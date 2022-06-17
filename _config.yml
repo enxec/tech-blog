@@ -11,8 +11,8 @@ exclude:
 # Site settings
 title: Wonmo's tech blog
 subtitle: "Don't dream, Be it (Tim curry)"
-email: blcentra@gmail.com
-name: Ben Centra
+email: wonmolee94@gmail.com
+name: Wonmo Lee
 description: >
   A simple yet classy theme for your Jekyll website or blog.
 # Base URL of site (i.e. /blog). It should always start with a slash,
@@ -78,8 +78,8 @@ descriptions:
 social:
   - name: Twitter
     icon: twitter
-    username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    username: wonmoLee
+    url: ""
     desc: Follow me on Twitter
     share: true
 
@@ -92,15 +92,15 @@ social:
 
   - name: GitHub
     icon: github
-    username: bencentra
-    url: https://github.com/bencentra
+    username: wonmoLee
+    url: https://github.com/wonmoLee
     desc: Fork me on GitHub
     share: false
 
   - name: LinkedIn
     icon: linkedin
-    username: Ben Centra
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+    username: wonmoLee
+    url: ""
     desc: Connect with me on LinkedIn
     share: true
 
