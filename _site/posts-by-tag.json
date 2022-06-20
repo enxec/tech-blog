@@ -3,6 +3,16 @@
 [   
       
   {
+  "tag" : "Git",
+  "posts" : [
+      
+      "./what-is-git.html"
+      
+    ]
+  } ,
+    
+      
+  {
   "tag" : "artificial intelligence",
   "posts" : [
       
@@ -69,16 +79,6 @@
   "posts" : [
       
       "./starting-the-adventure.html"
-      
-    ]
-  } ,
-    
-      
-  {
-  "tag" : "git",
-  "posts" : [
-      
-      "./what-is-git.html"
       
     ]
   } ,

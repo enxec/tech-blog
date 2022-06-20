@@ -1,9 +1,9 @@
 [
   
     {
-      "title"       : "git이란?",
+      "title"       : "Git이란?",
       "category"    : "git",
-      "tags"        : "git",
+      "tags"        : "Git",
       "url"         : "./what-is-git.html",
       "date"        : "2022-06-19 00:00:00 +0900",
       "description" : "개발자들간 협업의 핵심 및 중심이 되는 형상관리. 형상관리를 위해 사용되는 여러가지 도구 중 전세계적으로 가장 많이 사용되는 git에 대해 알아보자.",
