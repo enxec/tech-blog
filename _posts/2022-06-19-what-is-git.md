@@ -37,6 +37,9 @@ IT 현업에서 협업은 절대 빼놓을 수 없는 업무요소 중 하나이
 * * *
 
 ## 오픈소스 Git(GPL License)
+![GPL](./assets/img/posts/20220619/GPLv3-Logo.png "GPL")
+<div style="color: gray; text-align: center;">GPL</div>
+
 오픈소스를 이용해서 개발하는 경우 코드를 무료로 보고 사용할 수 있어 개발하기 편리하다는 장점이 있으나 사용하고 있는 오픈소스가 어떤 라이센스를 가지느냐에 따라서 상업적인 이용이 제한될 수도 있고 내가 만든 코드를 공개해야 할 의무까지 생길 수 있다. 
 
 그렇다면 Git은 어떤 라이선스를 가지고 있을까? 바로 리누스 토발즈가 설립한 재단인 GNU가 만든 GPL라이선스(GNU 일반 공중 사용 허가서)이다. GPL의 의무는 다음과 같다.
@@ -89,3 +92,6 @@ DVCS의 특징을 더해 Git의 장단점은 다음과 같다.
 
 읽어주셔서 감사합니다. 😊
 
+참고:  
+[Git - namuwiki](https://namu.wiki/w/Git)  
+[GNU 일반 공중 사용 허가서 - wikipedia](https://ko.wikipedia.org/wiki/GNU_%EC%9D%BC%EB%B0%98_%EA%B3%B5%EC%A4%91_%EC%82%AC%EC%9A%A9_%ED%97%88%EA%B0%80%EC%84%9C)  
