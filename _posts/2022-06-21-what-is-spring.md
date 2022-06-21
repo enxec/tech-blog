@@ -19,7 +19,7 @@ toc: no
 #### J2EE와 EJB
 자바 언어가 등장한 이래로 자바 기술로 기업환경의 어플리케이션을 만들기 위한 노력은 지속되어왔고, 썬마이크로시스템즈(자바 개발사)는 이를 위한 스펙들을 모아놓은 스펙 집합 J2EE(Java to Enterprise Edition)를 만들었다. J2EE의 대표적인 기술은 JSP, SERVLET, EJB, JDBC, JNDI 등이 있으며, 이중 기업환경의 시스템을 구현하기 위한 서버 측 컴포넌트 모델이자 규약으로 자바를 사용하여 서버 앱을 만드는 EJB(Enterprise Java Beans)는 표준 스펙으로 자리매김했다.
 
-![EJB](./assets/img/posts/20220621/EJB-Structure.png "EJB")
+![EJB](../assets/img/posts/20220621/EJB-Structure.png "EJB")
 <div style="color: gray; text-align: center;">EJB Structure</div>  
 
 하지만 J2EE와 EJB는 여러가지 문제점이 존재했으며, 우선 비지니스 로직과 기술적인 복잡함을 제대로 분리해내지 못했다. 또한 컨테이너 안에서만 동작하는 객체 구조나, 특정 환경에 종속적인 코드들로 오히려 개발의 복잡함이 가중되었으며, 가장 치명적인 단점은 EJB 틀 안에서 자바코드 스타일을 강제함으로써 상속을 제한하거나 다형성 적용을 근본적으로 제한하는 등 자바 언어의 철학이자 핵심인 객체지향적인 프로그래밍을 퇴색시켰다.
@@ -27,7 +27,7 @@ toc: no
 #### Spring의 등장
 EJB에 대한 반발로 자바 진형에서는 다양한 오픈소스가 쏟아져나왔고 2002년 로드존슨은 EJB의 문제점을 지적하며 EJB를 사용하지 않고도 고품질의 확장가능한 앱을 개발할 수 있음을 입증하는 책을 출판한다.
 
-![로드존슨의 J2EE 설계와 개발(expert one-on-one)](./assets/img/posts/20220621/Rod-Johnson-J2EE-expert-dev.jpg "로드존슨의 J2EE 설계와 개발(expert one-on-one)")
+![로드존슨의 J2EE 설계와 개발(expert one-on-one)](../assets/img/posts/20220621/Rod-Johnson-J2EE-expert-dev.jpg "로드존슨의 J2EE 설계와 개발(expert one-on-one)")
 <div style="color: gray; text-align: center;">로드존슨의 J2EE 설계와 개발(expert one-on-one)</div>
 
 책에는 30,000라인의 예제 소스코드와 현재 스프링의 핵심 개념과 기반 코드인 BeanFactory, ApplicationContext, POJO, IoC, DI 등이 포함되어 있다.
@@ -36,7 +36,7 @@ EJB에 대한 반발로 자바 진형에서는 다양한 오픈소스가 쏟아�
 * * *
 
 ## 스프링의 정의
-![Spring](./assets/img/posts/20220621/spring-logo2.png "Spring")
+![Spring](../assets/img/posts/20220621/spring-logo2.png "Spring")
 일반적으로 라이브러리나 프레임워크는 특정 분야나 한가지 기술에 특화된 목표로 만들어진다. 그러나 스프링은 등장배경에서 확인한것처럼 J2EE와 EJB의 대안으로 등장하였으며 애플리케이션의 전영역을 관통하는 일관된 프로그래밍 모델과 핵심기술을 바탕으로 빠르고 효과적으로 애플리케이션을 개발할수 있는 '애플리케이션 프레임워크'라는 특징을 가진다. 즉, 스프링은 특정 계층이나 기술, 업무 분야에 국한되지 않고 애플리케이션의 전 영역을 포괄하는 범용적인 프레임워크이며, 또한 자바 기반의 프레임워크이기 때문에 좋은 객체 지향 애플리케이션을 개발할 수 있는 프레임워크이다.
 
 * * *
@@ -60,7 +60,7 @@ EJB에 대한 반발로 자바 진형에서는 다양한 오픈소스가 쏟아�
 
 ## Spring 생태계
 Spring은 Framework와 함께 다양한 도구와 솔루션을 제공하여 속도, 단순성, 생산성에 초점을 맞추는 프로그래밍을 돕는다.
-![Spring Ecosystem](./assets/img/posts/20220621/spring-ecosystem.png "Spring Ecosystem")
+![Spring Ecosystem](../assets/img/posts/20220621/spring-ecosystem.png "Spring Ecosystem")
 <div style="color: gray; text-align: center;">Spring Ecosystem</div>  
 
 * * *
