@@ -1,7 +1,7 @@
 # Site settings
 title: Wonmo Lee's tech blog
 description: 'Artificial Intelligence trends and concepts made easy.' # this means to ignore newlines until "baseurl:"
-permalink: ':title:output_ext'
+permalink: '/:categories/:title'
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://wonmoLee.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #logo: "/assets/img/branding/MVM-logo-full.svg"

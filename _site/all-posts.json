@@ -1,25 +1,25 @@
 {
   "posts" : [
     
-    "./what-is-spring.html",
+    "./spring/what-is-spring",
     
-    "./what-is-git.html",
+    "./git/what-is-git",
     
-    "./AI-and-intellectual-property.html",
+    "./opinion/AI-and-intellectual-property",
     
-    "./back-to-basics.html",
+    "./theory/back-to-basics",
     
-    "./starting-the-adventure.html",
+    "./starting-the-adventure",
     
-    "./deep-q-learning-tic-tac-toe.html",
+    "./deep-q-learning-tic-tac-toe",
     
-    "./neural-network-optimization-methods.html",
+    "./neural-network-optimization-methods",
     
-    "./ML-Library-from-scratch.html",
+    "./ML-Library-from-scratch",
     
-    "./conways-game-of-life.html",
+    "./conways-game-of-life",
     
-    "./single-neuron-perceptron.html"
+    "./single-neuron-perceptron"
     
   ]
 }

@@ -5,8 +5,8 @@ show_date: true
 title: "Spring이란?"
 date: 2022-06-21
 img: posts/20220621/spring-logo.jpg
-tags: [Spring]
-category: Spring
+tags: [spring]
+category: spring
 author: Wonmo Lee
 description: "자바 웹 프레임워크 Spring에 대해 알아보자."
 toc: no

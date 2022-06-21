@@ -3,34 +3,14 @@
 [   
       
   {
-  "tag" : "Git",
-  "posts" : [
-      
-      "./what-is-git.html"
-      
-    ]
-  } ,
-    
-      
-  {
-  "tag" : "Spring",
-  "posts" : [
-      
-      "./what-is-spring.html"
-      
-    ]
-  } ,
-    
-      
-  {
   "tag" : "artificial intelligence",
   "posts" : [
       
-      "./AI-and-intellectual-property.html",
+      "./opinion/AI-and-intellectual-property",
       
-      "./back-to-basics.html",
+      "./theory/back-to-basics",
       
-      "./deep-q-learning-tic-tac-toe.html"
+      "./deep-q-learning-tic-tac-toe"
       
     ]
   } ,
@@ -40,15 +20,15 @@
   "tag" : "coding",
   "posts" : [
       
-      "./deep-q-learning-tic-tac-toe.html",
+      "./deep-q-learning-tic-tac-toe",
       
-      "./neural-network-optimization-methods.html",
+      "./neural-network-optimization-methods",
       
-      "./ML-Library-from-scratch.html",
+      "./ML-Library-from-scratch",
       
-      "./conways-game-of-life.html",
+      "./conways-game-of-life",
       
-      "./single-neuron-perceptron.html"
+      "./single-neuron-perceptron"
       
     ]
   } ,
@@ -58,7 +38,7 @@
   "tag" : "copyright",
   "posts" : [
       
-      "./AI-and-intellectual-property.html"
+      "./opinion/AI-and-intellectual-property"
       
     ]
   } ,
@@ -68,7 +48,7 @@
   "tag" : "creativity",
   "posts" : [
       
-      "./AI-and-intellectual-property.html"
+      "./opinion/AI-and-intellectual-property"
       
     ]
   } ,
@@ -78,7 +58,7 @@
   "tag" : "deep Neural networks",
   "posts" : [
       
-      "./neural-network-optimization-methods.html"
+      "./neural-network-optimization-methods"
       
     ]
   } ,
@@ -88,7 +68,17 @@
   "tag" : "general blogging",
   "posts" : [
       
-      "./starting-the-adventure.html"
+      "./starting-the-adventure"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "git",
+  "posts" : [
+      
+      "./git/what-is-git"
       
     ]
   } ,
@@ -98,7 +88,7 @@
   "tag" : "life",
   "posts" : [
       
-      "./starting-the-adventure.html"
+      "./starting-the-adventure"
       
     ]
   } ,
@@ -108,17 +98,17 @@
   "tag" : "machine learning",
   "posts" : [
       
-      "./AI-and-intellectual-property.html",
+      "./opinion/AI-and-intellectual-property",
       
-      "./back-to-basics.html",
+      "./theory/back-to-basics",
       
-      "./deep-q-learning-tic-tac-toe.html",
+      "./deep-q-learning-tic-tac-toe",
       
-      "./neural-network-optimization-methods.html",
+      "./neural-network-optimization-methods",
       
-      "./ML-Library-from-scratch.html",
+      "./ML-Library-from-scratch",
       
-      "./single-neuron-perceptron.html"
+      "./single-neuron-perceptron"
       
     ]
   } ,
@@ -128,13 +118,13 @@
   "tag" : "neural networks",
   "posts" : [
       
-      "./AI-and-intellectual-property.html",
+      "./opinion/AI-and-intellectual-property",
       
-      "./back-to-basics.html",
+      "./theory/back-to-basics",
       
-      "./ML-Library-from-scratch.html",
+      "./ML-Library-from-scratch",
       
-      "./single-neuron-perceptron.html"
+      "./single-neuron-perceptron"
       
     ]
   } ,
@@ -144,7 +134,7 @@
   "tag" : "optimization",
   "posts" : [
       
-      "./neural-network-optimization-methods.html"
+      "./neural-network-optimization-methods"
       
     ]
   } ,
@@ -154,11 +144,11 @@
   "tag" : "python",
   "posts" : [
       
-      "./deep-q-learning-tic-tac-toe.html",
+      "./deep-q-learning-tic-tac-toe",
       
-      "./ML-Library-from-scratch.html",
+      "./ML-Library-from-scratch",
       
-      "./conways-game-of-life.html"
+      "./conways-game-of-life"
       
     ]
   } ,
@@ -168,7 +158,17 @@
   "tag" : "reinforcement learning",
   "posts" : [
       
-      "./deep-q-learning-tic-tac-toe.html"
+      "./deep-q-learning-tic-tac-toe"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "spring",
+  "posts" : [
+      
+      "./spring/what-is-spring"
       
     ]
   } ,
@@ -178,7 +178,7 @@
   "tag" : "thoughts",
   "posts" : [
       
-      "./starting-the-adventure.html"
+      "./starting-the-adventure"
       
     ]
   } 
