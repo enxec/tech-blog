@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2022-06-21T17:59:39+09:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Wonmo Lee’s tech blog</title><subtitle>Artificial Intelligence trends and concepts made easy.</subtitle><author><name>Wonmo Lee</name></author><entry><title type="html">Spring이란?</title><link href="http://localhost:4000/blog/spring/what-is-spring" rel="alternate" type="text/html" title="Spring이란?" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/blog/spring/what-is-spring</id><content type="html" xml:base="http://localhost:4000/blog/spring/what-is-spring"><![CDATA[<p>전세계적으로 Java의 Spring, Nodejs의 express, Python의 Django 등 수많은 웹 프레임워크가 존재한다. 이번 포스팅에선 현재 한국의 수많은 기업에서 사용중인 자바 웹 프레임워크 ‘Spring’에 대해 알아보고자 한다.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2022-06-22T14:04:53+09:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Wonmo Lee’s tech blog</title><subtitle>Artificial Intelligence trends and concepts made easy.</subtitle><author><name>Wonmo Lee</name></author><entry><title type="html">Java란?</title><link href="http://localhost:4000/blog/java/what-is-java" rel="alternate" type="text/html" title="Java란?" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-22T00:00:00+09:00</updated><id>http://localhost:4000/blog/java/what-is-java</id><content type="html" xml:base="http://localhost:4000/blog/java/what-is-java"><![CDATA[<p>자바는 썬 마이크로시스템즈에서 개발하여 1996년 1월에 공식적으로 발표한 객체지향 프로그래밍 언어이다.
+자바의 가장 중요한 특징은 운영체제에 독립적이라는 것인데, 이것은 특정 운영체제에 종속받지않고 운영체제 종류에 상관없이 실행이 가능함을 뜻한다. 때문인지 자바는 다양한 기종의 컴퓨터와 운영체제가 공존하는 인터넷 환경에 적합한 언어로써 인터넷의 발전과 함께 많은 사용자층을 확보할 수 있었다.<br />
+또한 객체지향개념과 기존의 다른 프로그래밍언어, 특히 C++의 장점을 채택하는 동시에 잘 사용되지 않는 부분은 과감히 제외시킴으로써 비교적 배우기 쉽고 이해하기 쉬운 간결한 표현이 가능하도록 하였으며, 풍부한 클래스 라이프러리(Java API)를 통해 프로그래밍에 필요한 요소들을 기본적으로 제공하기 때문에 자바 프로그래머는 단순히 이 클래스 라이브러리만을 잘 활용해도 강력한 기능의 프로그램을 작성할 수 있는 언어이다.</p>
+
+<hr />
+
+<h2 id="java의-역사">Java의 역사</h2>
+<p><img src="../assets/img/posts/20220622/oracle-sun-logo.png" alt="Oracle &amp; Sun microsystems" title="Oracle &amp; Sun microsystems" /></p>
+<div style="color: gray; text-align: center;">Oracle &amp; Sun microsystems</div>
+<p>자바의 역사는 1991년 썬 마이크로시스템즈 의 엔지니어들에 의해서 고안된 오크라는 언어에서부터 시작되었다.
+제임스 고슬링과 아서 밴 호프와 같은 썬의 엔지니어들의 원래 목표는 가전제품에 탑재될 소프트웨어를 만드는 것이었다. 처음엔 C++을 확장해서 사용하려했지만 C++로는 역부족이였기 때문에 C++의 장점을 도입하고 단점은 보완후 도입한 새로운 언어를 개발하기에 이르렀다.<br />
+원래 Oak는 처음에는 가전제품이나 PDA와 같은 소형기기에 사용될 목적이었으나 여러 종류의 운영체제를 사용하는 컴퓨터들이 통신하는 인터넷이 등장하여 운영체제에 독립적인 Oak가 이에 적합하다고 판단, 오크를 인터넷에 적합하도록 개발 방향을 바꾸면서 이름을 자바로 변경하고 1996년 1월에 정식 버전을 발표하였다. 이후 서버 쪽 프로그래밍을 위한 서블릿과 JSP가 많이 사용되고 있으며 2010년 썬이 오라클에 인수되면서 현재 오라클사의 제품이 되었다.</p>
+
+<hr />
+
+<h2 id="java의-특징">Java의 특징</h2>
+<ul>
+  <li>운영체제에 독립적
+    <blockquote>
+      <p>기존의 언어들은 운영체제에 맞게 개발된 프로그램을 다른 운영체제에 적용하기 위해서 많은 노력이 필요하였지만
+  자바에서는 더 이상 그런 노력을 하지 않게 운영체제 독립적으로 구성되었다. 이것은 일종의 에뮬레이터인 자바가성머신(JVM)을 통해서 가능한 것인데, 자바 응용프로그램은 운영체제나 하드웨어가 아닌 JVM하고만 통신하고 JVM이 자바 응용프로그램으로부터 전달 받은 명령을 해당 운영체제가 이해할 수 있도록 변환하여 전달한다. 
+  자바로 작성된 프로그램은 운영체제에 독립적이지만 JVM은 운영체제에 종속적이어서 썬에서는 여러 운영체제에 설치할 수 있는 서로 다른 버전의 JVM을 제공하고 있다.</p>
+    </blockquote>
+  </li>
+  <li>객체지향언어
+    <blockquote>
+      <p>자바는 객체지향 프로그래밍 언어들 중 하나로 객체지향개념의 특징인 상속, 캡슐화, 다형성이 잘 적용된 순수한 객체지향언어이다.</p>
+    </blockquote>
+  </li>
+  <li>비교적 배우기 쉬움
+    <blockquote>
+      <p>자바는 연산과 기본구문에 대해선 C++을, 객체지향관련 구문은 스몰톡이라는 객체지향언어를 참조하여 개발되었다. 참조한 언어들의 장점은 취하면서 복잡하고 불필요한 부분들은 과감히 제거하여 단순화함으로서 쉽게 배울 수 있는 언어로 자리매김하였다.</p>
+    </blockquote>
+  </li>
+  <li>자동 메모리 관리(가비지 컬렉션)
+    <blockquote>
+      <p>자바로 작성된 프로그램이 실행되면 가비지컬렉터가 자동적으로 메모리를 관리해주는데, 이는 프로그래머가 메모리를 따로 관리 하지 않아도 되는 자바의 이점을 보여준다. 자동으로 메모리를 관리한다는 것이 다소 비효율적인 면도 있지만 프로그래머가 보다 프로그래밍에 집중할 수 있도록 도와준다.</p>
+    </blockquote>
+  </li>
+  <li>네트워크와 분산처리를 지원
+    <blockquote>
+      <p>자바에는 풍부하고 다양한 네트워크 프로그래밍 라이브러리(Java API)가 존재하며, 이것은 비교적 짧은 시간에 네트워크 관련 프로그램을 쉽게 개발할 수 있도록 지원한다.</p>
+    </blockquote>
+  </li>
+  <li>멀티쓰레드를 지원
+    <blockquote>
+      <p>일반적으로 멀티쓰레드의 지원은 사용되는 운영체제에 따라 구현방법이 상이하며, 처리방식도 다르다. 그러나 자바에서 개발되는 멀티쓰레드 프로그램은 시스템과는 관계없이 구현가능하며, 관련된 라이브러리가 제공되므로 구현이 쉽다. 그리고 여러 쓰레드에 대한 스케줄링을 자바 인터프리터가 담당하게 된다.</p>
+    </blockquote>
+  </li>
+  <li>동적 로딩을 지원
+    <blockquote>
+      <p>보통 자바로 작성된 애플리케이션은 여러개의 클래스로 구성되어 있다. 자바는 동적 로딩을 지원하기 때문에 실행 시에 모든 클래스가 로딩되지 않고 필요한 시점에 클래스를 로딩하여 사용할 수 있다는 장점이 있다. 그 외에도일부 클래스가 변경되어도 전체 애플리케이션을 다시 컴파일하지 않아도 되며, 애플리케이션의 변경사항이 발생해도 비교적 적은 작업만으로도 처리할 수 있는 유연한 애플리케이션을 작성 가능하다.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p><strong>알아두기:</strong><br />
+자바의 대표적인 단점은 속도문제인데 바이트코드를 하드웨어의 기계어로 바로 변환해주는 JIT컴파일러와 Hotspot과 같은 신기술의 도입으로 JVM의 기능이 향상됨으로써 속도문제가 많이 개선되었다.</p>
+
+<hr />
+
+<h2 id="jvmjava-virtual-machine">JVM(Java Virtual Machine)</h2>
+<p>JVM은 자바를 실행하기 위한 가상 컴퓨터라고 할 수있다.  가상 기계는 소프트웨어로 구현된 하드웨어를 뜻하는 넒은 의미의 용어이며 컴퓨터의 성능이 향상됨에 따라 점점 더 많은 하드웨어들이 소프트웨어화되어 컴퓨터 속으로 들어가고 있다. 요약해 JVM은 컴퓨터 속의 컴퓨터라고 생각하면 된다. 자바로 작성된 애플리케이션은 모두 JVM에서만 실행되기 때문에, 자바 애플리케이션이 실행되기 위해서는 반드시 JVM이 필요하다.</p>
+
+<p>일반 애플리케이션의 코드는 OS만 거치고 하드웨어로 전달되는데 비해 Java애플리케이션은 JVM을 한번 더 거치기 때문에, 그리고 하드웨어에 맞게 완전히 컴파일된 상태가 아니고 실행 시에 해석되기 때문에 속도가 느리다는 단점을 가지고 있다. 그러나 위에서 언급하였듯이 요즘엔 바이트 코드(컴파일된 자바코드)를 하드웨어의 기계어로 바로 변환해주는 JIT컴파일러와 향상된 최적화 기술이 적용되어 속도의 격차를 많이 줄였다.
+<img src="../assets/img/posts/20220622/general-java-compare.png" alt="일반프로그램과 자바프로그램 실행 프로세스 비교" title="일반프로그램과 자바프로그램 실행 프로세스 비교" /></p>
+<div style="color: gray; text-align: center;">일반프로그램과 자바프로그램 실행 프로세스 비교</div>
+<p>위 이미지를 보면 일반 프로그램은 OS와 바로 맞붙어 있기 때문에 OS종속적이다. 때문에 다른 OS에서 실행시키기 위해서는 애플리케이션을 그 OS에 맞게 변경해주어야한다. 반면 자바 프로그램은 JVM하고만 상호작용을 하기 때문에 OS와 하드웨어에 독립적이라 다른 OS에서도 프로그램 변경없이 실행이 가능한 것이다. 단, JVM은 OS에 종속적이여서 해당 OS에서 실행가능한 JVM이 필요하다.
+<img src="../assets/img/posts/20220622/java-os-relation.png" alt="JVM은 각각의 OS에 맞는 버전이 필요하다." title="JVM은 각각의 OS에 맞는 버전이 필요하다." /></p>
+<div style="color: gray; text-align: center;">JVM은 각각의 OS에 맞는 버전이 필요하다.</div>
+
+<hr />
+
+<p>읽어주셔서 감사합니다. 😊</p>]]></content><author><name>Wonmo Lee</name></author><category term="java" /><category term="java" /><summary type="html"><![CDATA[우리나라에서 현재 가장 많이 사용되고 있는 프로그래밍 언어 JAVA. 함께 알아보자]]></summary></entry><entry><title type="html">Spring이란?</title><link href="http://localhost:4000/blog/spring/what-is-spring" rel="alternate" type="text/html" title="Spring이란?" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/blog/spring/what-is-spring</id><content type="html" xml:base="http://localhost:4000/blog/spring/what-is-spring"><![CDATA[<p>전세계적으로 Java의 Spring, Nodejs의 express, Python의 Django 등 수많은 웹 프레임워크가 존재한다. 이번 포스팅에선 현재 한국의 수많은 기업에서 사용중인 자바 웹 프레임워크 ‘Spring’에 대해 알아보고자 한다.</p>
 
 <hr />
 
@@ -8038,123 +8111,4 @@ qXRvbwAAAB1kYXRhAAAAAQAAAABMYXZmNTguNDUuMTAw
 
 <p>Notice that since I am keeping an array of the coordinates of only the cells who are alive, I could apply just 3 rules, die of loneliness, die of overpopulation and become alive from reproduction (exactly 3 alive neighbors) because the ones who have 2 or 3 neighbors and are already alive, can remain alive in the next iteration.</p>
 
-<p>I&nbsp;found it very interesting to implement the Game of Life like this, it was quite a refreshing challenge and I am beginning to feel my coding skills ramping up again.</p>]]></content><author><name>Armando Maynez</name></author><category term="coding" /><category term="python" /><summary type="html"><![CDATA[Taking on the challenge of picking up coding again through interesting small projects, this time it is the turn of Conway's Game of Life.]]></summary></entry><entry><title type="html">Single Neuron Perceptron</title><link href="http://localhost:4000/blog/single-neuron-perceptron" rel="alternate" type="text/html" title="Single Neuron Perceptron" /><published>2021-01-26T04:32:20+09:00</published><updated>2021-01-26T04:32:20+09:00</updated><id>http://localhost:4000/blog/single-neuron-perceptron</id><content type="html" xml:base="http://localhost:4000/blog/single-neuron-perceptron"><![CDATA[<p>As an entry point to learning python and getting into Machine Learning, I decided to code from scratch the Hello World! of the field, a single neuron perceptron.</p>
-
-<h2 id="what-is-a-perceptron">What is a perceptron?</h2>
-
-<p>A perceptron is the basic building block of a neural network, it can be compared to a neuron, And its conception is what detonated the vast field of Artificial Intelligence nowadays.</p>
-
-<p>Back in the late 1950’s, a young <a href="https://en.wikipedia.org/wiki/Frank_Rosenblatt">Frank Rosenblatt</a> devised a very simple algorithm as a foundation to construct a machine that could learn to perform different tasks.</p>
-
-<p>In its essence, a perceptron is nothing more than a collection of values and rules for passing information through them, but in its simplicity lies its power.</p>
-
-<center><img src="./assets/img/posts/20210125/Perceptron.png" /></center>
-
-<p>Imagine you have a ‘neuron’ and to ‘activate’ it, you pass through several input signals, each signal connects to the neuron through a synapse, once the signal is aggregated in the perceptron, it is then passed on to one or as many outputs as defined. A perceptron is but a neuron and its collection of synapses to get a signal into it and to modify a signal to pass on.</p>
-
-<p>In more mathematical terms, a perceptron is an array of values (let’s call them weights), and the rules to apply such values to an input signal.</p>
-
-<p>For instance a perceptron could get 3 different inputs as in the image, lets pretend that the inputs it receives as signal are: $x_1 = 1, \; x_2 = 2\; and \; x_3 = 3$, if it’s weights are $w_1 = 0.5,\; w_2 = 1\; and \; w_3 = -1$ respectively, then what the perceptron will do when the signal is received is to multiply each input value by its corresponding weight, then add them up.</p>
-
-<p style="text-align:center">\(<br />
-\begin{align}
-\begin{split}
-\left(x_1 * w_1\right) + \left(x_2 * w_2\right) + \left(x_3 * w_3\right)
-\end{split}
-\end{align}
-\)</p>
-
-<p style="text-align:center">\(<br />
-\begin{align}<br />
-\begin{split}<br />
-\left(0.5 * 1\right) + \left(1 * 2\right) + \left(-1 * 3\right) = 0.5 + 2 - 3 = -0.5
-\end{split}<br />
-\end{align}<br />
-\)</p>
-
-<p>Typically when this value is obtained, we need to apply an “activation” function to smooth the output, but let’s say that our activation function is linear, meaning that we keep the value as it is, then that’s it, that is the output of the perceptron, -0.5.</p>
-
-<p>In a practical application, the output means something, perhaps we want our perceptron to classify a set of data and if the perceptron outputs a negative number, then we know the data is of type A, and if it is a positive number then it is of type B.</p>
-
-<p>Once we understand this, the magic starts to happen through a process called backpropagation, where we “educate” our tiny one neuron brain to have it learn how to do its job.</p>
-
-<tweet>The magic starts to happen through a process called backpropagation, where we "educate" our tiny one neuron brain to have it learn how to do its job.</tweet>
-
-<p>For this we need a set of data that it is already classified, we call this a training set. This data has inputs and their corresponding correct output. So we can tell the little brain when it misses in its prediction, and by doing so, we also adjust the weights a bit in the direction where we know the perceptron committed the mistake hoping that after many iterations like this the weights will be so that most of the predictions will be correct.</p>
-
-<p>After the model trains successfully we can have it classify data it has never seen before, and we have a fairly high confidence that it will do so correctly.</p>
-
-<p>The math behind this magical property of the perceptron is called gradient descent, and is just a bit of differential calculus that helps us convert the error the brain is having into tiny nudges of value of the weights towards their optimum. <a href="https://www.youtube.com/watch?v=aircAruvnKk&amp;list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi">This video series by 3 blue 1 brown explains it wonderfuly.</a></p>
-
-<p>My program creates a single neuron neural network tuned to guess if a point is above or below a randomly generated line and generates a visualization based on graphs to see how the neural network is learning through time.</p>
-
-<p>The neuron has 3 inputs and weights to calculate its output:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input 1 is the X coordinate of the point,
-Input 2 is the y coordinate of the point,
-Input 3 is the bias and it is always 1
-
-Input 3 or the bias is required for lines that do not cross the origin (0,0)
-</code></pre></div></div>
-
-<p>The Perceptron starts with weights all set to zero and learns by using 1,000 random points per each iteration.</p>
-
-<p>The output of the perceptron is calculated with the following activation function:
-    if x * weight_x + y weight_y + weight_bias is positive then 1 else 0</p>
-
-<p>The error for each point is calculated as the expected outcome of the perceptron minus the real outcome therefore there are only 3 possible error values:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Expected</th>
-      <th style="text-align: center">Calculated</th>
-      <th style="text-align: center">Error</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">-1</td>
-      <td style="text-align: center">1</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">-1</td>
-      <td style="text-align: center">-1</td>
-      <td style="text-align: center">0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">-1</td>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">-1</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>With every point that is learned if the error is not 0 the weights are adjusted according to:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>New_weight = Old_weight + error * input * learning_rate
-for example: New_weight_x = Old_weight_x + error * x * learning rate
-</code></pre></div></div>
-
-<p>A very useful parameter in all of neural networks is teh learning rate, which is basically a measure on how tiny our nudge to the weights is going to be.</p>
-
-<p>In this particular case, I coded the learning_rate to decrease with every iteration as follows:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>learning_rate = 0.01 / (iteration + 1)
-</code></pre></div></div>
-
-<p>this is important to ensure that once the weights are nearing the optimal values the adjustment in each iteration is subsequently more subtle.</p>
-
-<center><img src="./assets/img/posts/20210125/Learning_1000_points_per_iteration.jpg" /></center>
-
-<p>In the end, the perceptron always converges into a solution and finds with great precision the line we are looking for.</p>
-
-<p>Perceptrons are quite a revelation in that they can resolve equations by learning, however they are very limited. By their nature they can only resolve linear equations, so their problem space is quite narrow.</p>
-
-<p>Nowadays the neural networks consist of combinations of many perceptrons, in many layers, and other types of “neurons”, like convolution, recurrent, etc. increasing significantly the types of problems they solve.</p>]]></content><author><name>Armando Maynez</name></author><category term="machine learning" /><category term="coding" /><category term="neural networks" /><summary type="html"><![CDATA[Single neuron perceptron that classifies elements learning quite quickly.]]></summary></entry></feed>
+<p>I&nbsp;found it very interesting to implement the Game of Life like this, it was quite a refreshing challenge and I am beginning to feel my coding skills ramping up again.</p>]]></content><author><name>Armando Maynez</name></author><category term="coding" /><category term="python" /><summary type="html"><![CDATA[Taking on the challenge of picking up coding again through interesting small projects, this time it is the turn of Conway's Game of Life.]]></summary></entry></feed>

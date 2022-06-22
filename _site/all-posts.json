@@ -1,6 +1,8 @@
 {
   "posts" : [
     
+    "./java/what-is-java",
+    
     "./spring/what-is-spring",
     
     "./git/what-is-git",
