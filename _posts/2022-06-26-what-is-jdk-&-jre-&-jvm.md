@@ -2,17 +2,40 @@
 layout: post
 read_time: true
 show_date: true
-title: "JVM이란?"
+title: "JDK & JRE & JVM"
 date: 2022-06-26
 img: posts/20220622/java-logo.png
 tags: [java]
 category: java
 author: Wonmo Lee
-description: "자바가 OS로부터 독립할 수 있게 해준 JVM. 함께 알아보자."
+description: "JDK, JRE 그리고 JVM에 대해 알아보자."
 toc: no
 ---
+![JDK & JRE & JVM](../assets/img/posts/20220626/jdk-jre.png "JDK & JRE & JVM")
+<div style="color: gray; text-align: center;">JDK & JRE & JVM</div>
+
+## JDK?
+JDK는 Java Development Kit의 약자로 Java 애플리케이션을 만드는데 사용되는 소프트웨어 개발 환경이자 자바용 SDK이다. Java개발자는 JDK를 여러 OS환경에서 사용할 수 있으며, Java 프로그램을 코드화하고 실행하는데 사용한다.  
+JDK에는 JAVA 프로그램을 작성하는데 필요한 도구와 이를 실행하는데 필요한 JRE가 포함되어 있으며, 컴파일러(javac), JAVA 애플리케이션 시작 프로그램, 애플릿 뷰어 등도 포함되어 있다.
+
+* * *
+
+## JRE?
+JRE는 Java Runtime Environment의 약자로 다른 소프트웨어를 실행하도록 설계된 소프트웨어의 일부이다. 여기에는 클래스 라이브러리, 로더클래스 및 JVM이 포함되어 있다.  
+간단히 말해, Java 프로그램을 실행하려면 JRE가 필요하다. 기존에 JDK를 들고 있다면 위에서 언급했듯이 JDK는 JRE를 포함하고 있기 때문에 따로 설치가 필요하지않다. 하지만 개발자가 아닌 경우라면 JDK가 존재하지 않을테니 JRE를 따로 설치해주어야한다.
+
+* * *
+
+## JDK & JRE 상세구조
+JDK와 JRE의 각각 구성요소에 대한 정보는 오라클 문서 참고.  
+[JDK & JRE docs - Oracle](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/jdkfiles.html)
+
+![JDK & JRE Detail Structure](../assets/img/posts/20220626/jdk-jre-structure.png "JDK & JRE Detail Structure")
+<div style="color: gray; text-align: center;">JDK & JRE Detail Structure</div>
+
+## JVM?
 JVM은 Java Virtual Machine의 약어로 자바를 실행하기 위한 가상 컴퓨터라고 할 수있다. 가상 기계는 소프트웨어로 구현된 하드웨어를 뜻하는 넒은 의미의 용어이며 컴퓨터의 성능이 향상됨에 따라 점점 더 많은 하드웨어들이 소프트웨어화되어 컴퓨터 속으로 들어가고 있다.  
-요약해 JVM은 컴퓨터 속의 컴퓨터라고 생각하면 된다. 자바로 작성된 애플리케이션은 모두 JVM에서만 실행되기 때문에, 자바 애플리케이션이 실행되기 위해서는 반드시 JVM이 필요하다. 그렇다면 JVM은 어디서 어떻게 작동하는 것일까? 함께 알아보자.
+요약해 JVM은 컴퓨터 속의 컴퓨터라고 생각하면 된다. 자바로 작성된 애플리케이션은 모두 JVM에서만 실행되기 때문에, 자바 애플리케이션이 실행되기 위해서는 반드시 JVM이 필요하다.
 
 * * *
 
