@@ -33,6 +33,8 @@ JDK와 JRE의 각각 구성요소에 대한 정보는 오라클 문서 참고.
 ![JDK & JRE Detail Structure](../assets/img/posts/20220626/jdk-jre-structure.png "JDK & JRE Detail Structure")
 <div style="color: gray; text-align: center;">JDK & JRE Detail Structure</div>
 
+* * *
+
 ## JVM?
 JVM은 Java Virtual Machine의 약어로 자바를 실행하기 위한 가상 컴퓨터라고 할 수있다. 가상 기계는 소프트웨어로 구현된 하드웨어를 뜻하는 넒은 의미의 용어이며 컴퓨터의 성능이 향상됨에 따라 점점 더 많은 하드웨어들이 소프트웨어화되어 컴퓨터 속으로 들어가고 있다.  
 요약해 JVM은 컴퓨터 속의 컴퓨터라고 생각하면 된다. 자바로 작성된 애플리케이션은 모두 JVM에서만 실행되기 때문에, 자바 애플리케이션이 실행되기 위해서는 반드시 JVM이 필요하다.
