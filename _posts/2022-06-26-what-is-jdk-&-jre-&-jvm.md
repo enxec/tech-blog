@@ -8,30 +8,38 @@ tags:
   - JDK
   - JRE
   - JVM
+toc: true
+toc_sticky: true
+toc_label: "목차"
 ---
 ![JDK & JRE & JVM](/blog/assets/img/posts/20220626/jdk-jre.png "JDK & JRE & JVM"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">JDK & JRE & JVM</div>
 
-## JDK?
+# JDK?
+---
 JDK는 Java Development Kit의 약자로 Java 애플리케이션을 만드는데 사용되는 소프트웨어 개발 환경이자 자바용 SDK이다. Java개발자는 JDK를 여러 OS환경에서 사용할 수 있으며, Java 프로그램을 코드화하고 실행하는데 사용한다.  
 JDK에는 JAVA 프로그램을 작성하는데 필요한 도구와 이를 실행하는데 필요한 JRE가 포함되어 있으며, 컴파일러(javac), JAVA 애플리케이션 시작 프로그램, 애플릿 뷰어 등도 포함되어 있다.
 
-## JRE?
+# JRE?
+---
 JRE는 Java Runtime Environment의 약자로 다른 소프트웨어를 실행하도록 설계된 소프트웨어의 일부이다. 여기에는 클래스 라이브러리, 로더클래스 및 JVM이 포함되어 있다.  
 간단히 말해, Java 프로그램을 실행하려면 JRE가 필요하다. 기존에 JDK를 들고 있다면 위에서 언급했듯이 JDK는 JRE를 포함하고 있기 때문에 따로 설치가 필요하지않다. 하지만 개발자가 아닌 경우라면 JDK가 존재하지 않을테니 JRE를 따로 설치해주어야한다.
 
-## JDK & JRE 상세구조
+# JDK & JRE 상세구조
+---
 JDK와 JRE의 각각 구성요소에 대한 정보는 오라클 문서 참고.  
 [JDK & JRE docs - Oracle](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/jdkfiles.html)
 
 ![JDK & JRE Detail Structure](/blog/assets/img/posts/20220626/jdk-jre-structure.png "JDK & JRE Detail Structure"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">JDK & JRE Detail Structure</div>
 
-## JVM?
+# JVM?
+---
 JVM은 Java Virtual Machine의 약어로 자바를 실행하기 위한 가상 컴퓨터라고 할 수있다. 가상 기계는 소프트웨어로 구현된 하드웨어를 뜻하는 넒은 의미의 용어이며 컴퓨터의 성능이 향상됨에 따라 점점 더 많은 하드웨어들이 소프트웨어화되어 컴퓨터 속으로 들어가고 있다.  
 요약해 JVM은 컴퓨터 속의 컴퓨터라고 생각하면 된다. 자바로 작성된 애플리케이션은 모두 JVM에서만 실행되기 때문에, 자바 애플리케이션이 실행되기 위해서는 반드시 JVM이 필요하다.
 
-## JVM 특징
+# JVM 특징
+---
 일반 애플리케이션의 코드는 OS만 거치고 하드웨어로 전달되는데 비해 Java애플리케이션은 JVM을 한번 더 거치기 때문에, 그리고 하드웨어에 맞게 완전히 컴파일된 상태가 아니고 실행 시에 해석되기 때문에 속도가 느리다는 단점을 가지고 있다. 그러나 요즘엔 바이트 코드(컴파일된 자바코드)를 하드웨어의 기계어로 바로 변환해주는 JIT컴파일러와 향상된 최적화 기술이 적용되어 속도의 격차를 많이 줄였다.
 
 ![일반프로그램과 자바프로그램 실행 프로세스 비교](/blog/assets/img/posts/20220626/general-java-compare.png "일반프로그램과 자바프로그램 실행 프로세스 비교"){: width="100%"}
@@ -41,7 +49,8 @@ JVM은 Java Virtual Machine의 약어로 자바를 실행하기 위한 가상 �
 ![JVM은 각각의 OS에 맞는 버전이 필요하다.](/blog/assets/img/posts/20220626/java-os-relation.png "JVM은 각각의 OS에 맞는 버전이 필요하다."){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">JVM은 각각의 OS에 맞는 버전이 필요하다.</div>
 
-## 바이트 코드
+# 바이트 코드
+---
 JVM과 중요시 되는 요소는 바이트 코드이다. 바이트 코드는 JVM에서만 실행되는 기계어로서, 어떤 CUP와도 관계없는 코드이다.  
 자바 컴파일러는 자바 소스 프로그램을 컴파일하여 바이트 코드로 된 클래스 파일을 생성한다. 이 클래스 파일은 컴퓨터의 CPU에 의해 직접 실행되지 않고, JVM이 인터프리터 방식으로 실행시킨다. 이 클래스 파일은 어떤 OS를 탑재하든 CPU의 종류가 무엇이든, 어떤 하드웨어든 상관없이 JVM만 있으면 바로 실행 가능하며, 실행시 JVM의 JIT컴파일러에 의해 바이너리 코드로 변환되어 프로그램을 실행시킨다.  
 
@@ -51,7 +60,8 @@ __알아두기__
 - 기계어
     >0과 1로 이루어진 바이너리 코드이며, 모든 이진코드가 기계어인 컷은 아니다. 또한 기계어는 특정한 언어가 아니라 CPU가 이해하는 명령어 집합으로, CPU 제조사마다 기계어가 다를 수 있다.
 
-## JVM 구조
+# JVM 구조
+---
 ![JVM Structure](/blog/assets/img/posts/20220626/jvm-structure.png "JVM Structure"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">JVM Structure</div>
 >JVM의 구조
@@ -117,9 +127,9 @@ __알아두기__
             생성된 객체들의 정보의 주소값이 저장된 공간이다. 클래스 로더에 의해 load되는 Class, Method 등에 대한 Meta 정보가 저장되는 영역이고 JVM에 의해 사용된다.
             Reflection을 사용하여 동적으로 클래스가 로딩되는 경우에 사용된다.  
 
-* * *
+---
 
 읽어주셔서 감사합니다. 😊
 
-참고:  
+__Reference__  
 [JVM이란? 개념 및 구조 - Tistory](https://doozi0316.tistory.com/entry/1%EC%A3%BC%EC%B0%A8-JVM%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EB%A9%B0-%EC%9E%90%EB%B0%94-%EC%BD%94%EB%93%9C%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B8%EA%B0%80)
