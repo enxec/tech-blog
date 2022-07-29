@@ -9,34 +9,26 @@ tags:
 자바스크립트는 객체 기반의 스크립트 프로그래밍 언어이다. 자바스크립트는 웹 브라우저에서 주로 사용되며, Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.  
 또한 웹을 위한 인터프리터 언어이자 객체기반의 스크립트 프로그래밍 언어이며 HTML의 특정 요소(들)을 선택하여 다양한 이벤트 (마우스 클릭, 키보드 입력 등)에 따라 어떤 동작을 하도록 기능을 넣을 수 있으며 발생하는 이벤트에 따라 HTML, CSS를 조작할 수도 있고 그 외에도 여러가지를 할 수 있다.
 
-* * *
-
 ## JavaScript의 역사
-![Netscape](../assets/img/posts/20220623/netscape-logo.png "Netscape")
-<div style="color: gray; text-align: center;">Netscape</div>
+![Netscape](/blog/assets/img/posts/20220623/netscape-logo.png "Netscape"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">Netscape</div>
 자바스크립트의 등장은 넷스케이프사의 Marc Andreessen의 고민에서 부터 시작되었다. 때는 1993년, Marc Andreessen이라는 한 청년은 대학을 졸업함과 동시에 Netscape라는 기업을 설립한다. 이후 Marc Andreessen은 Netscape Navigator라는 웹 브라우저를 만들어 출시하고 당시 브라우저 시장의 약 80%를 점유하게된다. 그렇게 브라우저 시장을 점유한 그는 어느날 큰 고민에 빠졌다. 당시 Netscape Navigator로 동작하는 웹 사이트들은 하이퍼텍스트에 링크를 걸어 페이지와 페이지간의 간단한 이동만 가능한 정적인 사이트들 뿐이었다.  
 그래서 Marc Andreessen은 Netscape Navigator에서 동적인 웹 페이지가 구현되길 원했고, 그의 고민끝에 나온 결론은 스크립팅 언어를 추가하는 것이었다. 그는 스크립팅 언어를 만들기 위해 Brendan Eich를 스카웃하여 1994년, scheme스크립트를 변형하여 만든 프로토타입 기반의 유연한 언어인 Mocha를 개발하게 된다. 추후 Mocha는 LiveScript로 명칭이 바뀌게 되고 Netscape Navigator내에는 LiveScript를 이해하고 실행할 수 있는 LiveScript엔진 즉, 인터프리터가 내장되게 된다. 이후 Marc Andreessen은 LiveScript가 어떻게 하면 큰 인기를 끌 수 있을까 고민하였고, 당시 큰 인기를 누리고 있던 자바의 명칭을 활용해야겠다고 생각한 그는 LiveScript를 JavaScript로 이름을 바꾸게 된다. 그렇게 해서 넷스케이프사는 자바스크립트를 1995년에 공식적으로 출시하게 된다.
 
-* * *
-
 ## ECMAScript의 등장
-![Ecma International](../assets/img/posts/20220623/Ecma-International-logo.png "Ecma International")
-<div style="color: gray; text-align: center;">Ecma International</div>
+![Ecma International](/blog/assets/img/posts/20220623/Ecma-International-logo.png "Ecma International"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">Ecma International</div>
 ECMAScript란 간단히 말해 자바스크립트의 표준이라고 할 수 있다. ECMAScript의 탄생은 마이크로소프트의 움직임으로부터 시작되었다.  
 자바스크립트가 공식적으로 출시한 이래 브라우저의 무한한 잠재성을 확인한 마이크로소프트사는 넷스케이프의 브라우저를 Reverse engineering하여 약간의 소스만 변경하여 JScript라는 스크립트언어를 Internet Explorer브라우저와 함께 시장에 내놓았다. (참고 : Reverse engineering이란 만들어진 프로그램의 바이너리 코드를 분석해서 소스코드를 복원해내는 과정이다.)  
 이후 넷스케이프사의 브라우저와 마이크로소프트사의 브라우저가 브라우저시장에서 경쟁하면서 웹개발자들은 너무나도 다른 두 브라우저사이에서 고통을 받으며 개발해야했고 사용자들 또한 보다나은 페이지를 제공받기 위해 두 브라우저를 혼용해야했다. 이러한 문제가 지속되자 더이상 참지 못한 넷스케이프사는 ECMA International이라는 단체에 찾아가 JavaScript를 표준안으로 만들어보자고 제안했다. 그렇게 하여 1997년 JavaScript는 ECMAScript1이라는 표준안으로 재탄생하게된다.
 
-* * *
-
 ## ECMAScript 5와 6
-![ECMA5 & ECMA6](../assets/img/posts/20220623/ES5-ES6.png "ECMA5 & ECMA6")
-<div style="color: gray; text-align: center;">ECMA5 & ECMA6</div>
+![ECMA5 & ECMA6](/blog/assets/img/posts/20220623/ES5-ES6.png "ECMA5 & ECMA6"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">ECMA5 & ECMA6</div>
 ECMAScript는 자바스크립트를 사용하는데 있어 중요한 개념이기에 추가적으로 내용을 다루어본다.
 ECMAScript는 4버전까지 출시한 이후 IE는 브라우저시장의 약 90%정도를 점유하면서 표준안인 ECMAScript에 대해 반항을 하기 시작하고 때문에 ECMAScript의 발전은 주춤하게 된다.  
 그러던 중 구글사의 크롬과 JIT(자바스크립트를 빠르게 해석하고 이해하는 프로그램)이라는 강력한 소프트웨어와 함께 등장함에 따라 각 브라우저사들은 함께 모여 논의를 하게 되고 2009년, ECMAScript 5가 정식 출범하게 된다.  
 이후 2015년 ECMAScript 6가 출시하며, 현재 ECMA 2021까지 출시된 상황이다. 여기서 중요한 것은 ECMA 5와 ECMA 6인데 자바스크립트에서 가장 큰변화를 가져온것은 ECMA6가 등장했을때다. ECMA 6 이후 2021까지는 거의 변화가 없다고 보면되고, 우리 개발자들은 자바스크립트 사용시 ECMA 5이하인지, 아니면 ECMA 6 이상인지 확인해야한다.
-
-* * *
 
 ## JavaScript 특징
 - 자바스크립트는 객체 기반의 스크립트 언어다.
@@ -47,8 +39,6 @@ ECMAScript는 4버전까지 출시한 이후 IE는 브라우저시장의 약 90%
 - 클라이언트의 웹 브라우저에 의해 해석되고 실행된다.
 - HTML문서 내에 기술되고 HTML 문서와 함께 수행된다.
 - HTML에 연산 제어 등 프로그래밍적인 요소를 추가하고 클라이언트의 자원을 활용한다.
-
-* * *
 
 ## JavaScript의 장단점
 #### 장점

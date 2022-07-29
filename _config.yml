@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Wonmo Lee"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "./assets/img/profile.png"
   bio              : "Backend Developer"
   location         : "Busan, Republic of Korea"
   email            : "wonmolee94@gmail.com"

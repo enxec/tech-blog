@@ -9,45 +9,37 @@ tags:
   - JRE
   - JVM
 ---
-![JDK & JRE & JVM](../assets/img/posts/20220626/jdk-jre.png "JDK & JRE & JVM")
-<div style="color: gray; text-align: center;">JDK & JRE & JVM</div>
+![JDK & JRE & JVM](/blog/assets/img/posts/20220626/jdk-jre.png "JDK & JRE & JVM"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">JDK & JRE & JVM</div>
 
 ## JDK?
 JDK는 Java Development Kit의 약자로 Java 애플리케이션을 만드는데 사용되는 소프트웨어 개발 환경이자 자바용 SDK이다. Java개발자는 JDK를 여러 OS환경에서 사용할 수 있으며, Java 프로그램을 코드화하고 실행하는데 사용한다.  
 JDK에는 JAVA 프로그램을 작성하는데 필요한 도구와 이를 실행하는데 필요한 JRE가 포함되어 있으며, 컴파일러(javac), JAVA 애플리케이션 시작 프로그램, 애플릿 뷰어 등도 포함되어 있다.
 
-* * *
-
 ## JRE?
 JRE는 Java Runtime Environment의 약자로 다른 소프트웨어를 실행하도록 설계된 소프트웨어의 일부이다. 여기에는 클래스 라이브러리, 로더클래스 및 JVM이 포함되어 있다.  
 간단히 말해, Java 프로그램을 실행하려면 JRE가 필요하다. 기존에 JDK를 들고 있다면 위에서 언급했듯이 JDK는 JRE를 포함하고 있기 때문에 따로 설치가 필요하지않다. 하지만 개발자가 아닌 경우라면 JDK가 존재하지 않을테니 JRE를 따로 설치해주어야한다.
-
-* * *
 
 ## JDK & JRE 상세구조
 JDK와 JRE의 각각 구성요소에 대한 정보는 오라클 문서 참고.  
 [JDK & JRE docs - Oracle](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/jdkfiles.html)
 
-![JDK & JRE Detail Structure](../assets/img/posts/20220626/jdk-jre-structure.png "JDK & JRE Detail Structure")
-<div style="color: gray; text-align: center;">JDK & JRE Detail Structure</div>
-
-* * *
+![JDK & JRE Detail Structure](/blog/assets/img/posts/20220626/jdk-jre-structure.png "JDK & JRE Detail Structure"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">JDK & JRE Detail Structure</div>
 
 ## JVM?
 JVM은 Java Virtual Machine의 약어로 자바를 실행하기 위한 가상 컴퓨터라고 할 수있다. 가상 기계는 소프트웨어로 구현된 하드웨어를 뜻하는 넒은 의미의 용어이며 컴퓨터의 성능이 향상됨에 따라 점점 더 많은 하드웨어들이 소프트웨어화되어 컴퓨터 속으로 들어가고 있다.  
 요약해 JVM은 컴퓨터 속의 컴퓨터라고 생각하면 된다. 자바로 작성된 애플리케이션은 모두 JVM에서만 실행되기 때문에, 자바 애플리케이션이 실행되기 위해서는 반드시 JVM이 필요하다.
 
-* * *
-
 ## JVM 특징
 일반 애플리케이션의 코드는 OS만 거치고 하드웨어로 전달되는데 비해 Java애플리케이션은 JVM을 한번 더 거치기 때문에, 그리고 하드웨어에 맞게 완전히 컴파일된 상태가 아니고 실행 시에 해석되기 때문에 속도가 느리다는 단점을 가지고 있다. 그러나 요즘엔 바이트 코드(컴파일된 자바코드)를 하드웨어의 기계어로 바로 변환해주는 JIT컴파일러와 향상된 최적화 기술이 적용되어 속도의 격차를 많이 줄였다.
-![일반프로그램과 자바프로그램 실행 프로세스 비교](../assets/img/posts/20220626/general-java-compare.png "일반프로그램과 자바프로그램 실행 프로세스 비교")
-<div style="color: gray; text-align: center;">일반프로그램과 자바프로그램 실행 프로세스 비교</div>
-위 이미지를 보면 일반 프로그램은 OS와 바로 맞붙어 있기 때문에 OS종속적이다. 때문에 다른 OS에서 실행시키기 위해서는 애플리케이션을 그 OS에 맞게 변경해주어야한다. 반면 자바 프로그램은 JVM하고만 상호작용을 하기 때문에 OS와 하드웨어에 독립적이라 다른 OS에서도 프로그램 변경없이 실행이 가능한 것이다. 단, JVM은 OS에 종속적이여서 해당 OS에서 실행가능한 JVM이 필요하다.
-![JVM은 각각의 OS에 맞는 버전이 필요하다.](../assets/img/posts/20220626/java-os-relation.png "JVM은 각각의 OS에 맞는 버전이 필요하다.")
-<div style="color: gray; text-align: center;">JVM은 각각의 OS에 맞는 버전이 필요하다.</div>
 
-* * *
+![일반프로그램과 자바프로그램 실행 프로세스 비교](/blog/assets/img/posts/20220626/general-java-compare.png "일반프로그램과 자바프로그램 실행 프로세스 비교"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">일반프로그램과 자바프로그램 실행 프로세스 비교</div>
+위 이미지를 보면 일반 프로그램은 OS와 바로 맞붙어 있기 때문에 OS종속적이다. 때문에 다른 OS에서 실행시키기 위해서는 애플리케이션을 그 OS에 맞게 변경해주어야한다. 반면 자바 프로그램은 JVM하고만 상호작용을 하기 때문에 OS와 하드웨어에 독립적이라 다른 OS에서도 프로그램 변경없이 실행이 가능한 것이다. 단, JVM은 OS에 종속적이여서 해당 OS에서 실행가능한 JVM이 필요하다.
+
+![JVM은 각각의 OS에 맞는 버전이 필요하다.](/blog/assets/img/posts/20220626/java-os-relation.png "JVM은 각각의 OS에 맞는 버전이 필요하다."){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">JVM은 각각의 OS에 맞는 버전이 필요하다.</div>
 
 ## 바이트 코드
 JVM과 중요시 되는 요소는 바이트 코드이다. 바이트 코드는 JVM에서만 실행되는 기계어로서, 어떤 CUP와도 관계없는 코드이다.  
@@ -59,11 +51,9 @@ __알아두기__
 - 기계어
     >0과 1로 이루어진 바이너리 코드이며, 모든 이진코드가 기계어인 컷은 아니다. 또한 기계어는 특정한 언어가 아니라 CPU가 이해하는 명령어 집합으로, CPU 제조사마다 기계어가 다를 수 있다.
 
-* * *
-
 ## JVM 구조
-![JVM Structure](../assets/img/posts/20220626/jvm-structure.png "JVM Structure")
-<div style="color: gray; text-align: center;">JVM Structure</div>
+![JVM Structure](/blog/assets/img/posts/20220626/jvm-structure.png "JVM Structure"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">JVM Structure</div>
 >JVM의 구조
 - 클래스 로더
     >JVM 내로 클래스 파일을 로드하고, 링크를 통해 배치하는 작업을 수행하는 모듈이다.
@@ -82,8 +72,8 @@ __알아두기__
         >더이상 사용되지 않는 인스턴스를 찾아 메모리에서 삭제함.
 - 런타임 데이터 영역
     >프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간
-    ![Runtime Area](../assets/img/posts/20220626/runtime-area.png "Runtime Area")
-    <div style="color: gray; text-align: center;">Runtime Area</div>
+    ![Runtime Area](/blog/assets/img/posts/20220626/runtime-area.png "Runtime Area"){: width="100%"}
+    <div style="color: gray; text-align: center; margin-bottom: 30px;">Runtime Area</div>
     - PC Register
         >Thread가 시작될 때 생성되며 생성될 때마다 생성되는 공간으로, 스레드마다 하나씩 존재한다.
         Thread가 어떤 부분을 어떤 명령으로 실행해야할 지에 대한 기록을 하는 부분으로 현재 수행 중인 JVM 명령의 주소를 갖는다.
@@ -107,8 +97,8 @@ __알아두기__
         >객체를 저장하는 가상메모리 공간. new 연산자로 생성되는 객체와 배열을 저장하며
         Class Area(Static Area)에 올라온 클래스들만 객체로 생성할 수 있다.
         힙 영역은 다음과 같이 세 부분으로 나뉘어 진다.
-        ![Heap Structure](../assets/img/posts/20220626/heap-structure.jpg "Heap Structure")
-        <div style="color: gray; text-align: center;">Heap Structure</div>
+        ![Heap Structure](../assets/img/posts/20220626/heap-structure.jpg "Heap Structure"){: width="100%"}
+        <div style="color: gray; text-align: center; margin-bottom: 30px;">Heap Structure</div>
         - Young 영역
             >이곳의 인스턴스들은 추후 가비지 콜렉터에 의해 사라진다.
             생명 주기가 짧은 “젊은 객체”를 GC 대상으로 하는 영역이다.

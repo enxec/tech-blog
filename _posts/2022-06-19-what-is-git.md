@@ -14,28 +14,24 @@ IT 현업에서 협업은 절대 빼놓을 수 없는 업무요소 중 하나이
 그럼 형상관리라는 것은 어떻게 무엇으로 이루어지고 있는걸까? 
 현재 IT업계에서 형상관리는 SVN, Git, ClearCase 등 다양한 툴들이 활용되고 있으며, 우리는 이번 포스팅에서 전세계적으로 가장 많이 활용되고 있는 git이라는 형상관리도구를 알아보고자 한다.
 
-* * *
-
 ## Git의 탄생배경
 형상관리라는 개념이 없던 시절, 과거 개발자들은 소스코드를 어떻게 관리하였을까? 그렇다. 특정 개발자가 생산된 소스코드들을 일일이 모아 합쳐야만했다. 물론 프로젝트가 소규모라고 가정하면 뭐 감당할 수 있을듯하다. 하지만 대규모 프로젝트라면 정말 끔찍하지 않을 수 없다. 이러한 악조건 속에서 개발자들은 하루하루 지옥을 맛보며 개발을 하던 중 어느날, 버전관리시스템(VCS)이라는 개념이 생겨나며, SVN이나 CVS같은 버전관리시스템이 개발자들의 봄비로 자리잡게 된다.
 
 혹시 독자들은 리눅스를 개발한 리누스 토발즈라고 들어보셨는가? 리누스 토발즈는 IT발전에 막대한 영향을 끼친 인물로서, OS인 리눅스와 형상관리도구 Git을 개발한것으로 유명하다.
 
-![Linus-Benedict-Torvalds](../assets/img/posts/20220619/Linus-Benedict-Torvalds.jpg "리누스 토발즈")
-<div style="color: gray; text-align: center;">리누스 토발즈</div>  
+![Linus-Benedict-Torvalds](/blog/assets/img/posts/20220619/Linus-Benedict-Torvalds.jpg "리누스 토발즈"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">리누스 토발즈</div>  
 
 리누스 토발즈는 리눅스 커널 소스 코드를 관리할 때 SVN이나 CVS같은 버전관리시스템을 사용하지않았다. 그 이유로는 정확하진 않지만 기능이 마음에 들지않는다는 정설이 있다고한다. 때문에 버전관리시스템이 등장했음에도 불구하고 리누스 토발즈는 원시적으로 파일을 관리하던 중 결국 버티지 못하고 VCS를 채택하여 사용하게된다. 리누스 토발즈가 사용한 VCS는 BitKeeper라는 제품이며 분산 처리 기능과 비교적 빠른 성능 덕분에 사용했다고 한다. 
 
-![Bitkeeper](../assets/img/posts/20220619/Bitkeeper-logo.png "Bitkeeper")
-<div style="color: gray; text-align: center;">Bitkeeper</div>
+![Bitkeeper](/blog/assets/img/posts/20220619/Bitkeeper-logo.png "Bitkeeper"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">Bitkeeper</div>  
 
 그러다가 BitKeeper 쪽에서 리버스 엔지니어링을 문제로 일부 리눅스 개발자들을 제한하는 일이 발생했다. 때문에 리누스 토발즈는 BitKeeper를 계속 사용해야할지 아니면 다른 버전 관리 시스템을 사용해야할지 결정해야 했는데, 리누스 토발즈는 전자도 후자도 아닌 직접 VCS를 개발하겠다고 결정했으며, 그렇게 탄생한 VCS가 바로 Git이다.
 
-* * *
-
 ## 오픈소스 Git(GPL License)
-![GPL](../assets/img/posts/20220619/GPLv3-Logo.png "GPL")
-<div style="color: gray; text-align: center;">GPL</div>
+![GPL](/blog/assets/img/posts/20220619/GPLv3-Logo.png "GPL"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">GPL</div>
 
 오픈소스를 이용해서 개발하는 경우 코드를 무료로 보고 사용할 수 있어 개발하기 편리하다는 장점이 있으나 사용하고 있는 오픈소스가 어떤 라이센스를 가지느냐에 따라서 상업적인 이용이 제한될 수도 있고 내가 만든 코드를 공개해야 할 의무까지 생길 수 있다. 
 
@@ -47,8 +43,6 @@ IT 현업에서 협업은 절대 빼놓을 수 없는 업무요소 중 하나이
 - 변경된 컴퓨터 프로그램 역시 프로그램의 소스 코드를 반드시 공개 배포해야 한다.
 - 변경된 컴퓨터 프로그램 역시 반드시 똑같은 라이선스를 취해야 한다. 즉 GPL 라이선스를 적용해야 한다.
 
-* * *
-
 ## DVCS Git
 VCS의 종류는 크게 Local VCS, CVCS, DVCS 3가지가 있다. 그 중 Git은 DVCS에 해당하며 분산 버전관리 시스템이라고 한다. DVCS에는 Git 이외에 Mecurial, Bazaar, Darcs 등이 있으며, 특징은 다음과 같다.
 
@@ -56,13 +50,9 @@ VCS의 종류는 크게 Local VCS, CVCS, DVCS 3가지가 있다. 그 중 Git은 
 - 여러명이 동시에 작업하는 병렬 개발이 가능합니다.
 - 프로젝트를 모두 복사해와 로컬 환경에서 마음것 테스트 할 수 있습니다. 
 
-* * *
-
 ## Git 구조
-![Git 구조](../assets/img/posts/20220619/Git-Structure.png "Git 구조")
-<div style="color: gray; text-align: center;">Git Structure</div>
-
-* * *
+![Git 구조](/blog/assets/img/posts/20220619/Git-Structure.png "Git 구조"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">Git Structure</div>
 
 ## Git의 장단점
 DVCS의 특징을 더해 Git의 장단점은 다음과 같다.
