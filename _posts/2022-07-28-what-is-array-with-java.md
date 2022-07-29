@@ -1,15 +1,12 @@
 ---
-layout: post
-read_time: true
-show_date: true
 title: "배열 (with.자바)"
-date: 2022-07-28
-img: posts/20220622/java-logo.png
-tags: [java, array]
-category: java
-author: Wonmo Lee
-description: "자바에서의 배열에 대해 알아보자."
-toc: no
+categories:
+  - Java
+tags:
+  - 자바
+  - java
+  - 배열
+  - array
 ---
 
 ## 배열이란?

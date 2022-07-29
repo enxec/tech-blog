@@ -1,15 +1,12 @@
 ---
-layout: post
-read_time: true
-show_date: true
 title: "변수 (with.자바)"
-date: 2022-07-22
-img: posts/20220622/java-logo.png
-tags: [java, variable]
-category: java
-author: Wonmo Lee
-description: "자바의 변수에 대해 알아보자."
-toc: no
+categories:
+  - Java
+tags:
+  - java
+  - 자바
+  - 변수
+  - variable
 ---
 
 우리는 살아가면서 '변수' 라는 용어를 간혹 들어봤을 것이다. '변수가 많네~', '변수가 생길수도있어!', '변수에 담아!' 등 프로그래밍을 포함해 일상생활에서도 많이 쓰이곤한다.

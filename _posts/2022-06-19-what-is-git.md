@@ -1,15 +1,12 @@
 ---
-layout: post
-read_time: true
-show_date: true
 title: "Git이란?"
-date: 2022-06-19
-img: posts/20220619/git-logo.png
-tags: [git]
-category: git
-author: Wonmo Lee
-description: "개발자들간 협업의 핵심 및 중심이 되는 형상관리. 형상관리를 위해 사용되는 여러가지 도구 중 전세계적으로 가장 많이 사용되는 git에 대해 알아보자."
-toc: no
+categories:
+  - Git
+tags:
+  - git
+  - 깃
+  - 형상관리
+  - 분산 버전 관리 시스템
 ---
 IT 현업에서 협업은 절대 빼놓을 수 없는 업무요소 중 하나이다. 협업은 현재 문서, 이미지, 소스코드 등 다양한 요소들에 접목되어 이루어지고 있으며, 형상관리라는 개념 아래에서 체계적으로 관리된다.
 형상관리는 현시점에서 개발자, 엔지니어등 IT에 종사하는 많은 분들에게 불가피한 요소로 자리잡고 있으며, 때문에 개발자들의 생산성이 나날이 높아지고 있다.

@@ -1,15 +1,14 @@
 ---
-layout: post
-read_time: true
-show_date: true
 title: "상수와 리터럴 (with.자바)"
-date: 2022-07-27
-img: posts/20220622/java-logo.png
-tags: [java, constant, literal]
-category: java
-author: Wonmo Lee
-description: "자바에서의 상수와 리터럴에 대해 알아보자."
-toc: no
+categories:
+  - Java
+tags:
+  - java
+  - 자바
+  - 상수
+  - 리터럴
+  - constant
+  - literal
 ---
 
 프로그래밍을 하다보면 값이 변하지않는 데이터 공간에 대한 고민을 한번쯤 하게 된다. 그럴 땐 어떻게 해야할까? 그렇다. 변수가 아닌 상수를 활용하는 것이다.  

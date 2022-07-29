@@ -1,15 +1,10 @@
 ---
-layout: post
-read_time: true
-show_date: true
 title: "Java란?"
-date: 2022-06-22
-img: posts/20220622/java-logo.png
-tags: [java]
-category: java
-author: Wonmo Lee
-description: "우리나라에서 현재 가장 많이 사용되고 있는 프로그래밍 언어 JAVA. 함께 알아보자"
-toc: no
+categories:
+  - Java
+tags:
+  - java
+  - 자바
 ---
 자바는 썬 마이크로시스템즈에서 개발하여 1996년 1월에 공식적으로 발표한 객체지향 프로그래밍 언어이다.
 자바의 가장 중요한 특징은 운영체제에 독립적이라는 것인데, 이것은 특정 운영체제에 종속받지않고 운영체제 종류에 상관없이 실행이 가능함을 뜻한다. 때문인지 자바는 다양한 기종의 컴퓨터와 운영체제가 공존하는 인터넷 환경에 적합한 언어로써 인터넷의 발전과 함께 많은 사용자층을 확보할 수 있었다.  

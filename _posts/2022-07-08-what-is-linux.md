@@ -1,15 +1,13 @@
 ---
-layout: post
-read_time: true
-show_date: true
 title: "Linux란?"
-date: 2022-07-08
-img: posts/20220708/linux-logo.png
-tags: [linux]
-category: linux
-author: Wonmo Lee
-description: "Linux에 대해 알아보자."
-toc: no
+categories:
+  - Linux
+tags:
+  - linux
+  - 리눅스
+  - CLI
+  - 운영체제
+  - OS
 ---
 
 현재 세상에는 수많은 운영체제가 존재한다. Unix, Linux, window, android 등 너무 많아 읆기가 힘들 정도다. 이번 포스트에서는 이 수많은 OS들 중 역사가 깊고 OS발전의 발판을 마련하여 다양한 OS의 등장을 촉진한 대표적 CLI OS인 Linux에 대해 알아보고자 한다.

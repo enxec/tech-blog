@@ -1,15 +1,13 @@
 ---
-layout: post
-read_time: true
-show_date: true
 title: "JDK & JRE & JVM"
-date: 2022-06-26
-img: posts/20220622/java-logo.png
-tags: [java]
-category: java
-author: Wonmo Lee
-description: "JDK, JRE 그리고 JVM에 대해 알아보자."
-toc: no
+categories:
+  - Java
+tags:
+  - java
+  - 자바
+  - JDK
+  - JRE
+  - JVM
 ---
 ![JDK & JRE & JVM](../assets/img/posts/20220626/jdk-jre.png "JDK & JRE & JVM")
 <div style="color: gray; text-align: center;">JDK & JRE & JVM</div>

@@ -1,15 +1,12 @@
 ---
-layout: post
-read_time: true
-show_date: true
 title: "Spring이란?"
-date: 2022-06-21
-img: posts/20220621/spring-logo.jpg
-tags: [spring]
-category: spring
-author: Wonmo Lee
-description: "자바 웹 프레임워크 Spring에 대해 알아보자."
-toc: no
+categories:
+  - Spring
+tags:
+  - spring
+  - 스프링
+  - framework
+  - 프레임워크
 ---
 전세계적으로 Java의 Spring, Nodejs의 express, Python의 Django 등 수많은 웹 프레임워크가 존재한다. 이번 포스팅에선 현재 한국의 수많은 기업에서 사용중인 자바 웹 프레임워크 'Spring'에 대해 알아보고자 한다.
 

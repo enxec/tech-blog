@@ -1,15 +1,17 @@
 ---
-layout: post
-read_time: true
-show_date: true
 title: "캐스팅(형변환)이란?"
-date: 2022-07-27
-img: posts/20220622/java-logo.png
-tags: [java, casting]
-category: java
-author: Wonmo Lee
-description: "진법에 대해 알아보자."
-toc: no
+categories:
+  - Java
+tags:
+  - java
+  - 자바
+  - casting
+  - 캐스팅
+  - 형변환
+  - 명시적 캐스팅
+  - 묵시적 캐스팅
+  - 다운 캐스팅
+  - 업 캐스팅
 ---
 
 프로그래밍을 하다보면 같은 타입뿐 아니라 서르 다른 타입간의 연산을 수행해야하는 경우도 발생한다. 이때 우리는 연산을 수행하기전 타입을 일치시켜야하는데 어떻게 해야할까? 함께 알아보자.
