@@ -83,6 +83,39 @@ c = 0;      // int 자료형의 c 변수값을 0으로 초기화
 ![자바 예약어](/blog/assets/img/posts/20220722/java-reserved-word.png "자바 예약어"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">자바 예약어</div> 
 
+# 선언위치에 따른 변수의 종류
+자바에서 선언위치에 따른 변수의 종류에는 3가지가 있다.
+- 클래스 변수
+- 인스턴스 변수
+- 지역 변수
+
+변수의 종류를 결정 짓는 중요한 요소는 '변수의 선언된 위치' 이므로 변수의 종류를 파악하기 위해서는 변수가 어느 영역에 선언되었는지 확인하는 것이 중요하다. 멤버변수를 제외한 나머지 변수들은 모두 지역변수이며, 멤버변수 중 static이 붙은 것은 클래스변수, 붙지 않은 것은 인스턴스 변수이다. 글로만 보았을 때 이해가 잘 안갈 수 있으니 예제코드를 통해 알아보자.
+```java
+class Car {
+  static String color;              // 클래스 변수(static변수, 공유변수)
+  int wheel;                        // 인스턴스 변수
+
+  void engine() {             
+        boolean power = true;       // 지역 변수
+  }
+}
+```
+위 클래스를 구성을 보면 변수 2개와 메서드 1개가 있다. 앞전에 언급하였듯이 선언위치에 따른 변수는 크게 멤버변수와 지역변수 2개로 나뉜다. color와 wheel변수는 이중 멤버변수에 해당하며 statice의 유무에 따라 다시 한번 클래스 변수 또는 인스턴스 변수로 세분화 되어 나뉜다.  
+
+클래스변수와 인스턴스 변수를 이해하려면 static에 대한 이해가 필요한데, 해당 포스팅은 변수를 다루는 포스팅이므로 변수와 접목시켜 간단히만 설명하겠다.  
+static이 붙은 변수의 경우 어느 위치에 작성이 되어있든 자바프로그램이 실행되는 동시에 메모리에 올라간다. 반대로 static이 붙지 않은 변수의 경우 객체가 생성될 때 메모리에 올라간다.
+static유무에 따라 해당 변수를 사용할 수 있는 시점이 고려된다는 것이다. 따라서 color는 static이 있으므로 클래스변수에 해당하며, wheel는 static이 없으므로 인스턴스 변수에 해당하는 것이다.
+
+다음 engine메서드를 보자. 해당 메서드안에는 power라는 변수가 선언 및 초기화 되어있다. power변수는 메서드 안에 선언되어있으므로 멤버변수가 아닌 지역변수이다. 눈치빠르신 독자분들은 이해하셨겠지만 멤버변수와 지역변수로 나뉘는 기준은 scope다. color변수와 wheel변수는 engine메서드와 동급으로 클래스 영역에서 최상위 포지션을 차지하고있다. 하지만 power변수의 경우 클래스 안의 engine메서드 안에 자리잡고 있다. 뎁스가 하나 더 있는 것이다.
+
+원활한 이해를 돕기위해 표를 작성하면 다음과 같다.
+
+| 변수의 종류 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;선언위치&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;생성시기&nbsp;&nbsp;&nbsp;&nbsp; |
+|:---:||:---:||:---:|
+| 클래스 변수 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;클래스 영역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;클래스가 메모리에 올라갈 때&nbsp;&nbsp;&nbsp;&nbsp; |
+| 인스턴스 변수 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;클래스 영역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;인스턴스가 생성되었을 때&nbsp;&nbsp;&nbsp;&nbsp; |
+| 지역변수 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;클래스 영역 이외의 영역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;변수 선언문이 수행되었을 때&nbsp;&nbsp;&nbsp;&nbsp; |
+
 --- 
 
 읽어주셔서 감사합니다. 😊
