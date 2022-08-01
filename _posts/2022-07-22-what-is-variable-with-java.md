@@ -84,6 +84,7 @@ c = 0;      // int 자료형의 c 변수값을 0으로 초기화
 <div style="color: gray; text-align: center; margin-bottom: 30px;">자바 예약어</div> 
 
 # 선언위치에 따른 변수의 종류
+---
 자바에서 선언위치에 따른 변수의 종류에는 3가지가 있다.
 - 클래스 변수
 - 인스턴스 변수
@@ -108,13 +109,16 @@ static유무에 따라 해당 변수를 사용할 수 있는 시점이 고려된
 
 다음 engine메서드를 보자. 해당 메서드안에는 power라는 변수가 선언 및 초기화 되어있다. power변수는 메서드 안에 선언되어있으므로 멤버변수가 아닌 지역변수이다. 눈치빠르신 독자분들은 이해하셨겠지만 멤버변수와 지역변수로 나뉘는 기준은 scope다. color변수와 wheel변수는 engine메서드와 동급으로 클래스 영역에서 최상위 포지션을 차지하고있다. 하지만 power변수의 경우 클래스 안의 engine메서드 안에 자리잡고 있다. 뎁스가 하나 더 있는 것이다.
 
-원활한 이해를 돕기위해 표를 작성하면 다음과 같다.
+변수종류 각각의 특징을 정리하면 다음과 같다.
 
 | 변수의 종류 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;선언위치&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;생성시기&nbsp;&nbsp;&nbsp;&nbsp; |
 |:---:||:---:||:---:|
 | 클래스 변수 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;클래스 영역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;클래스가 메모리에 올라갈 때&nbsp;&nbsp;&nbsp;&nbsp; |
 | 인스턴스 변수 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;클래스 영역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;인스턴스가 생성되었을 때&nbsp;&nbsp;&nbsp;&nbsp; |
 | 지역변수 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;클래스 영역 이외의 영역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;변수 선언문이 수행되었을 때&nbsp;&nbsp;&nbsp;&nbsp; |
+
+인스턴스 변수는 인스턴스가 생성될 때 마다 생성되므로 인스턴스 마다 각기 다른 값을 유지할 수 있지만, 클래스 변수는 모든 인스턴스가 하나의 저장공간을 공유하므로, 항상 공통된 값을 가진다.
+따라서 위의 종류별 변수들의 특징들을 잘 알아두고 변수를 사용하는 것이 독자분들의 질 높은 프로그래밍에 도움이 될 것이다.
 
 --- 
 
