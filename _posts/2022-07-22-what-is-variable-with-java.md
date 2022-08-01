@@ -7,6 +7,10 @@ tags:
   - 자바
   - 변수
   - variable
+  - 멤버 변수
+  - 클래스 변수
+  - 인스턴스 변수
+  - 지역 변수
 toc: true
 toc_sticky: true
 toc_label: "목차"
