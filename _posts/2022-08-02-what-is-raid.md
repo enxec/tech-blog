@@ -51,7 +51,8 @@ RAID란 여러개의 하드 디스크가 있을 때 동일한 데이터를 다�
 - RAID-3
   >![RAID-3](/blog/assets/img/posts/20220802/raid3.png "RAID-3"){: width="100%"}
   <div style="color: gray; text-align: center; margin-bottom: 30px;">RAID-3</div> 
-  
+  스트라이핑 기술을 활용하
+  ㄷㅊ
 
 - RAID-4
   >![RAID-4](/blog/assets/img/posts/20220802/raid4.png "RAID-4"){: width="100%"}
