@@ -1,5 +1,5 @@
 ---
-title: "메서드 (with.자바)"
+title: "[Java] 메서드"
 categories:
   - Java
 tags:

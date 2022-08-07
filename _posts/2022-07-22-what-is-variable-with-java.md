@@ -1,5 +1,5 @@
 ---
-title: "변수 (with.자바)"
+title: "[Java] 변수"
 categories:
   - Java
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "데이터타입 (with.자바)"
+title: "[Java] 데이터타입"
 categories:
   - Java
 tags:

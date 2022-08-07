@@ -1,5 +1,5 @@
 ---
-title: "리눅스 디렉토리 구조"
+title: "[Linux] 디렉토리 구조"
 categories:
   - Linux
 tags:

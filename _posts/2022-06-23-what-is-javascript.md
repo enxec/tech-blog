@@ -1,5 +1,5 @@
 ---
-title: "JavaScript란?"
+title: "[JavaScript] JavaScript란?"
 categories:
   - Javascript
 tags:

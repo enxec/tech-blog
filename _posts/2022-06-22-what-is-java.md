@@ -1,5 +1,5 @@
 ---
-title: "Java란?"
+title: "[Java] Java란?"
 categories:
   - Java
 tags:

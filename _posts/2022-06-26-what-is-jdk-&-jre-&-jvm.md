@@ -1,5 +1,5 @@
 ---
-title: "JDK & JRE & JVM"
+title: "[Java] JDK & JRE & JVM"
 categories:
   - Java
 tags:

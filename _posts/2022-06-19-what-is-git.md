@@ -1,5 +1,5 @@
 ---
-title: "Git이란?"
+title: "[Git] Git이란?"
 categories:
   - Git
 tags:

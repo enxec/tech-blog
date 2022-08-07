@@ -1,5 +1,5 @@
 ---
-title: "배열 (with.자바)"
+title: "[Java] 배열"
 categories:
   - Java
 tags:

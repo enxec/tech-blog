@@ -1,5 +1,5 @@
 ---
-title: "데이터 모델링에 대하여"
+title: "[SQL] 데이터 모델링에 대하여"
 categories:
   - SQL
 tags:

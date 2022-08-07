@@ -1,5 +1,5 @@
 ---
-title: "RAID란?"
+title: "[Storage] RAID란?"
 categories:
   - Storage
 tags:

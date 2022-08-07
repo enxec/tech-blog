@@ -1,5 +1,5 @@
 ---
-title: "캐스팅(형변환)이란?"
+title: "[Java] 캐스팅(형변환)이란?"
 categories:
   - Java
 tags:

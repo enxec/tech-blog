@@ -1,5 +1,5 @@
 ---
-title: "클래스와 객체"
+title: "[Java] 클래스와 객체"
 categories:
   - Java
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "상수와 리터럴 (with.자바)"
+title: "[Java] 상수와 리터럴"
 categories:
   - Java
 tags:

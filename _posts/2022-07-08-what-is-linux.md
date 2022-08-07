@@ -1,5 +1,5 @@
 ---
-title: "Linux란?"
+title: "[Linux] Linux란?"
 categories:
   - Linux
 tags:
