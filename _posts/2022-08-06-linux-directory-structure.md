@@ -93,7 +93,8 @@ toc_label: "목차"
 
 # 레드햇 리눅스의 기본 디렉토리 동향
 ---
-최근 레드햇계열 리눅스는 root 디렉토리 바로 아래에 위치하는 기본 디렉토리 수를 줄이는 경향을 보이고 있다. CentOS 7.5의 디렉토리를 살펴보면 전통적으로 상위 디렉토리에 위치했던 /bin, /lib, /lib64, /sbin 을 /usr 디렉토리의 하위 디렉토리로 배치하고 [심볼릭 링크](https://wonmolee.github.io/blog/post/linux/what-is-inode-&-link/)를 생성해서 관리하고 있다.
+최근 레드햇계열 리눅스는 root 디렉토리 바로 아래에 위치하는 기본 디렉토리 수를 줄이는 경향을 보이고 있다. CentOS 7.5의 디렉토리를 살펴보면 전통적으로 상위 디렉토리에 위치했던 /bin, /lib, /lib64, /sbin 을 /usr 디렉토리의 하위 디렉토리로 배치하고  
+[심볼릭 링크](https://wonmolee.github.io/blog/post/linux/what-is-inode-&-link/)를 생성해서 관리하고 있다.
 
 ![레드햇 계열 리눅스의 디렉토리 동향](/blog/assets/img/posts/20220806/directory-trend.png "레드햇 계열 리눅스의 디렉토리 동향"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">레드햇 계열 리눅스의 디렉토리 동향</div> 
