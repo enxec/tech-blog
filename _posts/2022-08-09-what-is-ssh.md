@@ -1,5 +1,5 @@
 ---
-title: "[Linux] SSH란?"
+title: "[Linux] SSH개념과 SSH서버 설정 그리고 SSH서버 접속 방법"
 categories:
   - Linux
 tags:
