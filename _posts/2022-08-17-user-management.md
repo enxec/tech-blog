@@ -188,9 +188,6 @@ su root -c "tail /etc/shadow"
 su - test
 ```
 
-=======
-## 사용자 전환 
->>>>>>> ea04c52a02cbcbc949237c11b0bdfbc85b7a0c1f
 ---
 
 읽어주셔서 감사합니다. 😊
