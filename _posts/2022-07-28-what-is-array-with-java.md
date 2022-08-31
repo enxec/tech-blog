@@ -157,4 +157,4 @@ arraycopy 메서드는 5개의 파라메타를 요구하며 각 파라메타의 
 
 __Reference__  
 자바의 정석 - 남궁성  
-[Java에서 배열 지우기 -  DelftStack](https://www.delftstack.com/ko/howto/java/clear-an-array-in-java/)
+[Java에서 배열 지우기 - DelftStack](https://www.delftstack.com/ko/howto/java/clear-an-array-in-java/)
