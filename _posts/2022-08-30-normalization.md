@@ -88,7 +88,14 @@ toc_label: "목차"
 기본 정규형에는 제 4 정규형(4NF), 제 5 정규형(5NF)이 있다.
 - 제 4 정규형(4NF)
   >릴레이션이 BCNF를 만족하면서 다치 종속(MVD: Multi Valued Dependency)을 제거하면 제 4 정규형에 속한다.
-
+  >
+  >![제 4 정규형의 예](/blog/assets/img/posts/20220830/4NF.png "제 4 정규형의 예"){: width="100%"}
+  ><div style="color: gray; text-align: center; margin-bottom: 30px;">제 4 정규형의 예</div>
+- 제 5 정규형(5NF)
+  >릴레이션이 제4정규형을 만족하면서 후보키를 통하지 않는 조인 종속(JD: Join Dependency)을 제거하면 제 5 정규형에 속한다.
+  >
+  >![제 5 정규형의 예](/blog/assets/img/posts/20220830/5NF.png "제 5 정규형의 예"){: width="100%"}
+  ><div style="color: gray; text-align: center; margin-bottom: 30px;">제 5 정규형의 예</div>
 <br>
 
 # 반정규화란?
@@ -99,7 +106,7 @@ toc_label: "목차"
 
 # 반정규화가 성능에 미치는 영향
 - 반정규화를 적용한 모델에서 성능이 향상 될 수 경우
-  > 
+  >
 
 ---
 
