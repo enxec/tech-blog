@@ -101,4 +101,4 @@ INSERT INTO 주문상세 VALUES(주문상세번호SEQ.NEXTVAL, 110001, 1234, '�
 읽어주셔서 감사합니다. 😊 
 
 __Reference__  
-SQL 전문가 가이드 - Kdata 한국데이터산업진흥원  
+SQL 전문가 가이드 - Kdata 한국데이터산업진흥원
