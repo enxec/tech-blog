@@ -39,6 +39,8 @@ SELECT A.ENAME
 
 ![ROWNUM 예제](/blog/assets/img/posts/20221030/query-example.png "ROWNUM 예제"){: width="100%"}
 
+<br>
+
 # ROW LIMITING 절
 ---
 오라클은 12.1버전, SQL Server는 2012 버전부터 ROW LIMITING 절로 Top N 쿼리를 작성할 수 있다. ROW LIMITING 절은 ANSI 표준 SQL 문법이다. 아래는 ROW LIMITING 절의 구문이다. ROW LIMITING 절은 ORDER BY 절 다음에 기술하며, ORDER BY 절과 함께 수행된다. ROW와 ROWS는 구분하지 않아도 된다.
