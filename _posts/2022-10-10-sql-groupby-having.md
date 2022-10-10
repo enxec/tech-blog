@@ -43,7 +43,7 @@ SELECT A.JOB AS 직업
  GROUP BY A.JOB;
 ```
 
-![GROUP BY 예제](/blog/assets/img/posts/20221010/query-example.png "GROUP BY 예제"){: width="100%"}
+![GROUP BY 예제](/blog/assets/img/posts/20221010/query-example2.png "GROUP BY 예제"){: width="100%"}
 
 <br>
 
