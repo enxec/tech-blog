@@ -342,55 +342,117 @@ SELECT A.ENAME
 CUME_DIST, PERCENT_RANK 함수는 ANSI/ISO SQL 표준과 오라클 DBMS에서 지원하며, NTILE함수는 ANSI/ISO SQL 표준에는 없지만, 오라클과 SQL Server에서 지원한다. 그리고 RATIO_TO_REPORT 함수는 오라클에서만 지원한다.
 
 ### CUME_DIST
+CUME_DIST 함수를 이용해 파티션별 윈도우의 전체 건수에서 현재 행보다 작거나 같은 건수에 대한 누적백분율을 구한다. 결과 값은 > 0 & <= 1 의 범위를 가진다. 참고로 SQL Server에서는 지원하지 않는 함수다.
 
+#### 예제
+예제에 사용되는 릴레이션은 아래와 같다.
+
+![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
+
+- 쿼리
+  
+```sql
+SELECT A.DEPTNO
+     , A.ENAME
+     , A.SAL
+     , CUME_DIST() OVER(PARTITION BY DEPTNO ORDER BY SAL DESC) AS CD
+  FROM EMP A;
+```
+
+- 결과
+
+![CUME_DIST 예제](/blog/assets/img/posts/20221023/query-example16.png "CUME_DIST 예제"){: width="100%"}
 
 ### PERCENT_RANK
+PERCENT_RANK 함수를 이용해 파티션별 윈도우에서 제일 먼저 나오는 것을 0으로, 제일 늦게 나오는 것을 1로 해, 값이 아닌 행의 순서별 백분율을 구한다. 결과 값은 >= 0 & <= 1 의 범위를 가진다. 참고로 SQL Server에서는 지원하지 않는 함수다.
+
+#### 예제
+예제에 사용되는 릴레이션은 아래와 같다.
+
+![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
+
+- 쿼리
+  
+```sql
+SELECT A.DEPTNO
+     , A.ENAME
+     , A.SAL
+     , PERCENT_RANK() OVER(PARTITION BY DEPTNO ORDER BY SAL DESC) AS PR
+  FROM EMP A;
+```
+
+- 결과
+
+![PERCENT_RANK 예제](/blog/assets/img/posts/20221023/query-example17.png "PERCENT_RANK 예제"){: width="100%"}
 
 ### NTILE
+NTILE 함수를 이용해 파티션별 전체 건수를 ARGUMENT 값으로 N 등분한 결과를 구할 수 있다.
+
+#### 예제
+예제에 사용되는 릴레이션은 아래와 같다.
+
+![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
+
+- 쿼리
+  
+```sql
+SELECT A.ENAME
+     , A.SAL
+     , NTILE(4) OVER(ORDER BY SAL DESC) AS NT
+  FROM EMP A;
+```
+
+- 결과
+
+![NTILE 예제](/blog/assets/img/posts/20221023/query-example18.png "NTILE 예제"){: width="100%"}
 
 ### RATIO_TO_REPORT
+RATIO_TO_REPORT 함수를 이용해 파티션 내 전체 SUM(컬럼) 값에 대한 행별 컬럼 값의 백분율을 소수점으로 구할 수 있다. 결과 값은 > 0 & <= 1의 범위를 가진다. 개별 RATIO의 합을 구하면 1이 된다. SQL Server에서는 지원하지 않는 함수다.
 
-## 선형분석을 포함한 통계 분석 관련 
-위 선형분석을 포함한 통계 분석 관련 함수는 오라클 DBMS에서만 지원한다.
+#### 예제
+예제에 사용되는 릴레이션은 아래와 같다.
 
-### CORR
+![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+<div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
-### COVAR_POP
+- 쿼리
+  
+```sql
+SELECT A.ENAME
+     , A.SAL
+     , ROUND(RATIO_TO_REPORT (SAL) OVER(), 2) AS SAL_RR
+  FROM EMP A
+ WHERE JOB = 'SALESMAN';
+```
 
-### COVAR_SAMP
+- 결과
 
-### STDDEV
+![RATIO_TO_REPORT 예제](/blog/assets/img/posts/20221023/query-example19.png "RATIO_TO_REPORT 예제"){: width="100%"}
 
-### STDDEV_POP
-
-### STDDEV_SAMP
-
-### VARIANCE
-
-### VAR_POP
-
-### VAR_SAMP
-
-### REGR_(LINEAR REGRESSION)
-
-### REGR_SLOPE
-
-### REGR_INTERCEPT
-
-### REGR_COUNT
-
-### REGR_R2
-
-### REGR_AVGX
-
-### REGR_AVGY
-
-### REGR_SXX
-
-### REGR_SYY
-
-### REGR_SXY
-
+## 선형분석을 포함한 통계 분석 관련 함수
+위 선형분석을 포함한 통계 분석 관련 함수는 오라클 DBMS에서만 지원한다. 통계에 특화된 기능이므로 예제는 생략하겠다. 종류는 다음과 같다.
+- CORR
+- COVAR_POP
+- COVAR_SAMP
+- STDDEV
+- STDDEV_POP
+- STDDEV_SAMP
+- VARIANCE
+- VAR_POP
+- VAR_SAMP
+- REGR_(LINEAR REGRESSION)
+- REGR_SLOPE
+- REGR_INTERCEPT
+- REGR_COUNT
+- REGR_R2
+- REGR_AVGX
+- REGR_AVGY
+- REGR_SXX
+- REGR_SYY
+- REGR_SXY
 
 ---
 
