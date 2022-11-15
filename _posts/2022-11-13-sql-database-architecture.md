@@ -113,6 +113,7 @@ DBMS마다 DB에 대한 정의가 조금씩 다르다. 오라클에서는 디스
 오라클에선 임시 테이블 스페이스를 여러 개 생성해 두고, 사용자마다 별도의 임시 테이블스페이스를 지정해줄 수도 있다.
 
 - 예제 쿼리
+
 ```sql
 CREATE TEMPORARY TABLESPACE BIG_TEMP
 TEMPFILE '/usr/local/oracle/oradata/ora10g/big_temp.dbf' SIZE 2000m;
