@@ -224,8 +224,177 @@ MultiBlock I/O는 I/O Call이 필요한 시점에, 인접한 블록들을 같이
 대량의 데이터를 MultiBlock I/O 방식으로 읽을 때 Single Block I/O 보다 성능상 유리한 이유는 I/O Call 발생 횟수를 줄여주기 때문이다. 아래 예제를 통해 Single Block I/O 방식과 MultiBlock I/O 방식의 차이점을 알아보자.
 
 ```sql
+CREATE TABLE T AS
+SELECT *
+  FROM ALL_OBJECTS;
 
+ALTER TABLE T ADD
+CONSTRAINT T_PK PRIMARY KEY(OBJECT_ID);
+
+SELECT /*+ INDEX(T) */ COUNT(*)
+  FROM T
+ WHERE OBJECT_ID > 0;
+
+call    count  cpu elapsed disk query current rows 
+----    ----- ---- ------- ---- ----- ------- ---- 
+Parse     1   0.00   0.00    0    0      0     0 
+Execute   1   0.00   0.00    0    0      0     0 
+Fetch     2   0.26   0.25   64   65      0     1  
+-----   ----- ----  ------ ---- ----   -----  ---- 
+total     4   0.26   0.25   64   65      0     1 
+
+        Rows Row Source Operation 
+        ---- ------------------------------ 
+           1 SORT AGGREGATE (cr=65 r=64 w=0 time=256400 us) 
+       31192 INDEX RANGE SCAN T_PK (cr=65 r=64 w=0 time=134613 us) 
+       
+Elapsed times include waiting on following events: 
+Event waited on               Times   Max. Wait Total Waited 
+---------------- Waited      -------- --------- ------------
+SQL*Net message to client        2       0.00       0.00 
+db file sequential read         64       0.00       0.00 
+SQL*Net message from client      2       0.05       0.05
 ```
+
+위 실행 결과를 보면 64개 인덱스 블록을 디스크에서 읽으면서 64번의 I/O Call(db file sequential read 대기 이벤트)이 발생했다. 아래는 같은 양의 인덱스 블록을 MultiBlock I/O 방식으로 수행한 결과다.
+
+```sql
+-- 디스크 I/O가 발생하도록 버퍼 캐시 Flushing
+ALTER SYSTEM FLUSH BUFFER_CACHE;
+
+-- Multiblock I/O 방식으로 인덱스 스캔
+SELECT /*+ INDEX_FFS(T) */ COUNT(*)
+  FROM T
+ WHERE OBJECT_ID > 0;
+
+call  count cpu  elapsed disk query current rows 
+----- ----- ---- ------- ---- ----- ------- ---- 
+Parse   1   0.00   0.00    0    0      0      0 
+Execute 1   0.00   0.00    0    0      0      0 
+Fetch   2   0.26   0.26   64   69      0      1 
+----- ----- ---- ------- ---- ----- ------- ---- 
+total   4   0.26   0.26   64   69      0      1
+
+        Rows Row Source Operation 
+        ---- ------------------------------ 
+           1 SORT AGGREGATE (cr=69 r=64 w=0 time=267453 us) 
+       31192 INDEX FAST FULL SCAN T_PK (cr=69 r=64 w=0 time=143781 us)
+
+Elapsed times include waiting on following events: 
+  Event waited on              Times   Max. Wait   Total Waited 
+  ---------------- Waited      -----   ---------   -------------
+  SQL*Net message to client      2        0.00         0.00 
+  db file scattered read         9        0.00         0.00 
+  SQL*Net message from client    2        0.35         0.36
+```
+
+똑같이 64개 블록을 디스크에서 읽었는데, I/O Call이 9번(db file scattered read 대기 이벤트)에 그쳤다. 참고로, 위 테스트는 Oracle 9i에서 수행한 것이다. Oracle 10g부터는 Index Range Scan 또는 Index Full Scan 일 때도 Multiblock I/O 방식으로 읽는 경우가 있는데, 위처럼 테이블 액세스 없이 인덱스만 읽고 처리할 때가 그렇다. 인덱스를 스캔하면서 테이블을 Random 액세스할 때는 9i 이전과 동일하게 테이블과 인덱스 블록을 모두 Single Block I/O 방식으로 읽는다. 
+
+Single Block I/O 방식으로 읽은 블록들은 LRU 리스트 상 MRU 쪽(end)으로 위치하므로 한번 적재되면 버퍼 캐시에 비교적 오래 머문다. 반대로 MultiBlock I/O 방식으로 읽은 블록들은 LRU 리스트 상 LRU 쪽(end)으로 연결되므로 적재된 지 얼마 지나지 않아 1순위로 버퍼캐시에서 밀려난다.
+
+<br>
+
+# I/O 효율화 원리
+---
+논리적인 I/O 요청 횟수를 최소화하는 것이 I/O 효율화 튜닝의 핵심 원리다. I/O 때문에 시스템 성능이 낮게 측정될 때 하드웨어적인 방법을 통해 I/O 성능을 향상 시킬 수도 있다. 하지만 SQL 튜닝을 통해 I/O 발생 횟수 자체를 줄이는 것이 더 근본적이고 확실한 해결 방안이다. 애플리케이션 측면에서의 I/O 효율화 원리는 다음과 같이 요약할 수 있다.
+
+- 필요한 최소 블록만 읽도록 SQL 작성
+- 최적의 옵티마이징 팩터 제공
+- 필요하다면, 옵티마이저 힌트를 사용해 최적의 액세스 경로로 유도
+ 
+## 필요한 최소 블록만 읽도록 SQL 작성
+데이터베이스 성능은 I/O 효율에 달렸고, 이를 달성하려면 동일한 데이터를 중복 액세스하지 않고, 필요??령을 사용자는 최소 일량을 요구하는 형태로 논리적인 집합을 정의하고, 효율적인 처리가 가능하도록 작성하는 것이 무엇보다 중요하다. 아래는 비효율적인 중복 액세스를 없애고 필요한 최소 블록만 액세스하도록 튜닝한 사례다.
+
+```sql
+SELECT A.카드번호 
+     , A.거래금액 AS 전일_거래금액 
+     , B.거래금액 AS 주간_거래금액 
+     , C.거래금액 AS 전월_거래금액 
+     , D.거래금액 연중_거래금액 
+  FROM (
+        -- 전일거래실적 
+        SELECT 카드번호
+             , 거래금액 
+          FROM 일별카드거래내역 
+         WHERE 거래일자 = TO_CHAR(SYSDATE - 1,'YYYYMMDD')
+       ) A,
+       ( 
+        -- 전주거래실적 
+        SELECT 카드번호
+             , sum(거래금액) AS 거래금액 
+          FROM 일별카드거래내역 
+         WHERE 거래일자 BETWEEN TO_CHAR(SYSDATE - 7,'YYYYMMDD') 
+           AND TO_CHAR(SYSDATE - 1,'YYYYMMDD') 
+         GROUP BY 카드번호 
+       ) B,
+       ( 
+        -- 전월거래실적 
+        SELECT 카드번호
+              , SUM(거래금액) AS 거래금액 
+          FROM 일별카드거래내역 
+         WHERE 거래일자 BETWEEN TO_CHAR(ADD_MONTHS(SYSDATE, -1),'YYYYMM') || '01' 
+           AND TO_CHAR(LAST_DAY(ADD_MONTHS(SYSDATE,-1)),'YYYYMMDD') 
+         GROUP BY 카드번호 
+       ) C, 
+       ( 
+        -- 연중거래실적
+        SELECT 카드번호
+             , SUM(거래금액) AS 거래금액 
+          FROM 일별카드거래내역 
+         WHERE 거래일자 BETWEEN TO_CHAR(ADD_MONTHS(SYSDATE,-12),'YYYYMMDD') 
+           AND TO_CHAR(SYSDATE-1,'YYYYMMDD') 
+         GROUP BY 카드번호 
+       ) D 
+ WHERE B.카드번호 (+) = A.카드번호 
+   AND C.카드번호 (+) = A.카드번호 
+   AND D.카드번호 (+) = A.카드번호;
+```
+
+위 SQL은 어제 거래가 있었던 카드에 대한 전일, 주간, 전월, 연중 거래 실적을 집계하고 있다. 논리적인 전체 집합은 과거 1년치인데, 전일, 주간, 전월 데이터를 각각 액세스한 후 조인한 것을 볼 수 있다. 전일 데이터는 총 4번을 액세스한 셈이다.
+
+SQL을 아래와 같이 작성하면 과거 1년치 데이터를 한번만 읽고 전일, 주간, 전월 결과를 구할 수 있다. 즉 논리적인 집합 재구성을 통해 액세스해야 할 데이터 양을 최소화 할 수 있다.
+
+```sql
+SELECT 카드번호 
+     , SUM(CASE WHEN 거래일자 = TO_CHAR(SYSDATE-1,'YYYYMMDD') TEHN 거래금액 END) AS 전일_거래금액 
+     , SUM(CASE WHEN 거래일자 BETWEEN TO_CHAR(SYSDATE-7,'YYYYMMDD') AND TO_CHAR(SYSDATE-1,'YYYYMMDD') THEN 거래금액 END) AS 주간_거래금액 
+     , SUM(CASE WHEN 거래일자 BETWEEN TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM') || '01' AND TO_CHAR(LAST_DAY(ADD_MONTHS(SYSDATE,-1)),'YYYYMMDD') THEN 거래금액 END) AS 전월_거래금액 
+     , SUM(거래금액) AS 연중_거래금액 
+  FROM 일별카드거래내역 
+ WHERE 거래일자 BETWEEN TO_CHAR(ADD_MONTHS(SYSDATE,-12),'YYYYMMDD') 
+   AND TO_CHAR(SYSDATE-1,'YYYYMMDD') 
+ GROUP BY 카드번호 
+HAVING SUM(CASE WHEN 거래일자 = TO_CHAR(SYSDATE-1,'YYYYMMDD') THEN 거래금액 END ) > 0;
+```
+
+## 최적의 옵티마이징 팩터 제공
+옵티마이저가 블록 액세스를 최소화하면서 효율적으로 처리할 수 있도록 하려면 최적의 옵티마이징 팩터를 제공해 주어야 한다.
+
+- 전략적인 인덱스 구성
+  >전략적인 인덱스 구성은 가장 기본적인 옵티마이징 팩터다.
+- DBMS가 제공하는 기능 활용
+  >인덱스 외에도 DBMS가 제공하는 다양한 기능을 적극적으로 활용한다. 인덱스, 파티션, 클러스터, 윈도우 함수 등을 적극 활용해 옵티마이저가 최적의 선택을 할 수 있도록 한다.
+- 옵티마이저 모드 설정
+  >옵티마이저 모드(전체 처리속도 최적화, 최초 응답속도 최적화)와 그 외 옵티마이저 행동에 영향을 미치는 일부 파라미터를 변경해 주는 것이 도움이 될 수 있다.
+- 통계정보
+  >옵티마이저에게 정확한 정보를 제공한다.
+
+## 필요하다면, 옵티마이저 힌트를 사용해 최적의 액세스 경로로 유도
+최적의 옵티마이징 팩터를 제공했다면 가급적 옵티마이저 판단에 맡기는 것이 바람직하지만 옵티마이저가 생각만큼 최적의 실행계획을 수립하지 못하는 경우가 종종 있다. 그럴 때는 어쩔 수 없이 힌트를 사용해야 한다. 아래는 옵티마이저 힌트를 이용해 실행계획을 제어하는 방법을 예시하고 있다.
+
+
+```sql
+--- Oracle 
+SELECT /*+ LEADING(D) USE_NL(E) INDEX(D DEPT_LOC_IDX) */ * 
+  FROM EMP E
+     , DEPT D 
+ WHERE E.DEPTNO = D.DEPTNO 
+   AND D.LOC = 'CHICAGO';
+```
+
+옵티마이저 힌트를 사용할 때는 의도한 실행계획으로 수행되는지 반드시 확인해야 한다.
+
+CBO 기술이 고도로 발전하고 있긴 하지만 여러 가지 이유로 옵티마이저 힌트의 사용은 불가피하다. 따라서 데이터베이스 애플리케이션 개발자라면 인덱스, 조인, 옵티마이저의 기본 원리를 이해하고, 그것을 바탕으로 최적의 액세스 경로로 유도할 수 있는 능력을 필수적으로 갖추어야 한다.
 
 ---
 
