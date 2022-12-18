@@ -8,6 +8,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 SELECT는 테이블 또는 개체의 속성을 작성할 때 사용된다. 테이블의 데이터는 속성 즉, 컬럼에 다 담겨 있으므로 SELECT가 쿼리문장에서 빠질래야 빠질 수 없다. 그럼 긴말 필요 없이 바로 SELECT를 어떻게 사용하고 활용하는지 알아보자.

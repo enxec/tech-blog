@@ -11,6 +11,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 ![JDK & JRE & JVM](/blog/assets/img/posts/20220626/jdk-jre.png "JDK & JRE & JVM"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">JDK & JRE & JVM</div>

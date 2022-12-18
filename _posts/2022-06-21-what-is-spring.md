@@ -10,6 +10,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 전세계적으로 Java의 Spring, Nodejs의 express, Python의 Django 등 수많은 웹 프레임워크가 존재한다. 이번 포스팅에선 현재 한국의 수많은 기업에서 사용중인 자바 웹 프레임워크 'Spring'에 대해 알아보고자 한다.
 

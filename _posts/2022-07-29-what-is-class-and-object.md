@@ -12,6 +12,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 독자분들은 자바를 한번이라도 접해보았다면 객체지향이라는 말을 들어봤을 것이다.  

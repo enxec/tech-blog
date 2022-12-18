@@ -9,6 +9,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 DBMS를 사용하다 보면 Null값으로 인한 많은 특이사항들을 접하게 된다. Null값이 가지는 특성을 이해하지 못한다면 데이터 오류를 경험할 수 있으므로 반드시 숙지해야 할 부분 중 하나다. 이번 포스팅에서는 각 사례를 통해 Null에 대해 이해해보자.

@@ -12,6 +12,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 프로그래밍을 하다보면 값이 변하지않는 데이터 공간에 대한 고민을 한번쯤 하게 된다. 그럴 땐 어떻게 해야할까? 그렇다. 변수가 아닌 상수를 활용하는 것이다.  

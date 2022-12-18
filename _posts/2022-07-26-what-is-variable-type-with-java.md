@@ -15,6 +15,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 자바에서는 변수선언 시 변수의 타입, 즉 데이터타입을 지정해주어야한다. 또한 return이 존재하는 메서드의 경우 해당 리턴값의 데이터타입을 메서드 정의부에 명시해주어여한다.

@@ -10,6 +10,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 ![RAID](/blog/assets/img/posts/20220802/raid.jpg "RAID"){: width="100%"}

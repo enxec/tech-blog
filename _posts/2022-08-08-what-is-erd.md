@@ -10,6 +10,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 현업에서 데이터 모델링을 할때 반드시 거치는 작업이 있다. 바로 데이터 모델의 표기법인 ERD를 작성하는 것이다. 이번 포스팅에서는 ERD가 무엇이고 어떻게 작성하는 것인지 알아보자.

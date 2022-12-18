@@ -9,6 +9,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 SQL에서 Null은 중요한 개념이며 잘 다루어야 문제없이 데이터 처리가 가능하다. Null의 개념과 성질에 대해서는 작성해놓은 포스팅이 있으니 생략하고 바로 관련 함수를 살펴보겠다.

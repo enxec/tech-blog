@@ -9,6 +9,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 \* 해당 포스팅은 오라클 DB 관련 정보만 다룬다.

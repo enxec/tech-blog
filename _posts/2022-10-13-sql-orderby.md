@@ -8,6 +8,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 ORDER BY절은 SQL문장으로 조회한 데이터들을 다양한 목적에 맞게 특정 컬럼을 기준으로 정렬 및 출력하는데 사용한다. 어떻게 사용하는지 바로 알아보자.

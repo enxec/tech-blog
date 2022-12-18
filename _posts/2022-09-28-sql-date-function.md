@@ -8,6 +8,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 날짜형 함수는 단일행 함수의 한 종류로 DATE 타입의 값을 연산하는 함수다. 날짜형 함수는 어떤 것들이 있는지 함께 알아보자.

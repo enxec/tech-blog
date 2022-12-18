@@ -8,6 +8,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 변환형 함수는 단일행 함수의 한 종류로 특정 데이터 타입을 다양한 형식으로 출력하고 싶을 경우에 사용한다. 변환형 함수는 어떤 것들이 있는지 함께 알아보자.

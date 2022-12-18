@@ -8,6 +8,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 숫자형 함수는 단일행 함수의 한 종류로 숫자 데이터를 입력받아 처리하고 숫자를 리턴하는 함수이다. 숫자형 함수는 어떤 것들이 있는지 함께 알아보자.

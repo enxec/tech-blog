@@ -8,6 +8,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 문자형 함수는 단일행 함수의 한 종류로 문자 데이터를 매개 변수로 받아들여 문자나 숫자 값의 결과를 돌려주는 함수이다. 문자형 함수는 어떤 것들이 있는지 함께 알아보자.

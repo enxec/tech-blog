@@ -9,6 +9,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 # ROWNUM 슈도 컬럼

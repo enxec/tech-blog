@@ -11,6 +11,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 프로그램을 설계할 때 중요한 요소들이 다양하게 존재한다. 그 중에서도 각별히 신경쓰고 많은 시간과 노력을 투자하는 요소 중 하나가 데이터 모델링이다.  

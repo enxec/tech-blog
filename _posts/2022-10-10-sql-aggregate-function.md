@@ -9,6 +9,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "목차"
+comments: true
 ---
 
 집계함수는 여러 행들의 그룹이 모여서 그룹당 단 하나의 결과를 돌려주는 다중행 함수이다. 바로 본론으로 들어가 집계함수의 특징과 종류에는 무엇이 있는지 알아보자.
