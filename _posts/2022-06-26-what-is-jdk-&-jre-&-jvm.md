@@ -121,7 +121,7 @@ __알아두기__
         >객체를 저장하는 가상메모리 공간. new 연산자로 생성되는 객체와 배열을 저장하며
         Class Area(Static Area)에 올라온 클래스들만 객체로 생성할 수 있다.
         힙 영역은 다음과 같이 세 부분으로 나뉘어 진다.
-        ![Heap Structure](../assets/img/posts/20220626/heap-structure.jpg "Heap Structure"){: width="100%"}
+        ![Heap Structure](/blog/assets/img/posts/20220626/heap-structure.jpg "Heap Structure"){: width="100%"}
         <div style="color: gray; text-align: center; margin-bottom: 30px;">Heap Structure</div>
         - Young 영역
             >이곳의 인스턴스들은 추후 가비지 콜렉터에 의해 사라진다.
