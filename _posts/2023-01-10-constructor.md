@@ -1,5 +1,5 @@
 ---
-title: "생성자(Constructor)"
+title: "[Java] 생성자(Constructor)"
 categories:
   - Java
 tags:
