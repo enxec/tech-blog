@@ -340,7 +340,7 @@ public interface Map {
 
 <table border="1">
     <colgroup>
-        <col style="width:40%">
+        <col style="width:20%">
         <col style="width:60%">
     </colgroup>
     <tr style="background-color:gray;">
