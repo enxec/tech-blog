@@ -26,12 +26,12 @@ IT 현업에서 협업은 절대 빼놓을 수 없는 업무요소 중 하나이
 
 혹시 독자들은 리눅스를 개발한 리누스 토발즈라고 들어보셨는가? 리누스 토발즈는 IT발전에 막대한 영향을 끼친 인물로서, OS인 리눅스와 형상관리도구 Git을 개발한것으로 유명하다.
 
-![Linus-Benedict-Torvalds](/blog/assets/img/posts/20220619/Linus-Benedict-Torvalds.jpg "리누스 토발즈"){: width="100%"}
+![Linus-Benedict-Torvalds](/assets/img/posts/20220619/Linus-Benedict-Torvalds.jpg "리누스 토발즈"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">리누스 토발즈</div>  
 
 리누스 토발즈는 리눅스 커널 소스 코드를 관리할 때 SVN이나 CVS같은 버전관리시스템을 사용하지않았다. 그 이유로는 정확하진 않지만 기능이 마음에 들지않는다는 정설이 있다고한다. 때문에 버전관리시스템이 등장했음에도 불구하고 리누스 토발즈는 원시적으로 파일을 관리하던 중 결국 버티지 못하고 VCS를 채택하여 사용하게된다. 리누스 토발즈가 사용한 VCS는 BitKeeper라는 제품이며 분산 처리 기능과 비교적 빠른 성능 덕분에 사용했다고 한다. 
 
-![Bitkeeper](/blog/assets/img/posts/20220619/Bitkeeper-logo.png "Bitkeeper"){: width="100%"}
+![Bitkeeper](/assets/img/posts/20220619/Bitkeeper-logo.png "Bitkeeper"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Bitkeeper</div>  
 
 그러다가 BitKeeper 쪽에서 리버스 엔지니어링을 문제로 일부 리눅스 개발자들을 제한하는 일이 발생했다. 때문에 리누스 토발즈는 BitKeeper를 계속 사용해야할지 아니면 다른 버전 관리 시스템을 사용해야할지 결정해야 했는데, 리누스 토발즈는 전자도 후자도 아닌 직접 VCS를 개발하겠다고 결정했으며, 그렇게 탄생한 VCS가 바로 Git이다.
@@ -40,7 +40,7 @@ IT 현업에서 협업은 절대 빼놓을 수 없는 업무요소 중 하나이
 
 # 오픈소스 Git(GPL License)
 ---
-![GPL](/blog/assets/img/posts/20220619/GPLv3-Logo.png "GPL"){: width="100%"}
+![GPL](/assets/img/posts/20220619/GPLv3-Logo.png "GPL"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">GPL</div>
 
 오픈소스를 이용해서 개발하는 경우 코드를 무료로 보고 사용할 수 있어 개발하기 편리하다는 장점이 있으나 사용하고 있는 오픈소스가 어떤 라이센스를 가지느냐에 따라서 상업적인 이용이 제한될 수도 있고 내가 만든 코드를 공개해야 할 의무까지 생길 수 있다. 
@@ -67,7 +67,7 @@ VCS의 종류는 크게 Local VCS, CVCS, DVCS 3가지가 있다. 그 중 Git은 
 
 # Git 구조
 ---
-![Git 구조](/blog/assets/img/posts/20220619/Git-Structure.png "Git 구조"){: width="100%"}
+![Git 구조](/assets/img/posts/20220619/Git-Structure.png "Git 구조"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Git Structure</div>
 
 <br>

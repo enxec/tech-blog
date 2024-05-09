@@ -219,7 +219,7 @@ class Om {
 
 위의 Om클래스는 클래스변수(cv)와 인스턴스변수(iv)를 각각 하나씩 가지고 있다. 'new Om();'과 같이 하여 인스턴스를 생성했을 때, 클래스 변수와 인스턴스 변수가 초기화되어가는 과정을 단계별로 살펴보면 다음과 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20230221/variable-init.png "멤버변수 초기화 과정"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20230221/variable-init.png "멤버변수 초기화 과정"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">멤버변수 초기화 과정</div>
 
 >__클래스변수 초기화(1~3)__

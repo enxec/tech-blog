@@ -288,7 +288,7 @@ public final class Integer extends Number implements Comparable {
 ---
 Number클래스는 추상클래스로 내부적으로 숫자를 멤버변수로 갖는 래퍼 클래스들의 조상이다. 아래는 래퍼 클래스의 상속계층도이다.
 
-![래퍼클래스 상속계층도](/blog/assets/img/posts/20240314/wrapper-class-Inheritance-hierarchy.png "래퍼클래스 상속계층도"){: width="100%"}
+![래퍼클래스 상속계층도](/assets/img/posts/20240314/wrapper-class-Inheritance-hierarchy.png "래퍼클래스 상속계층도"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">래퍼클래스 상속계층도</div>
 
 BigInteger은 long으로도 다룰 수 없는 큰 범위의 정수를, BigDecimal은 double로도 다룰 수 없는 큰 범위의 부동 소수점수를 처리하기 위한 것으로 연산자의 역할을 대신하는 다양한 메서드를 제공한다.

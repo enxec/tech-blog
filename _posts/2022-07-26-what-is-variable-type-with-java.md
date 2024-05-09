@@ -63,7 +63,7 @@ comments: true
 기본형 데이터타입에서 boolean을 제외한 나머지 기본형 데이터들은 서로 연산과 변환이 가능하다. 그리고 정수타입중 가장 많이 쓰는 자료형은 위와 같이 int라고 언급하였는데, 이유는 CPU가 가장 
 효율적으로 처리할 수 있는 타입이기 때문이다. 만약 효율적인 실행보다 메모리를 절약하고자 한다면 byte 또는 short를 사용하길 바란다.
 
-![기본형 메모리 크기 및 데이터 범위](/blog/assets/img/posts/20220726/primitive-type-info.png "기본형 메모리 크기 및 데이터 범위"){: width="100%"}
+![기본형 메모리 크기 및 데이터 범위](/assets/img/posts/20220726/primitive-type-info.png "기본형 메모리 크기 및 데이터 범위"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">기본형 메모리 크기 및 데이터 범위</div>
 
 기본형 변수의 선언 및 초기화 예시는 다음과 같다.

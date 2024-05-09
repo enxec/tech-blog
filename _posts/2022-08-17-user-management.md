@@ -21,10 +21,10 @@ comments: true
 ---
 사용자는 말 그대로 해당 PC를 사용하는 사용자를 의미하며, 좀 더 의미를 좁혀 이해하면 PC를 사용하기 위한 계정이다. 우리는 이러한 의미의 사용자를 통해 프로그램을 실행하거나 파일을 수정하는 등 여러가지 작업을 할 수 있으며, 계정을 어떻게 관리하느냐에 따라 보안위협으로부터 보다 안전하게 PC를 사용할 수 있다.
 
-![리눅스 사용자 예시](/blog/assets/img/posts/20220817/linux-user.png "리눅스 사용자 예시"){: width="100%"}
+![리눅스 사용자 예시](/assets/img/posts/20220817/linux-user.png "리눅스 사용자 예시"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">리눅스 사용자 예시</div>
 <br>
-![윈도우 사용자 예시](/blog/assets/img/posts/20220817/window-user.png "윈도우 사용자 예시"){: width="100%"}
+![윈도우 사용자 예시](/assets/img/posts/20220817/window-user.png "윈도우 사용자 예시"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">윈도우 사용자 예시</div>
 
 <br>

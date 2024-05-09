@@ -20,12 +20,12 @@ comments: true
 
 # 일반적인 관계
 ---
-![일반적인 관계](/blog/assets/img/posts/20220906/general-relationship.png "일반적인 관계"){: width="100%"}
+![일반적인 관계](/assets/img/posts/20220906/general-relationship.png "일반적인 관계"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">일반적인 관계</div>
 
 위 모델에서 고객과 주문 엔터티가 관계를 맺고 있다. 고객 엔터티의 식별자인 고객번호를 주문 엔터티에 상속시킨 것이다. 아래 데이터를 보자.
 
-![고객과 주문 샘플 데이터](/blog/assets/img/posts/20220906/customer-and-order-sample-data.png "고객과 주문 샘플 데이터"){: width="100%"}
+![고객과 주문 샘플 데이터](/assets/img/posts/20220906/customer-and-order-sample-data.png "고객과 주문 샘플 데이터"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">고객과 주문 샘플 데이터</div>
 
 주문 엔터티에 고객 엔터티의 고객번호 데이터를 상속시켰다. 주문번호가 1100001인 주문의 고객명은 누구인가? '정우진' 고객이다. 우리는 '정우진' 고객 명을 어떻게 알 수 있었을까? 이를 풀어보면 다음과 같다.
@@ -50,12 +50,12 @@ SELECT B.고객명
 ---
 계층형 모델이 생소한 독자들도 있을 것이다. 계층형 모델이란 말 그대로 계층 구조를 가진 데이터 모델을 지칭한다. 바로 예시 모델을 보자.
 
-![계층형 모델 관계 표현 예시](/blog/assets/img/posts/20220906/hierarchical-model-relationship-representation-example.png "계층형 모델 관계 표현 예시"){: width="100%"}
+![계층형 모델 관계 표현 예시](/assets/img/posts/20220906/hierarchical-model-relationship-representation-example.png "계층형 모델 관계 표현 예시"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">계층형 모델 관계 표현 예시</div>
 
 위 모델은 SQL 입문자들이 가장 많이 접하는 샘플 스키마 EMP 모델이다. 이 모델은 많은 사람들이 계층형 데이터 모델이라는 사실을 모른다. 이 모델의 샘플 데이터를 살펴보자.
 
-![EMP 샘플 데이터](/blog/assets/img/posts/20220906/emp-sample-data.png "EMP 샘플 데이터"){: width="100%"}
+![EMP 샘플 데이터](/assets/img/posts/20220906/emp-sample-data.png "EMP 샘플 데이터"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 샘플 데이터</div>
 
 EMP 데이터에서 주목해야할 속성은 MGR이다. MGR 속성은 각 사원 관리자의 사원번호를 의미한다. 즉 'SMITH'의 관리자는 사원본호가 7902인 'FORD'가 된다. 그럼 'FORD'의 관리자는 누구일까? 사원번호가 7566인 'JONES'다. 관리자를 찾아가는 과정이 낯익지 않은가? 이 또한 위에서 언급한 조인이다. 이를 풀어보면 다음과 같다.
@@ -82,12 +82,12 @@ SELECT B.ENAME
 ---
 상호배타적 관계는 업무에 따라 얼마든지 만날 수 있으므로 개념 정도는 숙지하고 있어야 한다.
 
-![상호배타적 관계 예시](/blog/assets/img/posts/20220906/examples-of-mutually-exclusive-relationships.png "상호배타적 관계 예시"){: width="100%"}
+![상호배타적 관계 예시](/assets/img/posts/20220906/examples-of-mutually-exclusive-relationships.png "상호배타적 관계 예시"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">상호배타적 관계 예시</div>
 
 위 모델은 개인, 법인고객이 존재하는 모델에서 주문과의 상호배타적 관계를 표현하는 예시이다. 본 모델에서는 관계의 배타적 관계로서 주문 엔터티에는 개인 또는 법인번호 둘 중 하나만 상속될 수 있음을 의미한다. 즉 주문은 개인고객이거나 법인고객 둘 중 하나의 고객만이 가능하다. 이를 데이터로 보면 더 명확하게 이해할 수 있다.
 
-![주문 샘플 데이터](/blog/assets/img/posts/20220906/order-sample-data.png "주문 샘플 데이터"){: width="100%"}
+![주문 샘플 데이터](/assets/img/posts/20220906/order-sample-data.png "주문 샘플 데이터"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">주문 샘플 데이터</div>
 
 개인/법인번호는 개인고객 또는 법인 고객의 식별자가 상속된 값이다. 이때 고객구분코드의 값을 통해 개인고객의 식별자가 상속되었는지, 법인고객의 식별자가 상속되었는지를 나타낸다.  

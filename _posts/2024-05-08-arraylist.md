@@ -314,26 +314,26 @@ class VectorEx1 {
 
 1. 다음 capacity가 5인 Vector인스턴스 v를 생성하고, 3개의 객체를 저장한 후의 상태를 그림으로 나타낸 것이다.
 
-    ![Screenshot_1](/blog/assets/img/posts/20240508/Screenshot_1.png "Screenshot_1"){: width="100%"}
+    ![Screenshot_1](/assets/img/posts/20240508/Screenshot_1.png "Screenshot_1"){: width="100%"}
 
 2. v.trimToSize()를 호출하면 v의 빈 공간을 없애서 size와 capacity를 같게 한다. 배열은 크기를 변경할 수 없기 때문에 새로운 배열을 생성해서 그 주소값을 변수 v에 할당한다. 기존의 Vector인스턴스는 더 이상 사용할 수 없으며, 후에 가비지컬렉터에 의해서 메모리에서 제거된다.
 
-    ![Screenshot_2](/blog/assets/img/posts/20240508/Screenshot_2.png "Screenshot_2"){: width="100%"}
+    ![Screenshot_2](/assets/img/posts/20240508/Screenshot_2.png "Screenshot_2"){: width="100%"}
 
 3. v.ensureCapacity(6)는 v의 capacity가 최소한 6이 되도록 한다. 만일 v의 capacity가 6이상이라면 아무 일도 일어나지 않는다. 현재는 v의 capacity가 3이므로 크기가 6인 배열을 생성해서 v의 내용을 복사했다. 기존의 인스턴스를 다시 사용하는 것이 아니라 새로운 인스턴스를 생성하였음에 주의하자.
 
-    ![Screenshot_3](/blog/assets/img/posts/20240508/Screenshot_3.png "Screenshot_3"){: width="100%"}
+    ![Screenshot_3](/assets/img/posts/20240508/Screenshot_3.png "Screenshot_3"){: width="100%"}
 
 4. v.setSize(7)는 v의 size가 7이 되도록 한다. 만일 v의 capacity가 충분하면 새로 인스턴스를 생성하지 않아도 되지만 지금은 capacity가 6이므로 새로운 인스턴스를 생성해야한다. Vector는 capacity가 부족할 경우 자동적으로 기존의 크기보다 2배의 크기로 증가된다. 그래서 v의 capacity는 12가 된다.
 
     >💡 __참고__  
     > 생성자 Vector(int initialCapacity, int capacityIncrement)를 사용해서 인스턴스를 생성한 경우에는 지정해준 capacityIncrement만큼 증가하게 된다.
 
-    ![Screenshot_4](/blog/assets/img/posts/20240508/Screenshot_4.png "Screenshot_4"){: width="100%"}
+    ![Screenshot_4](/assets/img/posts/20240508/Screenshot_4.png "Screenshot_4"){: width="100%"}
 
 5. v.clear();는 v의 모든 요소를 삭제한다. 아래의 왼쪽그림의 상태에서 오른쪽 그림과 같은 상태가 되는 것이다.
 
-    ![Screenshot_5](/blog/assets/img/posts/20240508/Screenshot_5.png "Screenshot_5"){: width="100%"}
+    ![Screenshot_5](/assets/img/posts/20240508/Screenshot_5.png "Screenshot_5"){: width="100%"}
 
     >💡 __참고__  
     > Vector는 Object배열이기 때문에 실제로는 마지막 그림처럼 주소가 저장되어야 더 정확한 것이지만, 편의상 이전의 그림들은 간략히 표현한 것이다.

@@ -76,7 +76,7 @@ CONNECT BY [NOCYCLE] 조건
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -94,7 +94,7 @@ CONNECT BY MGR = PRIOR EMPNO;
 
 - 결과
 
-![계층형 질의 예제](/blog/assets/img/posts/20221031/query-example.png "계층형 질의 예제"){: width="100%"}
+![계층형 질의 예제](/assets/img/posts/20221031/query-example.png "계층형 질의 예제"){: width="100%"}
 
 <br>
 
@@ -102,7 +102,7 @@ CONNECT BY MGR = PRIOR EMPNO;
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -119,7 +119,7 @@ CONNECT BY MGR = PRIOR EMPNO;
 
 - 결과
 
-![계층형 질의 예제2](/blog/assets/img/posts/20221031/query-example2.png "계층형 질의 예제2"){: width="100%"}
+![계층형 질의 예제2](/assets/img/posts/20221031/query-example2.png "계층형 질의 예제2"){: width="100%"}
 
 ---
 

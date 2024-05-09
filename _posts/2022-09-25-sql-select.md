@@ -38,7 +38,7 @@ SELECT [ALL / DISTINCT] 컬럼명, 컬럼명, 컬럼명, ...
 ## 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![DEPT 릴레이션](/blog/assets/img/posts/20220925/dept-relation.png "DEPT 릴레이션"){: width="100%"}
+![DEPT 릴레이션](/assets/img/posts/20220925/dept-relation.png "DEPT 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">DEPT 릴레이션</div>
 
 <br>
@@ -49,7 +49,7 @@ SELECT *
   FROM DEPT;
 ```
 
-![테이블의 전체 컬럼에 대한 데이터를 가져올 때](/blog/assets/img/posts/20220925/dept-relation.png "테이블의 전체 컬럼에 대한 데이터를 가져올 때"){: width="100%"}
+![테이블의 전체 컬럼에 대한 데이터를 가져올 때](/assets/img/posts/20220925/dept-relation.png "테이블의 전체 컬럼에 대한 데이터를 가져올 때"){: width="100%"}
 
 <br>
 
@@ -59,7 +59,7 @@ SELECT DEPTNO, DNAME
   FROM DEPT;
 ```
 
-![테이블의 특정 컬럼에 대한 데이터를 가져올 때](/blog/assets/img/posts/20220925/query-example1.png "테이블의 특정 컬럼에 대한 데이터를 가져올 때"){: width="100%"}
+![테이블의 특정 컬럼에 대한 데이터를 가져올 때](/assets/img/posts/20220925/query-example1.png "테이블의 특정 컬럼에 대한 데이터를 가져올 때"){: width="100%"}
 
 <br>
 
@@ -69,7 +69,7 @@ SELECT DISTINCT LOC
   FROM DEPT;
 ```
 
-![테이블의 특정 컬럼에 대한 데이터를 중복제거하고 가져올 때](/blog/assets/img/posts/20220925/query-example2.png "테이블의 특정 컬럼에 대한 데이터를 중복제거하고 가져올 때"){: width="100%"}
+![테이블의 특정 컬럼에 대한 데이터를 중복제거하고 가져올 때](/assets/img/posts/20220925/query-example2.png "테이블의 특정 컬럼에 대한 데이터를 중복제거하고 가져올 때"){: width="100%"}
 
 <br>
 
@@ -94,7 +94,7 @@ SELECT 컬럼명 AS "별명", 컬럼명 AS "별명", 컬럼명 AS "별명", ...
 ## 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![DEPT 릴레이션](/blog/assets/img/posts/20220925/dept-relation.png "DEPT 릴레이션"){: width="100%"}
+![DEPT 릴레이션](/assets/img/posts/20220925/dept-relation.png "DEPT 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">DEPT 릴레이션</div>
 
 <br>
@@ -104,7 +104,7 @@ SELECT DEPTNO AS 부서번호, DNAME AS 부서명, LOC AS 위치
   FROM DEPT;
 ```
 
-![일반적인 Alias 사용](/blog/assets/img/posts/20220925/query-example3.png "일반적인 Alias 사용"){: width="100%"}
+![일반적인 Alias 사용](/assets/img/posts/20220925/query-example3.png "일반적인 Alias 사용"){: width="100%"}
 
 <br>
 
@@ -114,7 +114,7 @@ SELECT DEPTNO AS "DEPT NO", DNAME AS "Dname", LOC AS "위치^"
   FROM DEPT;
 ```
 
-![공백, 특수문자를 포함하거나 대소문자 구분이 필요할 때](/blog/assets/img/posts/20220925/query-example4.png "공백, 특수문자를 포함하거나 대소문자 구분이 필요할 때"){: width="100%"}
+![공백, 특수문자를 포함하거나 대소문자 구분이 필요할 때](/assets/img/posts/20220925/query-example4.png "공백, 특수문자를 포함하거나 대소문자 구분이 필요할 때"){: width="100%"}
 
 <br>
 
@@ -134,7 +134,7 @@ SELECT 컬럼명 - 컬럼명 AS "별명"
 ## 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 <br>
@@ -144,7 +144,7 @@ SELECT 연봉 - 커미션 AS "연봉 - 커미션"
   FROM EMP;
 ```
 
-![산술 연산자 예제](/blog/assets/img/posts/20220925/query-example5.png "산술 연산자 예제"){: width="100%"}
+![산술 연산자 예제](/assets/img/posts/20220925/query-example5.png "산술 연산자 예제"){: width="100%"}
 
 <br>
 
@@ -172,7 +172,7 @@ SELECT 컬럼명 + '문자열' + 컬럼명 AS "사람별 직업정보"
 ## 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 <br>
@@ -187,7 +187,7 @@ SELECT ENAME + '의 직업은 ' + JOB AS "사람별 직업정보"
   FROM EMP;
 ```
 
-![합성 연산자 예제](/blog/assets/img/posts/20220925/query-example6.png "합성 연산자 예제"){: width="100%"}
+![합성 연산자 예제](/assets/img/posts/20220925/query-example6.png "합성 연산자 예제"){: width="100%"}
 
 ---
 

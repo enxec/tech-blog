@@ -47,7 +47,7 @@ comments: true
 ## 모델링의 3가지 관점
 모델링은 크게 3가지 관점으로 구분하여 바라 볼 수 있다.
 
-![모델링의 관점](/blog/assets/img/posts/20220805/modeling-aspect.png "모델링의 관점"){: width="100%"}
+![모델링의 관점](/assets/img/posts/20220805/modeling-aspect.png "모델링의 관점"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">모델링의 관점</div> 
 
 - 데이터 관점
@@ -103,7 +103,7 @@ comments: true
 ---
 데이터 모델은 데이터베이스를 만들어내는 설계서로서 분명한 목표를 가지고 있다. 현실세계에서 DB까지 만들어지는 과정은 아래 그림과 같다.
 
-![모델링 프로세스](/blog/assets/img/posts/20220805/modeling-process.png "모델링 프로세스"){: width="100%"}
+![모델링 프로세스](/assets/img/posts/20220805/modeling-process.png "모델링 프로세스"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">모델링 프로세스</div> 
 
 위 그림을 보면 알 수 있듯이 데이터 모델링은 추상화 수준에 따라 3단계로 나뉘어 진행된다.
@@ -120,7 +120,7 @@ comments: true
 ---
 일반적으로는 계획 또는 분석단계에서 개념적 데이터 모델링, 분석 단계에서 논리적 데이터 모델링, 설계 단계에서 물리적 데이터 모델링이 수행된다. 단 현실 프로젝트에서는 개념적 데이터 모델이 생략된 개념 및 논리 데이터 모델링이 분석 단계 때 대부분 수행된다.
 
-![프로젝트 생명주기에 따른 데이터 모델](/blog/assets/img/posts/20220805/data-model-according-to-project-lifecycle.png "프로젝트 생명주기에 따른 데이터 모델"){: width="100%"}
+![프로젝트 생명주기에 따른 데이터 모델](/assets/img/posts/20220805/data-model-according-to-project-lifecycle.png "프로젝트 생명주기에 따른 데이터 모델"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">프로젝트 생명주기에 따른 데이터 모델</div>
 
 데이터 축과 애플리케이션 축으로 구분하여 프로젝트를 진행하면서 각각에 도출한 사항은 상호 검증을 지속적으로 수행하면서 단계별 완성도를 높여간다. 단 객체지향 개념은 데이터와 프로세스를 한꺼번에 바라보면서 모델링을 전개하므로 데이터 모델링과 프로세스 모델링을 구분하지 않고 일체형으로 진행하게 된다.
@@ -142,7 +142,7 @@ comments: true
 ## DB 3단계 구조
 ANSI/SPARC의 3단계 구성의 데이터 독립성 모델은 외부 단계와 개념적 단계, 내부적 단계로 구성된 서로 간섭되지 않는 모델을 제시하고 있다.
 
-![데이터 독립성](/blog/assets/img/posts/20220805/data-independence.png "데이터 독립성"){: width="100%"}
+![데이터 독립성](/assets/img/posts/20220805/data-independence.png "데이터 독립성"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">데이터 독립성</div>
 
 - 외부 단계
@@ -154,19 +154,19 @@ ANSI/SPARC의 3단계 구성의 데이터 독립성 모델은 외부 단계와 �
 
 위 3단계 구조의 상세 사항을 구성별로 표로 작성하면 다음과 같다.
 
-![데이터 독립성 구성요소](/blog/assets/img/posts/20220805/data-independence-components.png "데이터 독립성 구성요소"){: width="100%"}
+![데이터 독립성 구성요소](/assets/img/posts/20220805/data-independence-components.png "데이터 독립성 구성요소"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">데이터 독립성 구성요소</div>
 
 ## 두 영역의 데이터 독립성
 앞전에 언급한 DB 3단계로 개념이 분리되면서 각각의 영역에 대한 독립성을 지정하는 용어가 논리적인 독립성과 물리적인 독립성이다.
 
-![논리적·물리적 데이터 독립성](/blog/assets/img/posts/20220805/logical-pysical-independence.png "논리적·물리적 데이터 독립성"){: width="100%"}
+![논리적·물리적 데이터 독립성](/assets/img/posts/20220805/logical-pysical-independence.png "논리적·물리적 데이터 독립성"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">논리적·물리적 데이터 독립성</div>
 
 ## 사상
 사상은 영어로 Mapping이다. 이것은 상호 독립적인 개념을 연결시켜주는 다를 뜻하며, 데이터 독립성에서는 크게 2가지 사상이 도출된다.
 
-![사상](/blog/assets/img/posts/20220805/mapping.png "사상"){: width="100%"}
+![사상](/assets/img/posts/20220805/mapping.png "사상"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">사상</div>
 
 <br>
@@ -185,7 +185,7 @@ ANSI/SPARC의 3단계 구성의 데이터 독립성 모델은 외부 단계와 �
 
 각 요소에 대한 단수 및 복수의 명명은 다음과 같다.
 
-![단수와 복수의 명명](/blog/assets/img/posts/20220805/singular-plural-nomenclature.png "단수와 복수의 명명"){: width="100%"}
+![단수와 복수의 명명](/assets/img/posts/20220805/singular-plural-nomenclature.png "단수와 복수의 명명"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">단수와 복수의 명명</div>
 
 <br>
@@ -194,7 +194,7 @@ ANSI/SPARC의 3단계 구성의 데이터 독립성 모델은 외부 단계와 �
 ---
 실제 업무 시스템을 구축하는 실적 프로젝트에서는 DB를 전문적으로 하는 DBA가 데이터 모델링을 전적으로 하는 예는 거의 없다. 오히려 업무 시스템을 개발하는 응용 시스템 개발자가 데이터 모델링까지 하게된다. 이유는 데이터 모델링이라는 과정이 단지 DB를 설계한다는 측면보다 업무를 이해하고 분석하여 표현하는 것이 중요하고, 표현된 내용을 바탕으로 프로젝트 관련자와 의사소통하고 프로그램이나 다른 표기법과 비교 검증하는 일을 수행하는 등 많은 시간을 업무분석과 설계에 할애하기 때문이다. 이에 따라 업무 영역별 개발팀에서 보통 데이터 모델링을 진행하게 된다. 물론 대형 시스템이라면 모델링만을 전문적으로 담당하는 모델러를 투입하여 진행하는 경우도 있지만, 이와 같은 경우도 실제 모델링 작업은 응용 프로그램을 개발하는 사람이나 업무 분석가가 담당한다. 모델러나 DBA는 정확하게 모델링이 진행될 수 있도록 교육하고 제시하며 현안별로 직접 모델링하는 역할을 수행한다.
 
-![데이터 모델 이해관계자](/blog/assets/img/posts/20220805/data-model-stakeholder.png "데이터 모델 이해관계자"){: width="100%"}
+![데이터 모델 이해관계자](/assets/img/posts/20220805/data-model-stakeholder.png "데이터 모델 이해관계자"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">데이터 모델 이해관계자</div>
 
 <br>

@@ -76,7 +76,7 @@ class DecimalFormatEx1 {
 }
 ```
 
-![제목](/blog/assets/img/posts/20240401/example-1.png "결과"){: width="100%"}
+![제목](/assets/img/posts/20240401/example-1.png "결과"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">결과</div>
 
 위 예제는 자주 사용될 만한 패턴들을 테스트한 것이다. 각 패턴에 의한 결과를 비교해 보고 이 패턴들을 변형하여 새로운 패턴을 만들어 테스트해보자.

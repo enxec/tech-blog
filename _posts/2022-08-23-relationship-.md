@@ -17,7 +17,7 @@ comments: true
 관계를 사전적으로 정의하면 상호 연관성이 있는 상태로 말할 수 있다. 이것을 데이터 모델에 대입하여 정의하면, '엔터티의 인스턴스 사이의 논리적인 연관성으로서 존재의 형태로서나 행위로서 서로에게 연관성이 부여된 상태' 또는 '관계 패어링의 집합을 논리적으로 표현한 것' 이라고 할 수 있다.  
 관계는 엔터티와 엔터티 간 연관성을 표현하기 떄문에 엔터티의 정의에 따라 영향을 받기도 하고, 속성 정의 및 관계 정의에 따라서도 다양하게 변할 수 있다.
 
-![관계의 정의](/blog/assets/img/posts/20220823/relationship-definition.png "관계의 정의"){: width="100%"}
+![관계의 정의](/assets/img/posts/20220823/relationship-definition.png "관계의 정의"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">관계의 정의</div>
 
 ## 관계의 패어링
@@ -25,7 +25,7 @@ comments: true
 
 최초의 ERD에서 관계는 속성을 가질 수 있었으나, 요즘 ERD에서는 관계를 위해 속성 도출을 하진 않는다. 관계의 표현에는 이항 관계, 삼항 관계, n항 관계가 존재할 수 있는데 실제에 있어서 삼항 관계 이상은 잘 나타나지 않는다.
 
-![관계의 패어링](/blog/assets/img/posts/20220823/relationship-paring.png "관계의 패어링"){: width="100%"}
+![관계의 패어링](/assets/img/posts/20220823/relationship-paring.png "관계의 패어링"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">관계의 패어링</div>
 
 <br>
@@ -36,7 +36,7 @@ comments: true
 - 존재에 의한 관계(연관관계)
 - 행위에 의한 관계(의존관계)
 
-![관계의 분류](/blog/assets/img/posts/20220823/relationship-classification.png "관계의 분류"){: width="100%"}
+![관계의 분류](/assets/img/posts/20220823/relationship-classification.png "관계의 분류"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">관계의 분류</div>
 
 <br>
@@ -47,7 +47,7 @@ comments: true
 - 관계명
   >엔터티가 관계에 참여하는 형태를 지칭한다. 각각의 관계는 두개의 관계명을 가지고있다. 또한 각각의 관계명에 의해 두 가지의 관점으로 표현될 수 있다.
   >
-  >![관계명](/blog/assets/img/posts/20220823/relationship-name.png "관계명"){: width="100%"}
+  >![관계명](/assets/img/posts/20220823/relationship-name.png "관계명"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">관계명</div>
   >엔터티에서 관계가 시작되는 편을 관계시작점이라고 부르고, 받는 편을 관계끝점이라고 부른다. 관계 시작점과 끝점 모두 관계이름을 가져야 하며, 참여자의 관점에 따라 관계이름이 능동적이거나 >수동적으로 명명된다. 관계명은 다음과 같은 명명규칙에 따라 작성해야 한다.
   > - 애매한 동사를 피한다. 예를 들어 '관계된다', '관련이 있다', '이다', '한다' 등은 구체적이지 않아 어떤 행위가 있는지 또는 두 참여자 간 어떤 관계가 있는지 파악할 수 없다.
@@ -60,19 +60,19 @@ comments: true
   >
   >1) 1:1 관계차수
   >
-  >![1:1 관계차수](/blog/assets/img/posts/20220823/1-1-relational-order.png "1:1 관계차수"){: width="100%"}
+  >![1:1 관계차수](/assets/img/posts/20220823/1-1-relational-order.png "1:1 관계차수"){: width="100%"}
   >
   >관계에 참여하는 각각의 엔터티는 관계를 맺는 다른 엔터티의 엔터티에 대해 단지 하나의 관계만을 가지고 있다.
   >
   >2) 1:M 관계차수
   >
-  >![1:M 관계차수](/blog/assets/img/posts/20220823/1-M-relational-order.png "1:M 관계차수"){: width="100%"}
+  >![1:M 관계차수](/assets/img/posts/20220823/1-M-relational-order.png "1:M 관계차수"){: width="100%"}
   >
   >관계에 참여하는 각각의 엔터티는 관계를 맺는 다른 엔터티의 엔터티에 대해 하나 또는 그 이상의 수와 관계를 가지고 있다. 그러나 반대의 방향은 단지 하나만의 관계를 가지고 있다.
   >
   >3) M:M 관계차수
   >
-  >![M:M 관계차수](/blog/assets/img/posts/20220823/M-M-relational-order.png "M:M 관계차수"){: width="100%"}
+  >![M:M 관계차수](/assets/img/posts/20220823/M-M-relational-order.png "M:M 관계차수"){: width="100%"}
   >
   >관계에 참여하는 각각의 엔터티는 관계를 맺는 다른 엔터티의 엔터티에 대해 하나나 그 이상의 수와 관계를 가지고 있다. 반대의 방향도 동일하게 관계에 참여하는 각각의 엔터티는 관계를 맺는 
   >다른 엔터티의 엔터티에 대해 하나 또는 그 이상의 수와 관계를 가지고 있다.  
@@ -92,7 +92,7 @@ comments: true
   >선택참여관계는 모든 참여자가 반드시 관계를 가지는 것이 아닌 관계이다. 예를 들어 목록은 주문이 될 수도 있고, 주문되지 않을 수도 있으므로 목록과 주문목록과의 
   >관계는 선택참여관계가 된다.
   >
-  >![관계선택사양](/blog/assets/img/posts/20220823/relationship-optional.png "관계선택사양"){: width="100%"}
+  >![관계선택사양](/assets/img/posts/20220823/relationship-optional.png "관계선택사양"){: width="100%"}
   
 <br>
 

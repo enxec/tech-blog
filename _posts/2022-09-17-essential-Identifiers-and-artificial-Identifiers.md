@@ -27,12 +27,12 @@ comments: true
 따라서 모델링을 할 때에는 충분한 고민이 필요하며, 몇가지 사례를 통해 왜 충분한 고민이 필요한지에 대해 살펴보자. 
 
 ## 예제 1
-![주문과 주문상품 모델 본질식별자](/blog/assets/img/posts/20220917/order-and-order-product-model-essence-identifier.png "주문과 주문상품 모델 본질식별자"){: width="100%"}
+![주문과 주문상품 모델 본질식별자](/assets/img/posts/20220917/order-and-order-product-model-essence-identifier.png "주문과 주문상품 모델 본질식별자"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">주문과 주문상품 모델 본질식별자</div>
 
 주문상품 모델을 보자. 주문상품 모델에 구성되어 있는 식별자들은 본질식별자이다. 주문 상품 모델은 주문 시 구매한 상품에 대해 아래와 같은 예제처럼 상품 정보를 관리한다.
 
-![주문모델 데이터 예제](/blog/assets/img/posts/20220917/order-product-data-example.png "주문모델 데이터 예제"){: width="100%"}
+![주문모델 데이터 예제](/assets/img/posts/20220917/order-product-data-example.png "주문모델 데이터 예제"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">주문모델 데이터 예제</div>
 
 위 데이터를 보면 하나의 주문에 3개의 상품을 구매한 것을 알 수 있다. 이러한 데이터로 개발을 진행하여 주문상품 모델에 값을 insert하는 경우를 생각해보자. 쿼리는 다음과 같다.
@@ -45,7 +45,7 @@ INSERT INTO 주문상품 VALUES(110001, 234, 2);
 
 쿼리는 단순하다. 해당 주문에 구매한 상품에 대한 정보를 insert하면 된다. 하지만 종종 다음과 같은 모델이 목격된다.
 
-![주문과 주문상세 모델 인조식별자](/blog/assets/img/posts/20220917/artificial-identifier-of-order-and-order-product-model.png "주문과 주문상세 모델 인조식별자"){: width="100%"}
+![주문과 주문상세 모델 인조식별자](/assets/img/posts/20220917/artificial-identifier-of-order-and-order-product-model.png "주문과 주문상세 모델 인조식별자"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">주문과 주문상세 모델 인조식별자</div>
 
 위 모델은 주문상품번호라는 새로운 식별자를 생성하였다. 이 식별자는 외부식별자이며, 이와 같은 모델의 insert문은 다음과 같을 것이다.
@@ -61,12 +61,12 @@ INSERT INTO 주문상품 VALUES(주문상품번호SEQ.NEXTVAL, 110001, 234 , 2);
 대체로 모델에 대한 이해도가 높지 않은 상태에서 모델을 설계하다보면, 식별자는 유일성과 존재성만 만족하면 된다고 생각할 수 있기 때문이다. DBMS에서 기본키를 생성하면 유일성과 존재성 제약이 생기므로 데이터 입력 시 오류가 발생한다. 즉, 데이터 입력 시 에러가 발생하는 것에 대해서만 고려하고, 실제 해당 엔터티의 본질식별자에 대한 고민을 하지 않았기 때문에 위와 같은 모델이 만들어진 것이다.
 
 ## 예제 2
-![주문과 주문상세 모델 본질식별자](/blog/assets/img/posts/20220917/order-and-order-product-model-essence-identifier2.png "주문과 주문상세 모델 본질식별자"){: width="100%"}
+![주문과 주문상세 모델 본질식별자](/assets/img/posts/20220917/order-and-order-product-model-essence-identifier2.png "주문과 주문상세 모델 본질식별자"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">주문과 주문상세 모델 본질식별자</div>
 
 하나의 주문에 동일상품을 중복으로 구매할 경우를 생각해보자. 그렇다면 앞전의 본질식별자로 구성된 모델에서는 상품번호가 중복되기 때문에 불가능할 것이다. 위 모델에서는 상품번호를 식별자로 구성하지 않고 하나의 주문에 발생하는 상품의 count를 주문순번이라는 속성으로 식별자를 구성하였다. 이렇게 모델을 구성하면 어떤 업무의 변화가 일어나는지 보자.
 
-![본질식별자 주문상세](/blog/assets/img/posts/20220917/intrinsic-identifier-order-detail-data-example.png "본질식별자 주문상세"){: width="100%"}
+![본질식별자 주문상세](/assets/img/posts/20220917/intrinsic-identifier-order-detail-data-example.png "본질식별자 주문상세"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">본질식별자 주문상세</div>
 
 위 데이터를 보자. 동일상품을 하나의 주문에서 처리하고 있다. 즉, 쇼핑몰에서 동일한 상품을 몇 개의 각기 다른 배송지에 보내고 싶은 요건을 나타낸 것이다. 충분히 있을  수 있는 요건이다. 만일 앞전의 본질식별자로 이루어진 모델이라면 위와  같은 요건을 처리하기 위해서 주문을 따로 세번을 해야했을 것이다. 실제 자주 사용하는 쇼핑몰에서 주문을 해보면 동일상품 주문이 가능한 곳도, 그렇지 않은 곳도 있음을 알 수 있다. 모델에 대한 이해가 되었다면 위 모델로 개발한다고 가정해보자. 쿼리는 다음과 같다.
@@ -79,12 +79,12 @@ INSERT INTO 주문상세 VALUES(110001, 3, 1234, '제주감귤 1box', '친구집
 
 이전 모델과의 insert쿼리와 다른점은 주문순번 값을 위해 하나의 주문에 구매하는 상품의 count를 계산하여 입력해야 한다는 것이다. 이와 같은 작업은 어려운 일이 아니더라도 번거로운 작업이 추가된 것은 분명한 사실이다. 그리하여 다음과 같은 모델을 종종 발견할 수 있다.
 
-![주문과 주문상세 모델 인조식별자](/blog/assets/img/posts/20220917/artificial-identifier-of-order-and-order-product-model2.png "주문과 주문상세 모델 인조식별자"){: width="100%"}
+![주문과 주문상세 모델 인조식별자](/assets/img/posts/20220917/artificial-identifier-of-order-and-order-product-model2.png "주문과 주문상세 모델 인조식별자"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">주문과 주문상세 모델 인조식별자</div>
 
 위 모델에서 주문상세 모델은 식별자를 주문상세번호로 정의하였다. 이전 모델과 차이점은 식별자를 하나의 속성으로 구성한 외부식별자로 생성하였다는 것이다. 주문순번 속성은 사라졌지만 대신 주문상세번호가 생성되었다. 언뜻보면 큰 차이는 없어 보이지만 실제 개발 시 편의성이 향상되는 방식이다. 다음 데이터로 어떤 부분에서 개발의 편의성이 향상되었는지 확인해보자.
 
-![인조식별자 주문상세 데이터 예제](/blog/assets/img/posts/20220917/artificial-identifier-order-detail-data-example.png "인조식별자 주문상세 데이터 예제"){: width="100%"}
+![인조식별자 주문상세 데이터 예제](/assets/img/posts/20220917/artificial-identifier-order-detail-data-example.png "인조식별자 주문상세 데이터 예제"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">인조식별자 주문상세 데이터 예제</div>
 
 앞전의 본질식별자 주문상세 데이터와 위 데이터를 비교해보자. 주문순번이 주문상세번호로 바뀐 점 이외에 다른점이 없다. 하지만 실제 해당 값을 구하는 방식을 비교해보면 큰 차이를 알 수 있다. 주문순번은 하나의 주문번호에 대해 구매가 일어나는 상품의 count를 구하는 것이므로 시퀀스 객체를 활용할 수 없어 따로 작업을 해줘야 한다. 하지만 주문상세번호는 단일식별자로 구성된 키값이기 때문에 시퀀스 객체로 해결이 가능하다. 즉 시퀀스 객체만 활용한다면 따로 작업해줄 필요가 없다. 다음 쿼리를 보면 더 명확히 이해할 수 있다.

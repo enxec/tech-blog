@@ -15,7 +15,7 @@ comments: true
 SQL에서 Null은 중요한 개념이며 잘 다루어야 문제없이 데이터 처리가 가능하다. Null의 개념과 성질에 대해서는 작성해놓은 포스팅이 있으니 생략하고 바로 관련 함수를 살펴보겠다.
 
 관련 함수를 살펴보기전 Null의 개념을 잡고 싶다면 아래 링크를 참조하길 바란다.  
-[[SQL] Null 속성의 이해 - Wonmo Lee's github tech blog](https://wonmolee.github.io/blog/post/sql/understanding-the-null-property/)
+[[SQL] Null 속성의 이해 - Wonmo Lee's github tech blog](https://wonmolee.techblog.doubleuem.com/post/sql/understanding-the-null-property/)
 
 # Null 관련 함수 종류
 ---
@@ -32,7 +32,7 @@ SELECT NVL(NULL, '1') AS "NVL-TEST"
   FROM DUAL;
 ```
 
-![NVL 함수 예제](/blog/assets/img/posts/20221003/query-example1.png "NVL 함수 예제"){: width="100%"}
+![NVL 함수 예제](/assets/img/posts/20221003/query-example1.png "NVL 함수 예제"){: width="100%"}
 
 ## NULLIF
 - 사용법
@@ -41,7 +41,7 @@ SELECT NVL(NULL, '1') AS "NVL-TEST"
 - 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 ```sql
@@ -52,7 +52,7 @@ SELECT ENAME
   FROM EMP;
 ```
 
-![NULLIF 함수 예제](/blog/assets/img/posts/20221003/query-example2.png "NULLIF 함수 예제"){: width="100%"}
+![NULLIF 함수 예제](/assets/img/posts/20221003/query-example2.png "NULLIF 함수 예제"){: width="100%"}
 
 ## COALESCE
 - 사용법
@@ -61,7 +61,7 @@ SELECT ENAME
 - 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 ```sql
@@ -73,7 +73,7 @@ SELECT ENAME
   FROM EMP;
 ```
 
-![COALESCE 함수 예제](/blog/assets/img/posts/20221003/query-example3.png "COALESCE 함수 예제"){: width="100%"}
+![COALESCE 함수 예제](/assets/img/posts/20221003/query-example3.png "COALESCE 함수 예제"){: width="100%"}
 
 ---
 

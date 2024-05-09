@@ -18,7 +18,7 @@ comments: true
 ---
 DBMS마다 DB에 대한 정의가 조금씩 다르다. 오라클에서는 디스크에 저장된 데이터 집합(Datafile, Redo Log File, Control File 등)을 DB라고 부른다. 그리고 SGA 공유 메모리 영역과 이를 엑세스하는 프로세스 집합을 합쳐서 인스턴스라고 부른다.
 
-![Oracle Architecture](/blog/assets/img/posts/20221113/oracle-architecture.png "Oracle Architecture"){: width="100%"}
+![Oracle Architecture](/assets/img/posts/20221113/oracle-architecture.png "Oracle Architecture"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Oracle Architecture</div>
 
 기본적으로 하나의 인스턴스가 하나의 DB만 액세스하지만, RAC(Real Application Cluster) 환경에서는 여러 인스턴스가 하나의 DB를 액세스할 수 있다. 하나의 인스턴스가 여러 DB를 액세스할 수는 없다.
@@ -37,7 +37,7 @@ DBMS마다 DB에 대한 정의가 조금씩 다르다. 오라클에서는 디스
 클라이언트가 서버 프로세스와 연결하는 방식은 DBMS마다 다르지만, 오라클은 전용 서버 방식과 공유 서버 방식 2가지가 존재한다.
 
 ### 전용 서버 방식
-![전용 서버 방식](/blog/assets/img/posts/20221113/dedicated-server-method.png "전용 서버 방식"){: width="100%"}
+![전용 서버 방식](/assets/img/posts/20221113/dedicated-server-method.png "전용 서버 방식"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">전용 서버 방식</div>
 
 위 그림은 전용 서버 방식으로 접속할 때 내부적으로 어떤 과정을 거쳐 세션을 수립하고 사용자 명령을 처리하는지 보여준다.
@@ -49,7 +49,7 @@ DBMS마다 DB에 대한 정의가 조금씩 다르다. 오라클에서는 디스
 ### 공유 서버 방식
 공유 서버는 말 그대로 하나의 서버 프로세스를 여러 사용자 세션이 공유하는 방식이다. 앞서 설명한 Connection Pooling 기법을 DBMS 내부에 구현해 놓은 것으로 생각하면 쉽다. 즉, 미리 여러 개의 서버 프로세스를 띄어 놓고 이를 공유해 반복 재사용한다.
 
-![공유 서버 방식](/blog/assets/img/posts/20221113/shared-server-method.png "공유 서버 방식"){: width="100%"}
+![공유 서버 방식](/assets/img/posts/20221113/shared-server-method.png "공유 서버 방식"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">공유 서버 방식</div>
 
 위 그림에서 보듯, 공유 서버 방식으로 오라클에 접속하면 사용자 프로세스는 서버 프로세스와 직접 통신하지 않고 Dispatcher 프로세스를 거친다. 사용자 명령이 Dispatcher에게 전달되면 Dispatcher는 이를 SGA에 있는 요청 큐에 등록한다. 이후 가장 먼저 가용한 서버 프로세스가 요청 큐에 있는 사용자 명령을 꺼내서 처리하고, 그 결과를 응답 큐에 등록한다.
@@ -79,7 +79,7 @@ DBMS마다 DB에 대한 정의가 조금씩 다르다. 오라클에서는 디스
 오라클은 크게 데이터 파일, 임시 데이터 파일, 로그파일이 존재한다.
 
 ## 데이터 파일
-![오라클 데이터 파일 구조](/blog/assets/img/posts/20221113/data-file-structure.png "오라클 데이터 파일 구조"){: width="100%"}
+![오라클 데이터 파일 구조](/assets/img/posts/20221113/data-file-structure.png "오라클 데이터 파일 구조"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">오라클 데이터 파일 구조</div>
 
 오라클은 물리적으로는 데이터 파일에 데이터를 저장하고 관리한다. 공간을 할당하고 관리하기 위한 논리적인 구조도 크게 다르지 않지만 약간의 차이는 있다.
@@ -105,7 +105,7 @@ DBMS마다 DB에 대한 정의가 조금씩 다르다. 오라클에서는 디스
 
 각 세그먼트는 정확히 한 테이블스페이스에만 속하지만, 한 테이블스페이스에는 여러 세그먼트가 존재할 수 있다. 특정 세그먼트에 할당된 모든 익스텐트는 해당 세그먼트와 관련된 테이블스페이스 내에서만 찾아진다. 한 세그먼트가 여러 테이블스페이스에 걸쳐 저장될 수는 없다. 하지만 앞서 언급했듯이 한 세그먼트가 여러 데이터 파일에 걸쳐 저장될 수는 있다. 한 테이블스페이스가 여러 데이터 파일로 구성되기 때문이다. 지금까지 설명한 내용을 그림으로 요약하면 다음과 같다.
 
-![오라클 저장 구조](/blog/assets/img/posts/20221113/oracle-save-structure.png "오라클 저장 구조"){: width="100%"}
+![오라클 저장 구조](/assets/img/posts/20221113/oracle-save-structure.png "오라클 저장 구조"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">오라클 저장 구조</div>
 
 ## 임시 데이터 파일
@@ -169,7 +169,7 @@ __1) 버퍼 블록의 상태__
 __2) LRU 알고리즘__  
 버퍼 캐시는 유한한 자원이므로 모든 데이터를 캐싱해 둘 수 없다. 따라서 모든 DBMS는 사용빈도가 높은 데이터 블록 위주로 버퍼 캐시가 구성되도록 LRU(least recently used) 알고리즘을 사용한다. 모든 버퍼 블록 헤더를 LRU 체인에 연결해 사용빈도 순으로 위치를 옮겨가다가, Free 버퍼가 필요해질 때면 액세스 빈도가 낮은 쪽(LRU end) 데이터 블록부터 밀어내는 방식이다. 아래와 같은 컨베이어 벨트를 연상하면 LRU 알고리즘을 쉽게 이해할 수 있다.
 
-![LRU list](/blog/assets/img/posts/20221113/lru-list.png "LRU list"){: width="100%"}
+![LRU list](/assets/img/posts/20221113/lru-list.png "LRU list"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">LRU list</div>
 
 ### 공유 풀

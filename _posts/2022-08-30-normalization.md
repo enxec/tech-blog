@@ -54,13 +54,13 @@ comments: true
 - 제 1 정규형(1NF)
   >릴레이션에 속한 모든 속성의 도메인이 더 이상 분해되지 않는 원자값으로만 구성된 정규형이다.
   >
-  >![제 1 정규형의 예](/blog/assets/img/posts/20220830/1NF.png "제 1 정규형의 예"){: width="100%"}
+  >![제 1 정규형의 예](/assets/img/posts/20220830/1NF.png "제 1 정규형의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">제 1 정규형의 예</div>
 - 제 2 정규형(2NF)
   >릴레이션이 제1정규형에 속하고, 기본키가 아닌 모든 속성이 기본키에 완전 함수 종속되면 제2정규형에 속한다.
   >제1정규형에 속하는 릴레이션이 제2정규형을 만족하려면, 부분 함수 종속을 제거하고 모든 속성이 기본키에 완전 함수 종속되도록 릴레이션을 분해하는 정규화 과정을 거쳐야 한다.
   >
-  >![제 2 정규형의 예](/blog/assets/img/posts/20220830/2NF.png "제 2 정규형의 예"){: width="100%"}
+  >![제 2 정규형의 예](/assets/img/posts/20220830/2NF.png "제 2 정규형의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">제 2 정규형의 예</div>
   >__알고가기__
   >- 완전 함수 종속  
@@ -70,7 +70,7 @@ comments: true
 - 제 3 정규형(3NF)
   >릴레이션이 제2정규형에 속하고, 기본키가 아닌 모든 속성이 기본키에 이행적 함수 종속이 되지 않으면 제3정규형에 속한다.
   >
-  >![제 3 정규형의 예](/blog/assets/img/posts/20220830/3NF.png "제 3 정규형의 예"){: width="100%"}
+  >![제 3 정규형의 예](/assets/img/posts/20220830/3NF.png "제 3 정규형의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">제 3 정규형의 예</div>
   >__알고가기__
   >- 이행적 함수 종속  
@@ -82,7 +82,7 @@ comments: true
   >하나의 릴레이션에 여러개의 후보키가 존재할 수도 있는데, 이런 경우는 제3정규형까지 모두 만족하더라도 이상 현상이 발생할 수 있다. 이러한 이상현상을 해결하기 위해 제3정규형보다 좀 더 
   >엄격한 제약조건을 제시한 것이 BCNF이다.
   >
-  >![보이스/코드 정규형의 예](/blog/assets/img/posts/20220830/BCNF.png "보이스/코드 정규형의 예"){: width="100%"}
+  >![보이스/코드 정규형의 예](/assets/img/posts/20220830/BCNF.png "보이스/코드 정규형의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">보이스/코드 정규형의 예</div>
 
 ## 고급 정규형
@@ -90,12 +90,12 @@ comments: true
 - 제 4 정규형(4NF)
   >릴레이션이 BCNF를 만족하면서 다치 종속(MVD: Multi Valued Dependency)을 제거하면 제 4 정규형에 속한다.
   >
-  >![제 4 정규형의 예](/blog/assets/img/posts/20220830/4NF.png "제 4 정규형의 예"){: width="100%"}
+  >![제 4 정규형의 예](/assets/img/posts/20220830/4NF.png "제 4 정규형의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">제 4 정규형의 예</div>
 - 제 5 정규형(5NF)
   >릴레이션이 제4정규형을 만족하면서 후보키를 통하지 않는 조인 종속(JD: Join Dependency)을 제거하면 제 5 정규형에 속한다.
   >
-  >![제 5 정규형의 예](/blog/assets/img/posts/20220830/5NF.png "제 5 정규형의 예"){: width="100%"}
+  >![제 5 정규형의 예](/assets/img/posts/20220830/5NF.png "제 5 정규형의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">제 5 정규형의 예</div>
 <br>
 
@@ -107,7 +107,7 @@ comments: true
 
 # 반정규화가 성능에 미치는 영향
 ## 성능이 향상 될 수 경우
-![성능저하 정규화 모델의 예](/blog/assets/img/posts/20220830/example-of-a-degraded-regularization-model.png "성능저하 정규화 모델의 예"){: width="100%"}
+![성능저하 정규화 모델의 예](/assets/img/posts/20220830/example-of-a-degraded-regularization-model.png "성능저하 정규화 모델의 예"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">성능저하 정규화 모델의 예</div>
 
 위 이미지는 주문과 결제에 대한 모델이다. 위 모델에서 생소한 속성만 설명하면, 주문 엔터티에서 주문상태 코드는 주문 상태에 대한 코드값으로 '주문·취소·반품·교환' 등의 정보를 관리하고, 결제일시 속성은 실제 결제를 진행한 일시정보를 관리한다. 결제 엔터티에서 결제수단구분코드 속성은 '카드결제·계좌이체·핸드폰결제' 등을 관리하는 코드값이다. 결제수단번호 속성은 결제수단구분코드에서 사용한 실제 '카드번호·계좌번호·핸드폰번호' 등을 관리하는 속성값이다.  
@@ -131,7 +131,7 @@ SELECT A.결제수단번호
 
 1234고객의 주문 내역이 많을 수록 성능이 나빠지는 문제가 존재한다. 최종결과는 1건을 가져오지만, 주문내역이 많을 수록 해당 주문테이블과 결제테이블의 조인 건수가 증가하게 되며, 조인된 결제정보를 모두 읽고 내림차순 정렬하여 최근 1건의 데이터를 가져온다. 즉 주문내역이 많을 수록 조인에 대한 부하가 증가하여 성능이 나빠지는 구조다. 그렇다면 어떻게 모델을 구성해야 성능 부하를 개선할 수 있을까? 그렇다. 결제 엔터티에 고객번호 속성을 반정규화함으로써 조인에 대한 성능 부하를 개선하는 것이다.
 
-![성능개선된 반정규화 모델 예시](/blog/assets/img/posts/20220830/example-of-performance-improvement-of-semi-normalized-model.png "성능개선된 반정규화 모델 예시"){: width="100%"}
+![성능개선된 반정규화 모델 예시](/assets/img/posts/20220830/example-of-performance-improvement-of-semi-normalized-model.png "성능개선된 반정규화 모델 예시"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">성능개선된 반정규화 모델 예시</div>
 
 위 이미지는 앞전의 모델을 반정규화한 것이다. 이에 따른 쿼리는 다음과 같이 수정된다.
@@ -155,12 +155,12 @@ SELECT A.결제수단번호
 ## 성능이 저하될 수 있는 경우
 이번엔 반정규화 시 성능이 저하되는 경우를 살펴보자.  
 
-![정규화한 모델 예시](/blog/assets/img/posts/20220830/normalized-model-example.png "정규화한 모델 예시"){: width="100%"}
+![정규화한 모델 예시](/assets/img/posts/20220830/normalized-model-example.png "정규화한 모델 예시"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">정규화한 모델 예시</div>
 
 위 이미지는 주문과 배송에 대한 모델이다. 업무적으로 생각해보면 고객이 주문하면 이후 판매자가 배송을 한다. 대부분의 쇼핑몰은 고객이 주문한 주문내역에 대해 배송정보를 조회할 수 있는 기능을 갖추고 있다. 즉 현재 내가 주문한 상품이 어디쯤 배송되었는지를 조회할 수 있는 화면이 존재한다. 이러한 화면을 개발한다고 가정하고 위 모델을 보자. 주문정보는 주문 엔터티에서 가져올 수 있고, 송장번호는 배송 엔터티에서 가져올 수 있다. 즉 주문과 배송 엔터티를 함께 조인해야 상품이 어디쯤 배송되었는지 조회가능하다. 그런데 여기서! 성능을 위해 주문 엔터티에 송장번호를 반정규화를 해보자.
 
-![반정규화한 모델 예시](/blog/assets/img/posts/20220830/semi-normalized-model-example.png "반정규화한 모델 예시"){: width="100%"}
+![반정규화한 모델 예시](/assets/img/posts/20220830/semi-normalized-model-example.png "반정규화한 모델 예시"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">반정규화한 모델 예시</div>
 
 위 이미지는 주문엔터티에 송장번호를 반정규화한 것이다. 지금부터 업무프로세스를 다시 생각해보자. 고객이 주문하면 판매자가 배송을 진행한다고 앞서 설명하였다. 그리고 고객이 주문을 하였다해도 판매자가 그 즉시 배송을 하지않는다. 경우에 따라 판매자의 상품판매 취소가 진행될 수 도 있다. 그렇다면 위와같이 모델을 구성하면 주문이 발생하여 주문번호가 생성되면, 송장번호는 처음에 NULL값이 들어갈 것이고, 배송준비가 완료되어야 갱신을 통해 송장번호가 들어갈 것이다.  

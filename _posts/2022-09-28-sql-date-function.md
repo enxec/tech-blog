@@ -27,7 +27,7 @@ SELECT SYSDATE AS 결과
   FROM DUAL;
 ```
 
-![SYSDATE함수 예제](/blog/assets/img/posts/20220928/query-example23.png "SYSDATE함수 예제"){: width="100%"}
+![SYSDATE함수 예제](/assets/img/posts/20220928/query-example23.png "SYSDATE함수 예제"){: width="100%"}
 
 <br>
 
@@ -47,7 +47,7 @@ SELECT EXTRACT(YEAR FROM SYSDATE) AS 입사년도
   FROM DUAL;
 ```
 
-![EXTRACT함수 예제](/blog/assets/img/posts/20220928/query-example24.png "EXTRACT함수 예제"){: width="100%"}
+![EXTRACT함수 예제](/assets/img/posts/20220928/query-example24.png "EXTRACT함수 예제"){: width="100%"}
 
 <br>
 
@@ -69,7 +69,7 @@ SELECT TO_NUMBER(TO_CHAR(SYSDATE, 'YYYY')) AS 입사년도
   FROM DUAL;
 ```
 
-![TO_NUMBER함수 예제](/blog/assets/img/posts/20220928/query-example24.png "TO_NUMBER함수 예제"){: width="100%"}
+![TO_NUMBER함수 예제](/assets/img/posts/20220928/query-example24.png "TO_NUMBER함수 예제"){: width="100%"}
 
 <br>
 

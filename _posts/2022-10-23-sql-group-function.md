@@ -35,7 +35,7 @@ SELECT 컬럼명, 컬럼명, ...
 ### 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -50,7 +50,7 @@ SELECT A.DEPTNO
 
 - 결과
 
-![ROLLUP 예제](/blog/assets/img/posts/20221023/query-example.png "ROLLUP 예제"){: width="100%"}
+![ROLLUP 예제](/assets/img/posts/20221023/query-example.png "ROLLUP 예제"){: width="100%"}
 
 ## CUBE
 CUBE는 결합 가능한 모든 값에 대해 다차원적인 집계를 생성한다. ROLLUP에 비해 다양한 데이터를 얻는 장점이 있는 반면, 시스템에 부하를 많이 주는 단점이 있다. CUBE를 사용할 때는 내부적으로 Grouping Columns의 순서를 바꾸어서 또 한번의 쿼리를 추가 수행해야 한다. 그뿐만 아니라 Grand Total은 양쪽의 쿼리에서 모두 생성되므로 한 번의 쿼리에서는 제거되어야 하며, ROLLUP에 비해 시스템의 연산 대상이 많다. 
@@ -67,7 +67,7 @@ SELECT 컬럼명, 컬럼명, ...
 ### 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -83,7 +83,7 @@ SELECT A.DEPTNO
 
 - 결과
 
-![CUBE 예제](/blog/assets/img/posts/20221023/query-example2.png "CUBE 예제"){: width="100%"}
+![CUBE 예제](/assets/img/posts/20221023/query-example2.png "CUBE 예제"){: width="100%"}
 
 ## GROUPING SETS
 GROUPING SETS를 이용해 더욱 다양한 소계 집합을 만들 수 있는데, GROUP BY SQL 문장을 여러번 반복하지 않아도 원하는 결과를 쉽게 얻을 수 있게 됬다.
@@ -100,7 +100,7 @@ SELECT 컬럼명, 컬럼명, ...
 ### 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -115,7 +115,7 @@ SELECT A.DEPTNO
 
 - 결과
 
-![GROUPING SETS 예제](/blog/assets/img/posts/20221023/query-example3.png "GROUPING SETS 예제"){: width="100%"}
+![GROUPING SETS 예제](/assets/img/posts/20221023/query-example3.png "GROUPING SETS 예제"){: width="100%"}
 
 ---
 

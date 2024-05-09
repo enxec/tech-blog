@@ -27,7 +27,7 @@ SELECT LOWER('HELLO WORLD') AS 결과
   FROM DUAL;
 ```
 
-![LOWER함수 예제](/blog/assets/img/posts/20220928/query-example1.png "LOWER함수 예제"){: width="100%"}
+![LOWER함수 예제](/assets/img/posts/20220928/query-example1.png "LOWER함수 예제"){: width="100%"}
 
 <br>
 
@@ -45,7 +45,7 @@ SELECT UPPER('hello world') AS 결과
   FROM DUAL;
 ```
 
-![UPPER함수 예제](/blog/assets/img/posts/20220928/query-example2.png "UPPER함수 예제"){: width="100%"}
+![UPPER함수 예제](/assets/img/posts/20220928/query-example2.png "UPPER함수 예제"){: width="100%"}
 
 <br>
 
@@ -63,7 +63,7 @@ SELECT ASCII('A') AS 결과
   FROM DUAL;
 ```
 
-![ASCII함수 예제](/blog/assets/img/posts/20220928/query-example3.png "ASCII함수 예제"){: width="100%"}
+![ASCII함수 예제](/assets/img/posts/20220928/query-example3.png "ASCII함수 예제"){: width="100%"}
 
 <br>
 
@@ -81,7 +81,7 @@ SELECT CHR(65) AS 결과
   FROM DUAL;
 ```
 
-![CHR함수 예제](/blog/assets/img/posts/20220928/query-example4.png "CHR함수 예제"){: width="100%"}
+![CHR함수 예제](/assets/img/posts/20220928/query-example4.png "CHR함수 예제"){: width="100%"}
 
 <br>
 
@@ -99,7 +99,7 @@ SELECT CONCAT('Hello', ' World') AS 결과
   FROM DUAL;
 ```
 
-![CONCAT함수 예제](/blog/assets/img/posts/20220928/query-example5.png "CONCAT함수 예제"){: width="100%"}
+![CONCAT함수 예제](/assets/img/posts/20220928/query-example5.png "CONCAT함수 예제"){: width="100%"}
 
 <br>
 
@@ -117,7 +117,7 @@ SELECT SUBSTR('Hello World', 7, 5) AS 결과
   FROM DUAL;
 ```
 
-![SUBSTR함수 예제](/blog/assets/img/posts/20220928/query-example6.png "SUBSTR함수 예제"){: width="100%"}
+![SUBSTR함수 예제](/assets/img/posts/20220928/query-example6.png "SUBSTR함수 예제"){: width="100%"}
 
 <br>
 
@@ -135,7 +135,7 @@ SELECT LENGTH('Hello World') AS 결과
   FROM DUAL;
 ```
 
-![LENGTH함수 예제](/blog/assets/img/posts/20220928/query-example7.png "LENGTH함수 예제"){: width="100%"}
+![LENGTH함수 예제](/assets/img/posts/20220928/query-example7.png "LENGTH함수 예제"){: width="100%"}
 
 <br>
 
@@ -155,7 +155,7 @@ SELECT LTRIM('xxxYYZZxYZ', 'x') AS 결과
   FROM DUAL;
 ```
 
-![LTRIM함수 예제](/blog/assets/img/posts/20220928/query-example8.png "LTRIM함수 예제"){: width="100%"}
+![LTRIM함수 예제](/assets/img/posts/20220928/query-example8.png "LTRIM함수 예제"){: width="100%"}
 
 <br>
 
@@ -175,7 +175,7 @@ SELECT RTRIM('XXYYzzXYzz', 'z') AS 결과
   FROM DUAL;
 ```
 
-![RTRIM함수 예제](/blog/assets/img/posts/20220928/query-example9.png "RTRIM함수 예제"){: width="100%"}
+![RTRIM함수 예제](/assets/img/posts/20220928/query-example9.png "RTRIM함수 예제"){: width="100%"}
 
 <br>
 
@@ -195,7 +195,7 @@ SELECT TRIM('x' FROM 'xxYYZZxYZxx') AS 결과
   FROM DUAL;
 ```
 
-![TRIM함수 예제](/blog/assets/img/posts/20220928/query-example10.png "TRIM함수 예제"){: width="100%"}
+![TRIM함수 예제](/assets/img/posts/20220928/query-example10.png "TRIM함수 예제"){: width="100%"}
 
 ---
 

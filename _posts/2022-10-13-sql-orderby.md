@@ -33,7 +33,7 @@ ORDER BY절은 2가지의 정렬방식이 있으며 내용은 다음과 같다.
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![DEPT 릴레이션](/blog/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
+![DEPT 릴레이션](/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">DEPT 릴레이션</div>
 
 - 쿼리
@@ -48,7 +48,7 @@ SELECT DEPTNO
 
 - 결과
 
-![ORDER BY절 예제](/blog/assets/img/posts/20221013/query-example.png "ORDER BY절 예제"){: width="100%"}
+![ORDER BY절 예제](/assets/img/posts/20221013/query-example.png "ORDER BY절 예제"){: width="100%"}
 
 # ORDER BY 특징
 ---

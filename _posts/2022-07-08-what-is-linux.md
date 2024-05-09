@@ -24,7 +24,7 @@ comments: true
 그렇게 1991년 하반기, 토발즈는 리눅스 첫번째 버전을 세상에 내놓게된다.  
 그후 지속적인 개발을 통해 리눅스 성능을 향상 시키며 계속해서 업그레이드 된 리눅스 버전을 세상에 내놓았고, 이 덕분에 급속도로 전 세계에 리눅스가 퍼져나가며 리눅스 기반의 다양한 OS들이 등장하게 된다.  
 
-![Linus-Benedict-Torvalds](/blog/assets/img/posts/20220619/Linus-Benedict-Torvalds.jpg "리누스 토발즈"){: width="100%"}
+![Linus-Benedict-Torvalds](/assets/img/posts/20220619/Linus-Benedict-Torvalds.jpg "리누스 토발즈"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">리누스 토발즈</div> 
 
 <br>

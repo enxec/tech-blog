@@ -17,7 +17,7 @@ comments: true
 
 # 메서드(method)란?
 ---
-![method](/blog/assets/img/posts/20220801/method.png "method"){: width="100%" height="100"}
+![method](/assets/img/posts/20220801/method.png "method"){: width="100%" height="100"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">method</div> 
 메서드는 객체의 기능을 수행하는 일련의 문장들을 하나로 묶어 놓은 것이다. 기본적으로 수학의 함수와 유사하며, 어떤 값을 입력하면 이 값으로 작업을 수행해서 결과를 반환한다. 예를 들어 소수점 올림을 하는 메서드 Math.ceil()은 인자를 필요로하며, 4.5를 인자값으로 입력하면 5.0이라는 결과로 반환한다. 이러한 메서드는 때에 따라 입력값 또는 출력값이 없을 수 도 있으며, 심지어 입력값, 출력값 모두 없을 수 도있다.  
 

@@ -34,7 +34,7 @@ SQL 성능을 좌우하는 가장 중요한 성능지표는 액세스하는 블�
 ## I/O 효율화 튜닝의 중요성
 디스크를 경유한 데이터 입출력은 디스크의 액세스 암(Arm)이 움직이면서 헤드를 통해 데이터를 읽고 쓰기 때문에 느린 반면, 메모리를 통한 입출력은 전기적 신호에 불과하기 때문에 디스크를 통한 I/O에 비해 비교할 수 없을 정도로 빠르다. 모든 DBMS는 읽고자 하는 블록을 먼저 버퍼 캐시에서 찾아보고, 없을 경우에만 디스크에서 읽어 버퍼 캐시에 적재한 후 읽기/쓰기 작업을 수행한다. 물리적인 디스크 I/O가 필요할 때면 서버 프로세스는 시스템에 I/O Call을 하고 잠시 대기 상태에 빠진다. 디스크 I/O 경합이 심할수록 대기 시간도 길어진다.
 
-![디스크 I/O 경합](/blog/assets/img/posts/20221115/disk-io-contention.png "디스크 I/O 경합"){: width="100%"}
+![디스크 I/O 경합](/assets/img/posts/20221115/disk-io-contention.png "디스크 I/O 경합"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">디스크 I/O 경합</div>
 
 모든 데이터를 메모리에 올려 놓고 사용할 수 있다면 좋겠지만 비용과 기술 측면에 한계가 있다. 메모리는 물리적으로 한정된 자원이므로, 결국 디스크 I/O를 최소화하고 버퍼 캐시 효율을 높이는 것이 데이터베이스 I/O 튜닝의 목표가 된다.
@@ -81,7 +81,7 @@ RAC 같은 클러스터링(Clustering) 데이터베이스 환경에선 인스턴
 
 # Sequential I/O vs Random I/O
 ---
-![시퀀셜 I/O와 랜덤 I/O](/blog/assets/img/posts/20221115/sequential-io-and-random-io.png "시퀀셜 I/O와 랜덤 I/O"){: width="100%"}
+![시퀀셜 I/O와 랜덤 I/O](/assets/img/posts/20221115/sequential-io-and-random-io.png "시퀀셜 I/O와 랜덤 I/O"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">시퀀셜 I/O와 랜덤 I/O</div>
 
 Sequential 액세스는 레코드간 논리적 또는 물리적인 순서를 따라 차례대로 읽어 나가는 방식이다. 인덱스 리프 블록에 위치한 모든 레코드는 포인터를 따라 논리적으로 연결돼 있고, 이 포인터를 따라 스캔하는 것은 Sequential 액세스 방식이다. 테이블 레코드 간에는 포인터로 연결되지 않지만 테이블을 스캔할 때는 물리적으로 저장된 순서대로 읽어 나가므로 이것 또한 Sequential 액세스 방식이다. 

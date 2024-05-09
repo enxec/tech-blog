@@ -27,7 +27,7 @@ SELECT TO_NUMBER('4321') AS 결과
   FROM DUAL;
 ```
 
-![TO_NUMBER함수 예제](/blog/assets/img/posts/20220928/query-example25.png "TO_NUMBER함수 예제"){: width="100%"}
+![TO_NUMBER함수 예제](/assets/img/posts/20220928/query-example25.png "TO_NUMBER함수 예제"){: width="100%"}
 
 <br>
 
@@ -45,7 +45,7 @@ SELECT TO_CHAR(SYSDATE, 'DD') AS 일
   FROM DUAL;
 ```
 
-![TO_CHAR함수 예제](/blog/assets/img/posts/20220928/query-example26.png "TO_CHAR함수 예제"){: width="100%"}
+![TO_CHAR함수 예제](/assets/img/posts/20220928/query-example26.png "TO_CHAR함수 예제"){: width="100%"}
 
 <br>
 
@@ -63,7 +63,7 @@ SELECT TO_DATE('20220811', 'YYYY/MM/DD') AS 일자
   FROM DUAL;
 ```
 
-![TO_DATE함수 예제](/blog/assets/img/posts/20220928/query-example27.png "TO_DATE함수 예제"){: width="100%"}
+![TO_DATE함수 예제](/assets/img/posts/20220928/query-example27.png "TO_DATE함수 예제"){: width="100%"}
 
 ---
 

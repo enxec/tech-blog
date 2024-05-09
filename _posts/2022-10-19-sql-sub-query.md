@@ -50,7 +50,7 @@ __알아두기__
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![DEPT 릴레이션](/blog/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
+![DEPT 릴레이션](/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">DEPT 릴레이션</div>
 
 - 쿼리
@@ -68,7 +68,7 @@ SELECT A.DEPTNO
 
 - 결과
 
-![단일 행 서브쿼리 예제](/blog/assets/img/posts/20221019/query-example.png "단일 행 서브쿼리 예제"){: width="100%"}
+![단일 행 서브쿼리 예제](/assets/img/posts/20221019/query-example.png "단일 행 서브쿼리 예제"){: width="100%"}
 
 ## 다중 행 서브쿼리
 서브쿼리의 실행 결과가 여러 건인 서브쿼리를 의미한다. 다중 행 서브쿼리는 다중행 비교 연산자와 함께 사용된다. 다중 행 비교 연산자에는 IN, ALL, ANY, SOME, EXISTS가 있다.
@@ -77,7 +77,7 @@ SELECT A.DEPTNO
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![DEPT 릴레이션](/blog/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
+![DEPT 릴레이션](/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">DEPT 릴레이션</div>
 
 - 쿼리
@@ -95,7 +95,7 @@ SELECT A.DEPTNO
 
 - 결과
 
-![다중 행 서브쿼리 예제](/blog/assets/img/posts/20221019/query-example2.png "다중 행 서브쿼리 예제"){: width="100%"}
+![다중 행 서브쿼리 예제](/assets/img/posts/20221019/query-example2.png "다중 행 서브쿼리 예제"){: width="100%"}
 
 ## 다중 컬럼 서브쿼리
 서브쿼리의 실행 결과로 여러 컬럼을 반환한다. 메인쿼리의 조건절에 여러 컬럼을 동시에 비교할 수 있다. 서브쿼리와 메인쿼리에서 비교하고자 하는 컬럼개수와 컬럼의 위치가 동일해야 한다.
@@ -105,7 +105,7 @@ SQL Server에서는 지원되지 않는 문법이다.
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -122,7 +122,7 @@ SELECT *
 
 - 결과
 
-![다중 컬럼 서브쿼리 예제](/blog/assets/img/posts/20221019/query-example3.png "다중 컬럼 서브쿼리 예제"){: width="100%"}
+![다중 컬럼 서브쿼리 예제](/assets/img/posts/20221019/query-example3.png "다중 컬럼 서브쿼리 예제"){: width="100%"}
 
 ## 연관 컬럼 서브쿼리
 서브쿼리가 메인쿼리 컬럼을 갖고 있는 형태의 서브쿼리다. 일반적으로 메인쿼리가 먼저 수행되어 읽혀진 데이터를 서브쿼리에서 조건이 맞는지 확인하고자 할 때 주로 사용한다.
@@ -131,10 +131,10 @@ SELECT *
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![DEPT 릴레이션](/blog/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
+![DEPT 릴레이션](/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">DEPT 릴레이션</div>
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -153,7 +153,7 @@ SELECT *
 
 - 결과
 
-![연관 컬럼 서브쿼리 예제](/blog/assets/img/posts/20221019/query-example4.png "연관 컬럼 서브쿼리 예제"){: width="100%"}
+![연관 컬럼 서브쿼리 예제](/assets/img/posts/20221019/query-example4.png "연관 컬럼 서브쿼리 예제"){: width="100%"}
 
 ## 비연관 컬럼 서브쿼리
 서브쿼리가 메인쿼리 컬럼을 갖고 있지 않는 형태의 서브쿼리이며, 메인쿼리에 값(서브쿼리가 실행된 결과)을 제공하기 위한 목적으로 주로 사용한다. 비연관 컬럼 서브쿼리는 예제를 생략하겠다.

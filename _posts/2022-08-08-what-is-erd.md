@@ -29,7 +29,7 @@ ERD는 데이터 모델에 대한 표기법을 활용해 다이어그램 형태�
 ---
 E-R 표기법에는 다양한 종류가 있으며, 내용은 다음과 같다.
 
-![다양한 형태의 E-R 표기법](/blog/assets/img/posts/20220808/er-type.png "다양한 형태의 E-R 표기법"){: width="100%"}
+![다양한 형태의 E-R 표기법](/assets/img/posts/20220808/er-type.png "다양한 형태의 E-R 표기법"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">다양한 형태의 E-R 표기법</div>
 
 <br>
@@ -44,23 +44,23 @@ ERD 작업 순서는 다음과 같다.
 2. 엔터티를 적절히 배치한다.
   >엔터티를 처음에 어디에 배치하는지는 데이터 모델링 툴 사용 여부와 관계없이 중요한 문제이다. 일반적으로 사람의 눈은 왼쪽에서 오른쪽, 위쪽에서 아래쪽으로 이동하는 경향이 있기 때문에 데이터 모델링에서도 가장 중요한 엔터티를 왼쪽 상단에 배치하고, 이것을 중심으로 다른 엔터티를 나열하면서 전개하면 사람의 눈이 따라가기에 편리한 데이터 모델링을 할 수 있다. 해당 업무에서 가장 중요한 엔터티는 왼쪽 상단에서 조금 아래쪽 중앙에 배치하여 전체 엔터티와 어울리게 하면, 향후 관계를 연결할 때 선이 꼬이지 않고 효과적으로 배치할 수 있다.
   >
-  >![엔터티 배치의 예](/blog/assets/img/posts/20220808/place-entity.png "엔터티 배치의 예"){: width="100%"}
+  >![엔터티 배치의 예](/assets/img/posts/20220808/place-entity.png "엔터티 배치의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">엔터티 배치의 예</div>
 3. 엔터티 간 관계를 설정한다.
   >엔터티에 배치가 되면 관계를 정의한 분석서를 보고 서로 관련 있는 엔터티 간에 관계를 설정한다. 초기에는 모두 Primary Key로 속성이 상속되는 식별자 관계를 설정한다. 중복되는 관계가 발생되지 않도록 하고, Circle 관계도 발생하지 않도록 유의하여 작성한다.
   >
-  >![ERD 관계연결의 예](/blog/assets/img/posts/20220808/erd-relation-connect.png "ERD 관계연결의 예"){: width="100%"}
+  >![ERD 관계연결의 예](/assets/img/posts/20220808/erd-relation-connect.png "ERD 관계연결의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">ERD 관계연결의 예</div>
 4. 관계명을 기술한다.
   >관계 설정이 완료되면 연결된 관계에 관계 이름을 부여한다. 관계 이름은 현재형을 사용하고 지나치게 포괄적인 용어(예, 이다, 가진다 등)는 사용하지 않도록 한다.
   >
-  >![ERD 관계명 표시의 예](/blog/assets/img/posts/20220808/erd-relation-name-mark.png "ERD 관계명 표시의 예"){: width="100%"}
+  >![ERD 관계명 표시의 예](/assets/img/posts/20220808/erd-relation-name-mark.png "ERD 관계명 표시의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">ERD 관계명 표시의 예</div>
 
 5. 관계의 참여도 기술 및 필수여부 기술
   >관계에 대한 이름을 모두 지정하였다면 관계가 참여하는 성격 중 엔터티 내에 인스턴스들이 얼마나 관계에 참여하는지를 나타내는 관계차수를 표현한다.
   >
-  >![관계의 참여도 기술 및 필수여부 기술의 예](/blog/assets/img/posts/20220808/erd-relational-order-and-selectivity-display.png "관계의 참여도 기술 및 필수여부 기술의 예"){: width="100%"}
+  >![관계의 참여도 기술 및 필수여부 기술의 예](/assets/img/posts/20220808/erd-relational-order-and-selectivity-display.png "관계의 참여도 기술 및 필수여부 기술의 예"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">관계의 참여도 기술 및 필수여부 기술의 예</div>
   >위 이미지는 관계의 관계차수를 지정한 ERD의 모습을 보여준다. IE 표기법으로는 하나의 관계는 실선으로 표기하고, 바커 표기법으로는 점선과 실선을 혼합하여 표기한다. 다수 참여의 관계는 까마귀발과 같은 모양으로 그려준다. 또한 관계의 필수 및 선택 표시는 관계선에 원을 표현하여 ERD를 그리도록 한다.
 

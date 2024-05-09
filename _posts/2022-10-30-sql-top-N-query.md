@@ -19,7 +19,7 @@ comments: true
 ## 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -38,7 +38,7 @@ SELECT A.ENAME
 
 - 결과
 
-![ROWNUM 예제](/blog/assets/img/posts/20221030/query-example.png "ROWNUM 예제"){: width="100%"}
+![ROWNUM 예제](/assets/img/posts/20221030/query-example.png "ROWNUM 예제"){: width="100%"}
 
 <br>
 
@@ -59,7 +59,7 @@ SELECT A.ENAME
 ## 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -73,7 +73,7 @@ SELECT A.EMPNO
 
 - 결과
 
-![ROW LIMITING 예제](/blog/assets/img/posts/20221030/query-example2.png "ROW LIMITING 예제"){: width="100%"}
+![ROW LIMITING 예제](/assets/img/posts/20221030/query-example2.png "ROW LIMITING 예제"){: width="100%"}
 
 ---
 

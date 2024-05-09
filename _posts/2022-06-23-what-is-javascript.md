@@ -17,7 +17,7 @@ comments: true
 
 # JavaScript의 역사
 ---
-![Netscape](/blog/assets/img/posts/20220623/netscape-logo.png "Netscape"){: width="100%"}
+![Netscape](/assets/img/posts/20220623/netscape-logo.png "Netscape"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Netscape</div>
 자바스크립트의 등장은 넷스케이프사의 Marc Andreessen의 고민에서 부터 시작되었다. 때는 1993년, Marc Andreessen이라는 한 청년은 대학을 졸업함과 동시에 Netscape라는 기업을 설립한다. 이후 Marc Andreessen은 Netscape Navigator라는 웹 브라우저를 만들어 출시하고 당시 브라우저 시장의 약 80%를 점유하게된다. 그렇게 브라우저 시장을 점유한 그는 어느날 큰 고민에 빠졌다. 당시 Netscape Navigator로 동작하는 웹 사이트들은 하이퍼텍스트에 링크를 걸어 페이지와 페이지간의 간단한 이동만 가능한 정적인 사이트들 뿐이었다.  
 그래서 Marc Andreessen은 Netscape Navigator에서 동적인 웹 페이지가 구현되길 원했고, 그의 고민끝에 나온 결론은 스크립팅 언어를 추가하는 것이었다. 그는 스크립팅 언어를 만들기 위해 Brendan Eich를 스카웃하여 1994년, scheme스크립트를 변형하여 만든 프로토타입 기반의 유연한 언어인 Mocha를 개발하게 된다. 추후 Mocha는 LiveScript로 명칭이 바뀌게 되고 Netscape Navigator내에는 LiveScript를 이해하고 실행할 수 있는 LiveScript엔진 즉, 인터프리터가 내장되게 된다. 이후 Marc Andreessen은 LiveScript가 어떻게 하면 큰 인기를 끌 수 있을까 고민하였고, 당시 큰 인기를 누리고 있던 자바의 명칭을 활용해야겠다고 생각한 그는 LiveScript를 JavaScript로 이름을 바꾸게 된다. 그렇게 해서 넷스케이프사는 자바스크립트를 1995년에 공식적으로 출시하게 된다.
@@ -26,7 +26,7 @@ comments: true
 
 # ECMAScript의 등장
 ---
-![Ecma International](/blog/assets/img/posts/20220623/Ecma-International-logo.png "Ecma International"){: width="100%"}
+![Ecma International](/assets/img/posts/20220623/Ecma-International-logo.png "Ecma International"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Ecma International</div>
 ECMAScript란 간단히 말해 자바스크립트의 표준이라고 할 수 있다. ECMAScript의 탄생은 마이크로소프트의 움직임으로부터 시작되었다.  
 자바스크립트가 공식적으로 출시한 이래 브라우저의 무한한 잠재성을 확인한 마이크로소프트사는 넷스케이프의 브라우저를 Reverse engineering하여 약간의 소스만 변경하여 JScript라는 스크립트언어를 Internet Explorer브라우저와 함께 시장에 내놓았다. (참고 : Reverse engineering이란 만들어진 프로그램의 바이너리 코드를 분석해서 소스코드를 복원해내는 과정이다.)  
@@ -36,7 +36,7 @@ ECMAScript란 간단히 말해 자바스크립트의 표준이라고 할 수 있
 
 # ECMAScript 5와 6
 ---
-![ECMA5 & ECMA6](/blog/assets/img/posts/20220623/ES5-ES6.png "ECMA5 & ECMA6"){: width="100%"}
+![ECMA5 & ECMA6](/assets/img/posts/20220623/ES5-ES6.png "ECMA5 & ECMA6"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">ECMA5 & ECMA6</div>
 ECMAScript는 자바스크립트를 사용하는데 있어 중요한 개념이기에 추가적으로 내용을 다루어본다.
 ECMAScript는 4버전까지 출시한 이후 IE는 브라우저시장의 약 90%정도를 점유하면서 표준안인 ECMAScript에 대해 반항을 하기 시작하고 때문에 ECMAScript의 발전은 주춤하게 된다.  

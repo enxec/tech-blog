@@ -32,7 +32,7 @@ SELECT 컬럼명
 ## 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 예제 쿼리 및 결과
@@ -44,7 +44,7 @@ SELECT A.JOB AS 직업
  GROUP BY A.JOB;
 ```
 
-![GROUP BY 예제](/blog/assets/img/posts/20221010/query-example2.png "GROUP BY 예제"){: width="100%"}
+![GROUP BY 예제](/assets/img/posts/20221010/query-example2.png "GROUP BY 예제"){: width="100%"}
 
 <br>
 
@@ -66,7 +66,7 @@ HAVING 그룹조건식;
 ## 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20220925/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 예제 쿼리 및 결과
@@ -79,7 +79,7 @@ SELECT A.JOB AS 직업
 HAVING AVG(A.SAL) > 2500;
 ```
 
-![GROUP BY 예제](/blog/assets/img/posts/20221010/query-example2.png "GROUP BY 예제"){: width="100%"}
+![GROUP BY 예제](/assets/img/posts/20221010/query-example2.png "GROUP BY 예제"){: width="100%"}
 
 ---
 

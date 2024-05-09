@@ -18,7 +18,7 @@ comments: true
 
 # Java의 역사
 ---
-![Oracle & Sun microsystems](/blog/assets/img/posts/20220622/oracle-sun-logo.png "Oracle & Sun microsystems"){: width="100%"}
+![Oracle & Sun microsystems](/assets/img/posts/20220622/oracle-sun-logo.png "Oracle & Sun microsystems"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Oracle & Sun microsystems</div>
 자바의 역사는 1991년 썬 마이크로시스템즈 의 엔지니어들에 의해서 고안된 오크라는 언어에서부터 시작되었다.
 제임스 고슬링과 아서 밴 호프와 같은 썬의 엔지니어들의 원래 목표는 가전제품에 탑재될 소프트웨어를 만드는 것이었다. 처음엔 C++을 확장해서 사용하려했지만 C++로는 역부족이였기 때문에 C++의 장점을 도입하고 단점은 보완후 도입한 새로운 언어를 개발하기에 이르렀다.  
@@ -55,7 +55,7 @@ __알아두기:__
 프로그래밍은 컴퓨터 언어로 프로그램 소스파일을 작성하는 것으로 시작한다. 컴퓨터는 C/C++, 자바와 같은 고급 언어로 작성된 프로그램을 직접 처리할 수 없기 때문에 컴퓨터가 실행 할 수 있는 기계어 코드로 변환하는 컴파일 과정이 필요하다. 컴파일을 전담하는 소프트웨어를 컴파일러라고 하며, 각 언어마다 전용 컴파일러가 존재한다.  
 자바는 소스프로그램의 확장자가 .java이고, JDK안에 담겨있는 자바 전용 컴파일러인 javac에 의해 .class파일로 컴파일되며, 컴파일된 클래스파일은 자바 가상 기계(JVM)에 의해 실행된다.
 
-![자바 프로그램 실행 프로세스](/blog/assets/img/posts/20220622/java-exe-process.jpg "자바 프로그램 실행 프로세스"){: width="100%"}
+![자바 프로그램 실행 프로세스](/assets/img/posts/20220622/java-exe-process.jpg "자바 프로그램 실행 프로세스"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">자바 프로그램 실행 프로세스</div>
 
 ---

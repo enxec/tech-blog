@@ -27,7 +27,7 @@ SELECT ABS(-15) AS 결과
   FROM DUAL;
 ```
 
-![ABS함수 예제](/blog/assets/img/posts/20220928/query-example11.png "ABS함수 예제"){: width="100%"}
+![ABS함수 예제](/assets/img/posts/20220928/query-example11.png "ABS함수 예제"){: width="100%"}
 
 <br>
 
@@ -45,7 +45,7 @@ SELECT SIGN(-15) AS 결과
   FROM DUAL;
 ```
 
-![SIGN함수 예제](/blog/assets/img/posts/20220928/query-example12.png "SIGN함수 예제"){: width="100%"}
+![SIGN함수 예제](/assets/img/posts/20220928/query-example12.png "SIGN함수 예제"){: width="100%"}
 
 <br>
 
@@ -63,7 +63,7 @@ SELECT MOD(7, 3) AS 결과
   FROM DUAL;
 ```
 
-![MOD함수 예제](/blog/assets/img/posts/20220928/query-example13.png "MOD함수 예제"){: width="100%"}
+![MOD함수 예제](/assets/img/posts/20220928/query-example13.png "MOD함수 예제"){: width="100%"}
 
 <br>
 
@@ -81,7 +81,7 @@ SELECT CEIL(42.195) AS 결과
   FROM DUAL;
 ```
 
-![CEIL함수 예제](/blog/assets/img/posts/20220928/query-example14.png "CEIL함수 예제"){: width="100%"}
+![CEIL함수 예제](/assets/img/posts/20220928/query-example14.png "CEIL함수 예제"){: width="100%"}
 
 <br>
 
@@ -99,7 +99,7 @@ SELECT FLOOR(42.195) AS 결과
   FROM DUAL;
 ```
 
-![FLOOR함수 예제](/blog/assets/img/posts/20220928/query-example15.png "FLOOR함수 예제"){: width="100%"}
+![FLOOR함수 예제](/assets/img/posts/20220928/query-example15.png "FLOOR함수 예제"){: width="100%"}
 
 <br>
 
@@ -117,7 +117,7 @@ SELECT ROUND(42.1954, 3) AS 결과
   FROM DUAL;
 ```
 
-![ROUND함수 예제](/blog/assets/img/posts/20220928/query-example16.png "ROUND함수 예제"){: width="100%"}
+![ROUND함수 예제](/assets/img/posts/20220928/query-example16.png "ROUND함수 예제"){: width="100%"}
 
 <br>
 
@@ -135,7 +135,7 @@ SELECT TRUNC(42.1954, 3) AS 결과
   FROM DUAL;
 ```
 
-![TRUNC함수 예제](/blog/assets/img/posts/20220928/query-example16.png "TRUNC함수 예제"){: width="100%"}
+![TRUNC함수 예제](/assets/img/posts/20220928/query-example16.png "TRUNC함수 예제"){: width="100%"}
 
 <br>
 
@@ -157,7 +157,7 @@ SELECT SIN(0) AS 결과1
   FROM DUAL;
 ```
 
-![SIN, COS, TAN함수 예제](/blog/assets/img/posts/20220928/query-example17.png "SIN, COS, TAN함수 예제"){: width="100%"}
+![SIN, COS, TAN함수 예제](/assets/img/posts/20220928/query-example17.png "SIN, COS, TAN함수 예제"){: width="100%"}
 
 <br>
 
@@ -175,7 +175,7 @@ SELECT EXP(2) AS 결과
   FROM DUAL;
 ```
 
-![EXP함수 예제](/blog/assets/img/posts/20220928/query-example18.png "EXP함수 예제"){: width="100%"}
+![EXP함수 예제](/assets/img/posts/20220928/query-example18.png "EXP함수 예제"){: width="100%"}
 
 <br>
 
@@ -193,7 +193,7 @@ SELECT POWER(2, 3) AS 결과
   FROM DUAL;
 ```
 
-![POWER함수 예제](/blog/assets/img/posts/20220928/query-example19.png "POWER함수 예제"){: width="100%"}
+![POWER함수 예제](/assets/img/posts/20220928/query-example19.png "POWER함수 예제"){: width="100%"}
 
 <br>
 
@@ -211,7 +211,7 @@ SELECT SQRT(4) AS 결과
   FROM DUAL;
 ```
 
-![SQRT함수 예제](/blog/assets/img/posts/20220928/query-example20.png "SQRT함수 예제"){: width="100%"}
+![SQRT함수 예제](/assets/img/posts/20220928/query-example20.png "SQRT함수 예제"){: width="100%"}
 
 <br>
 
@@ -229,7 +229,7 @@ SELECT LOG(10, 100) AS 결과
   FROM DUAL;
 ```
 
-![LOG함수 예제](/blog/assets/img/posts/20220928/query-example21.png "LOG함수 예제"){: width="100%"}
+![LOG함수 예제](/assets/img/posts/20220928/query-example21.png "LOG함수 예제"){: width="100%"}
 
 <br>
 
@@ -247,7 +247,7 @@ SELECT LN(7.3890561) AS 결과
   FROM DUAL;
 ```
 
-![LN함수 예제](/blog/assets/img/posts/20220928/query-example22.png "LN함수 예제"){: width="100%"}
+![LN함수 예제](/assets/img/posts/20220928/query-example22.png "LN함수 예제"){: width="100%"}
 
 ---
 

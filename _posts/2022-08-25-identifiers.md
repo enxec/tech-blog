@@ -44,7 +44,7 @@ comments: true
 ---
 식별자의 분류에 대한 내용은 다음 표와 같다.
 
-![식별자 분류](/blog/assets/img/posts/20220825/identifiers-classification.png "식별자 분류"){: width="100%"}
+![식별자 분류](/assets/img/posts/20220825/identifiers-classification.png "식별자 분류"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">식별자 분류</div>
 
 <br>
@@ -53,7 +53,7 @@ comments: true
 ---
 식별자에 대한 위의 분류방법을 데이터 모델에서 표현하면 아래 그림과 같다.
 
-![식별자 표기법](/blog/assets/img/posts/20220825/identifiers-notation.png "식별자 표기법"){: width="100%"}
+![식별자 표기법](/assets/img/posts/20220825/identifiers-notation.png "식별자 표기법"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">식별자 표기법</div>
 
 <br>
@@ -71,18 +71,18 @@ comments: true
 ## 식별자관계와 비식별자관계의 결정
 외부식별자는 자기 자신의 엔터티에서 필요한 속성이 아니라 다른 엔터티와의 관계를 통해 자식 쪽에 엔터티에 생성되는 속성을 말한다. DB 생성 시에 Foreign key 역할을 한다. 관계와 속성을 정의하고 주식별자를 정의하면, 논리적인 관계에 의해 자연스럽게 외부식별자가 도출되지만 중요하게 고려해야할 사항이 있다. 엔터티에 주식별자가 지정되고 엔터티 간 관계를 연결하면 부모쪽의 주식별자를 자식엔터티의 속성으로 내려보낸다. 이때 자식 엔터티에서 부모엔터티로부터 받은 외부식별자를 자신의 주식별자로 이용할 것인지, 부모와 연결이 되는 속성으로만 이용할 것인지를 결정해야 한다.
 
-![식별자/비식별자관계 조정](/blog/assets/img/posts/20220825/reconciliation-of-identifier-relationships.png "식별자/비식별자관계 조정"){: width="100%"}
+![식별자/비식별자관계 조정](/assets/img/posts/20220825/reconciliation-of-identifier-relationships.png "식별자/비식별자관계 조정"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">식별자/비식별자관계 조정</div>
 
 ## 식별자관계
 부모로부터 받은 식별자를 자식엔터티의 주식별자로 이용하는 경우는 Null값이 오면 안되므로 반드시 부모엔터티가 생성되어야 자기 자신의 엔터티가 생성되는 경우다. 부모로부터 받은 속성을 자식엔터티가 모두 사용하고 그것만으로 주식별자로 사용한다면, 부모엔터티와 자식엔터티의 관계는 1:1의 관계가 될 것이다. 만약 부모로부터 받은 속성을 포함하여 다른 부모엔터티에서 받은 속성을 포함하거나 스스로 가지고 있는 속성과 함께 주식별자로 구성되는 경우는 1:M 관계가 된다.
 
-![외부식별자의 주식별자 역할](/blog/assets/img/posts/20220825/role-of-stock-identifiers-of-external-identifiers.png "외부식별자의 주식별자 역할"){: width="100%"}
+![외부식별자의 주식별자 역할](/assets/img/posts/20220825/role-of-stock-identifiers-of-external-identifiers.png "외부식별자의 주식별자 역할"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">외부식별자의 주식별자 역할</div>
 
 식별자관계를 맺을 때 주의할점이 있다. 만약 엔터티간의 관계를 식별자로만 설정할 때 문제가 발생할 수 있다. 아래 그림을 살펴보자.
 
-![식별자관계 연결의 주식별자](/blog/assets/img/posts/20220825/share-identifier-of-identifier-relationship-connection.png "식별자관계 연결의 주식별자"){: width="100%"}
+![식별자관계 연결의 주식별자](/assets/img/posts/20220825/share-identifier-of-identifier-relationship-connection.png "식별자관계 연결의 주식별자"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">식별자관계 연결의 주식별자</div>
 
 위 그림은 식별자 관계로만 개체를 연결하여 PK속성이 매우 증가된 예이다. 이럴 경우 엔터티의 정보를 가져올 때 비효율적인 쿼리를 작성하게 되고 길이 또한 매우 길어진다. 때문에 개발 복잡성과 잦은 오류를 유발한다. 따라서 엔터티간의 관계를 설정할 때 적절한 식별자 사용이 매우 중요하다.
@@ -96,16 +96,16 @@ comments: true
 - 엔터티별로 데이터의 생명주기를 다르게 관리할 경우
   >예를 들어 부모엔터티에 인스턴스가 자식의 엔터티와 관계를 가지고 있었지만, 자식만 남겨두고 먼저 소멸될 수 있는 경우가 이에 해당한다. 이에 대한 방안으로 물리DB 생성 시 Foreign Key를 연결하지 않는 임시적인 방법을 사용하기도 하지만, 데이터 모델상에서 관계를 비식별자관계로 조정하는 것이 가장 좋은 방법이다.
 - 여러 개의 엔터티가 하나의 엔터티로 통합 및 표현되었는데 각각의 엔터티가 별도의 관계를 가질 경우
-  >![외부식별자의 비식별자 역할](/blog/assets/img/posts/20220825/non-identifier-role-of-external-identifier.png "외부식별자의 비식별자 역할"){: width="100%"}
+  >![외부식별자의 비식별자 역할](/assets/img/posts/20220825/non-identifier-role-of-external-identifier.png "외부식별자의 비식별자 역할"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">외부식별자의 비식별자 역할</div>
 - 자식엔터티에 주식별자로 사용하여도 되지만 자식 엔터티에서 별도의 주식별자를 생성하는 것이 더 유리하다고 판단될 경우
-  >![자식엔터티의 독립 주식별자](/blog/assets/img/posts/20220825/independent-stock-identifier-of-child-entity.png "자식엔터티의 독립 주식별자"){: width="100%"}
+  >![자식엔터티의 독립 주식별자](/assets/img/posts/20220825/independent-stock-identifier-of-child-entity.png "자식엔터티의 독립 주식별자"){: width="100%"}
   ><div style="color: gray; text-align: center; margin-bottom: 30px;">자식엔터티의 독립 주식별자</div>
 
 비식별자 관계 설정 시 마찬가지로 주의할 점이 있다.  
 일반적으로 각각의 엔터티에는 중요한 기준 속성이 있다. 이 기준 속성은 부모엔터티에 있는 PK속성으로부터 상속되어 자식엔터티에 존재하는 경우가 많다. 이러한 속성의 예로 '주민등록번호', '사원번호' 등이 있는데, 데이터 모델링을 전개할 때 각 엔터티 간의 관계를 비식별자관계로 설정하면 이런 유형의 속성이 자식 엔터티로 상속되지 않아 자식엔터티에서 데이터를 처리할 때 쓸데없이 부모엔터티까지 찾아가야 하는 경우가 발생한다.
 
-![비식별자 관계](/blog/assets/img/posts/20220825/non-identifier-relationship.png "비식별자 관계"){: width="100%"}
+![비식별자 관계](/assets/img/posts/20220825/non-identifier-relationship.png "비식별자 관계"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">비식별자 관계</div>
 
 때문에 쿼리에 많은 조인이 걸리게 되고 그에 따른 복잡성 증가와 성능이 저하된다. 따라서 아래서 제시할 고려사앙을 데이터 모델링에 반영한다면 효과적인 데이터 모델을 만들어 유용하게 활용할 수 있다.
@@ -116,7 +116,7 @@ comments: true
 
 기본적으로 식별자관계로 모든 관계가 연결되면서 다음 조건에 해당할 경우 비식별자관계로 조정하면 된다.
 
-![비식별자관계 설정 고려사항](/blog/assets/img/posts/20220825/non-identifier-relationship-considerations.png "비식별자관계 설정 고려사항"){: width="100%"}
+![비식별자관계 설정 고려사항](/assets/img/posts/20220825/non-identifier-relationship-considerations.png "비식별자관계 설정 고려사항"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">비식별자관계 설정 고려사항</div>
 
 여기서 가장 중요한 요인은 자식 엔터티의 독립된 주식별자 구성이 필요한지를 분석하는 것이다. 독립적으로 주식별자를 구성한다는 것은 업무적 필요성과 성능상 필요 여부를 모두 포함하는 의미로 이해하면 된다.
@@ -124,13 +124,13 @@ comments: true
 ### 식별자관계와 비식별자관계 비교
 식별자관계와 비식별자관계를 비교하는 내용은 다음과 같다.
 
-![식별자관계와 비식별자관계 비교](/blog/assets/img/posts/20220825/comparison-of-identifier-relationship-and-non-identifier-relationship.png "식별자관계와 비식별자관계 비교"){: width="100%"}
+![식별자관계와 비식별자관계 비교](/assets/img/posts/20220825/comparison-of-identifier-relationship-and-non-identifier-relationship.png "식별자관계와 비식별자관계 비교"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">식별자관계와 비식별자관계 비교</div>
 
 ### 식별자와 비식별자를 적용한 데이터 모델의 예
 위와 같은 기준에 의해 식별자와 비식별자관계가 적절하게 설정된 모델의 예는 다음과 같다.
 
-![식별자관계와 비식별자관계를 적절히 선택한 예시 모델](/blog/assets/img/posts/20220825/an-example-model-that-properly-selects-an-identifier-relationship-and-a-non-identifier-relationship.png "식별자관계와 비식별자관계를 적절히 선택한 예시 모델"){: width="100%"}
+![식별자관계와 비식별자관계를 적절히 선택한 예시 모델](/assets/img/posts/20220825/an-example-model-that-properly-selects-an-identifier-relationship-and-a-non-identifier-relationship.png "식별자관계와 비식별자관계를 적절히 선택한 예시 모델"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">식별자관계와 비식별자관계를 적절히 선택한 예시 모델</div>
 
 ---

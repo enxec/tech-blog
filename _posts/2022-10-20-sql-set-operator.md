@@ -38,7 +38,7 @@ UNION은 개별 SQL문의 결과에 대해 합집합 연산을 수행한다. 단
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![DEPT 릴레이션](/blog/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
+![DEPT 릴레이션](/assets/img/posts/20221004/dept-relation.png "DEPT 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">DEPT 릴레이션</div>
 
 - 쿼리
@@ -55,7 +55,7 @@ SELECT B.DNAME
 
 - 결과
 
-![UNION 예제](/blog/assets/img/posts/20221020/query-example.png "UNION 예제"){: width="100%"}
+![UNION 예제](/assets/img/posts/20221020/query-example.png "UNION 예제"){: width="100%"}
 
 ## UNION ALL
 개별 SQL문의 결과에 대해 합집합 연산을 수행하며, 중복된 행도 그대로 표시된다. 즉 단순히 개별 SQL문의 결과를 합쳐 하나의 결과로 출력하는 것이다. 일반적으로 여러 질의 결과가 상호 배타적일 때 많이 사용한다. 개별 SQL문의 결과가 서로 중복되지 않는 경우 UNION과 결과가 동일하다.(결과의 정렬 순서에는 차이가 있을 수 있음)
@@ -64,7 +64,7 @@ SELECT B.DNAME
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -81,7 +81,7 @@ SELECT *
 
 - 결과
 
-![UNION ALL 예제](/blog/assets/img/posts/20221020/query-example2.png "UNION ALL 예제"){: width="100%"}
+![UNION ALL 예제](/assets/img/posts/20221020/query-example2.png "UNION ALL 예제"){: width="100%"}
 
 ## INTERSECT
 개별 SQL문의 결과에 대해 교집합 연산을 수행한다. 단, 결과에서 모든 중복된 행은 하나의 행으로 만든다.
@@ -90,7 +90,7 @@ SELECT *
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -107,7 +107,7 @@ SELECT *
 
 - 결과
 
-![UNION 예제](/blog/assets/img/posts/20221020/query-example3.png "UNION 예제"){: width="100%"}
+![UNION 예제](/assets/img/posts/20221020/query-example3.png "UNION 예제"){: width="100%"}
 
 ## MINUS/EXCEPT
 개별 SQL문의 결과에 대해 차집합 연산을 수행한다. 단 결과에서 모든 중복된 행은 하나의 행으로 만든다. (Oracle : MINUS / SQL Server : EXCEPT)
@@ -116,7 +116,7 @@ SELECT *
 ---
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -132,7 +132,7 @@ SELECT *
 
 - 결과
 
-![MINUS 예제](/blog/assets/img/posts/20221020/query-example4.png "MINUS 예제"){: width="100%"}
+![MINUS 예제](/assets/img/posts/20221020/query-example4.png "MINUS 예제"){: width="100%"}
 
 ---
 

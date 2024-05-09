@@ -302,7 +302,7 @@ ssh -l test ezlc.org mkdir data
 SSH 서버를 접속할 때 패스워드를 입력하여 접속하지만 인증키를 이용하여 접속할 수도 있다.
 SSH 클라이언트에서 ssh-keygen 명령을 이용해서 비밀키와 공개키를 생성하고, SSH 서버에 공개키를 복사하면 된다.
 
-![인증키를 이용한 SSH server 접속 가상 설명도](/blog/assets/img/posts/20220809/ssh-keygen-process.png "인증키를 이용한 SSH server 접속 가상 설명도"){: width="100%"}
+![인증키를 이용한 SSH server 접속 가상 설명도](/assets/img/posts/20220809/ssh-keygen-process.png "인증키를 이용한 SSH server 접속 가상 설명도"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">인증키를 이용한 SSH server 접속 가상 설명도</div> 
 
 - 사용법

@@ -11,7 +11,7 @@
 	"image": {
 		"prefix": "img",
 		"body": [
-			"![제목](/blog/assets/img/posts/날짜/파일명.png \"제목\"){: width=\"100%\"}",
+			"![제목](/assets/img/posts/날짜/파일명.png \"제목\"){: width=\"100%\"}",
 			"<div style=\"color: gray; text-align: center; margin-bottom: 30px;\">제목</div>"
 		],
 		"description": "이미지 영역 생성",

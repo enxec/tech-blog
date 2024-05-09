@@ -26,7 +26,7 @@ comments: true
 ---
 프로그래밍 세계에서는 변수를 '단 하나의 값을 저장할 수 있는 메모리상의 공간'을 뜻한다. 이렇게 이름지어진 이유는 프로그래밍에서의 변수의 성질, 즉 '변수에 저장된 값은 변경될 수 있다'는 점이 수학에서의 '변하는 수'를 정의하고 있는 변수와 상통하고 있기 때문이다.
 
-![변수](/blog/assets/img/posts/20220722/variable.png "변수"){: width="100%"}
+![변수](/assets/img/posts/20220722/variable.png "변수"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">변수</div> 
 
 <br>
@@ -49,7 +49,7 @@ int와 String은 자바에서 '데이터타입' 또는 '변수타입' 이라고 
 데이터타입은 int, String 이외에도 char, long, boolean등이 있으며, 변수를 선언함에 있어 해당 변수에 어떤 데이터 유형을 담아 사용할 것인지 고려하여 위 예시와 같이 작성해주면 된다.  
 
 데이터타입의 자세한 내용은 아래링크를 참고바란다.  
-[데이터타입 (with.자바) - WONMO LEE's TECH BLOG](https://wonmolee.github.io/blog/java/what-is-variable-type-with-java)
+[데이터타입 (with.자바) - WONMO LEE's TECH BLOG](https://wonmolee.techblog.doubleuem.com/java/what-is-variable-type-with-java)
 
 ## 변수 초기화
 변수 초기화란 변수를 사용하기 전에 처음으로 값을 저장하는 것을 말한다. 변수는 종류에 따라 변수의 초기화를 생략할 수 있지만, 사용전에 적절한 값으로 초기화하는 것이 좋다. 이유는 여러 프로그램이 공유하는 자원인 메모리에, 전에 다른 프로그램에 의해 저장된 '알 수 없는 값(쓰레기값)'이 남아있을 수 있기 때문이다.
@@ -91,7 +91,7 @@ c = 0;      // int 자료형의 c 변수값을 0으로 초기화
 예약어는 '키워드' 또는 '리져브드 워드' 라고 하며, 프로그래밍언어의 구문에 사용되는 단어를 의미한다. 예약어는 변수 뿐만 아니라 클래스, 메서드의 이름으로도 사용할 수 없다. 
 
 자바에서 사용되는 예약어는 다음과 같다.
-![자바 예약어](/blog/assets/img/posts/20220722/java-reserved-word.png "자바 예약어"){: width="100%"}
+![자바 예약어](/assets/img/posts/20220722/java-reserved-word.png "자바 예약어"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">자바 예약어</div> 
 
 <br>

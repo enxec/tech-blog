@@ -25,7 +25,7 @@ JDK1.2 이전까지는 Vector, Hashtable, Properties와 같은 컬렉션 클래�
 ---
 컬렉션 프레임워크에서는 컬렉션데이터 그룹을 크게 3가지 타입이 존재한다고 인식하고 각 컬렉션을 다루는데 필요한 기능을 가진 3개의 인터페이스를 정의하였다. 그리고 인터페이스 List와 Set의 공통된 부분을 다시 뽑아서 새로운 인터페이스인 Collection을 추가로 정의하였다.
 
-![컬렉션 프레임워크의 핵심 인터페이스간의 상속계층도](/blog/assets/img/posts/20240502/collection-framework-Inheritance-hierarchy-between-core-interfaces.png "컬렉션 프레임워크의 핵심 인터페이스간의 상속계층도"){: width="100%"}
+![컬렉션 프레임워크의 핵심 인터페이스간의 상속계층도](/assets/img/posts/20240502/collection-framework-Inheritance-hierarchy-between-core-interfaces.png "컬렉션 프레임워크의 핵심 인터페이스간의 상속계층도"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">컬렉션 프레임워크의 핵심 인터페이스간의 상속계층도</div>
 
 인터페이스 List와 Set을 구현한 컬렉션 클래스들은 서로 많은 공통부분이 있어서, 공통된 부분을 다시 뽑아 Collection인터페이스를 정의할 수 있었지만 Map인터페이스는 이들과는 전혀 다른 형태로 컬렉션을 다루기 때문에 같은 상속계층도에 포함되지 못했다. 이러한 설계는 객체지향언어의 장점을 극명히 보여준다.
@@ -79,7 +79,7 @@ JDK1.2 이전까지는 Vector, Hashtable, Properties와 같은 컬렉션 클래�
 
 Vector나 Hashtable과 같은 기존의 컬렉션 클래스들을 호환하기 위해, 설계를 변경해서 남겨두었지만 가능하면 사용하지 않는 것이 좋다. 대신 새로 추가된 ArrayList와 HashMap을 사용하자.,
 
-![Vector클래스의 상속계층도 변화 - 왼쪽이 JDK1.2이전, 오른쪽이 이후](/blog/assets/img/posts/20240502/inheritance-hierarchy-of-the-Vector-class-also-changes.png "Vector클래스의 상속계층도 변화 - 왼쪽이 JDK1.2이전, 오른쪽이 이후"){: width="100%"}
+![Vector클래스의 상속계층도 변화 - 왼쪽이 JDK1.2이전, 오른쪽이 이후](/assets/img/posts/20240502/inheritance-hierarchy-of-the-Vector-class-also-changes.png "Vector클래스의 상속계층도 변화 - 왼쪽이 JDK1.2이전, 오른쪽이 이후"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Vector클래스의 상속계층도 변화 - 왼쪽이 JDK1.2이전, 오른쪽이 이후</div>
 
 ## Collection 인터페이스
@@ -168,7 +168,7 @@ Collection인터페이스는 컬렉션 클래스에 저장된 데이터를 읽�
 ## List 인터페이스
 List 인터페이스는 중복을 허용하면서 저장순서가 유지되는 컬렉션을 구현하는데 사용된다.
 
-![List의 상속계층도](/blog/assets/img/posts/20240502/list-Inheritance-hierarchy.png "List의 상속계층도"){: width="100%"}
+![List의 상속계층도](/assets/img/posts/20240502/list-Inheritance-hierarchy.png "List의 상속계층도"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">List의 상속계층도</div>
 
 List인터페이스에 정의된 메서드는 다음과 같다. Collection인터페이스로부터 상속받은 것들은 제외하였다.
@@ -239,13 +239,13 @@ List인터페이스에 정의된 메서드는 다음과 같다. Collection인터
 ## Set인터페이스
 Set인터페이스는 중복을 허용하지 않고 저장순서가 유지되지 않는 컬렉션 클래스를 구현하는데 사용된다. Set인터페이스를 구현한 클래스로는 HashSet, TreeSet 등이 있다.
 
-![Set의 상속계층도](/blog/assets/img/posts/20240502/set-Inheritance-hierarchy.png "Set의 상속계층도"){: width="100%"}
+![Set의 상속계층도](/assets/img/posts/20240502/set-Inheritance-hierarchy.png "Set의 상속계층도"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Set의 상속계층도</div>
 
 ## Map인터페이스
 Map인터페이스는 키(key)와 값(value)을 하나의 쌍으로 묶어서 저장하는 컬렉션 클래스를 구현하는데 사용된다. 키는 중복될 수 없지만 값은 중복을 허용한다. 기존에 저장된 데이터와 중복된 키와 값을 저장하면 기존의 값은 없어지고 마지막에 저장된 값이 남게된다. Map인터페이스를 구현한 클래스로는 Hashable, HashMap, LinkedHashMap, SortedMap, TreeMap 등이 있다.
 
-![Map의 상속계층도](/blog/assets/img/posts/20240502/map-Inheritance-hierarchy.png "Map의 상속계층도"){: width="100%"}
+![Map의 상속계층도](/assets/img/posts/20240502/map-Inheritance-hierarchy.png "Map의 상속계층도"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Map의 상속계층도</div>
 
 <table border="1">

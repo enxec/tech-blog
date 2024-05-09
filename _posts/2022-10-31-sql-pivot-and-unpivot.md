@@ -47,7 +47,7 @@ PIVOT [XML]
 ## 예제 1
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -66,12 +66,12 @@ SELECT *
 
 - 결과
 
-![PIVOT 예제](/blog/assets/img/posts/20221031/query-example3.png "PIVOT 예제"){: width="100%"}
+![PIVOT 예제](/assets/img/posts/20221031/query-example3.png "PIVOT 예제"){: width="100%"}
 
 ## 예제 2
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![EMP 릴레이션](/blog/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
+![EMP 릴레이션](/assets/img/posts/20221017/emp-relation.png "EMP 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">EMP 릴레이션</div>
 
 - 쿼리
@@ -91,7 +91,7 @@ SELECT *
 
 - 결과
 
-![PIVOT 예제](/blog/assets/img/posts/20221031/query-example4.png "PIVOT 예제"){: width="100%"}
+![PIVOT 예제](/assets/img/posts/20221031/query-example4.png "PIVOT 예제"){: width="100%"}
 
 # UNPIVOT 절
 ---
@@ -116,7 +116,7 @@ UNPIVOT [{INCLUDE | EXCLUDE} NULLS]
 ## 예제
 예제에 사용되는 릴레이션은 아래와 같다.
 
-![T1 릴레이션](/blog/assets/img/posts/20221031/t1-relation.png "T1 릴레이션"){: width="100%"}
+![T1 릴레이션](/assets/img/posts/20221031/t1-relation.png "T1 릴레이션"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">T1 릴레이션</div>
 
 - 쿼리
@@ -132,7 +132,7 @@ UNPIVOT (SAL FOR DEPTNO IN (D10_SAL, D20_SAL))
 
 - 결과
 
-![UNPIVOT 예제](/blog/assets/img/posts/20221031/query-example5.png "UNPIVOT 예제"){: width="100%"}
+![UNPIVOT 예제](/assets/img/posts/20221031/query-example5.png "UNPIVOT 예제"){: width="100%"}
 
 ---
 

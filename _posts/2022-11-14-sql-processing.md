@@ -24,12 +24,12 @@ SQL은 'Structured Query Language'의 줄임말이다. 말 그대로 구조적 �
 ---
 SQL 처리 과정을 오라클 기준으로 좀 더 자세히 표현하면 아래와 같다.
 
-![SQL 처리 과정](/blog/assets/img/posts/20221114/sql-processing.png "SQL 처리 과정"){: width="100%"}
+![SQL 처리 과정](/assets/img/posts/20221114/sql-processing.png "SQL 처리 과정"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">SQL 처리 과정</div>
 
 처리 과정에서 표현된 각 서브엔진의 역할은 다음과 같다.
 
-![서브엔진별 역할](/blog/assets/img/posts/20221114/roles-by-sub-engine.png "서브엔진별 역할"){: width="100%"}
+![서브엔진별 역할](/assets/img/posts/20221114/roles-by-sub-engine.png "서브엔진별 역할"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">서브엔진별 역할</div>
 
 오라클뿐만 아니라 다른 DBMS도 비슷한 처리과정을 통해 실행계획을 생성한다. 쿼리 최적화 과정 즉, Parser와 Optimizer 역할에 해당하는 내용은 다음과 같다.
@@ -90,7 +90,7 @@ SELECT *
    AND NO = 1;
 ```
 
-![실행계획 예제](/blog/assets/img/posts/20221114/execution-plan-result-example.png "실행계획 예제"){: width="100%"}
+![실행계획 예제](/assets/img/posts/20221114/execution-plan-result-example.png "실행계획 예제"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">실행계획 예제</div>
 
 옵티마이저가 PK_EMP 인덱스를 선택했다. PK_EMP2 인덱스를 선택할 수 있고, 테이블을 Full Scan할 수도 있다. PK_EMP 인덱스를 선택한 근거는 무엇일까?
@@ -155,7 +155,7 @@ DBMS마다 이처럼 차이가 있다는 사실을 미리 숙지하고, 애플�
 ## 힌트 종류
 오라클은 공식적으로 다음과 같이 많은 종류의 힌트를 제공하며, 비공식 힌트까지 합치면 350여 개(12c 기준)에 이른다. 비공식 힌트까지 모두 알 필요는 없지만, 최소한 아래 내용의 힌트들은 그용도와 사용법에 맞게 숙지할 필요가 있다.
 
-![오라클 힌트](/blog/assets/img/posts/20221114/oracle-hint-type.png "오라클 힌트"){: width="100%"}
+![오라클 힌트](/assets/img/posts/20221114/oracle-hint-type.png "오라클 힌트"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">오라클 힌트</div>
 
 ---

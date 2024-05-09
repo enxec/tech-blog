@@ -38,12 +38,12 @@ comments: true
 ---
 자바에서는 실행 시 발생할 수 있는 오류(Exception과 Error)를 클래스로 정의하였다. 앞서 배운 것처럼 모든 클래스의 조상은 Object클래스이므로 Exception과 Error클래스 역시 Object클래스의 자손들이다.
 
-![예외클래스 계층도](/blog/assets/img/posts/20240312/exceptionclass-hierarchy.png "예외클래스 계층도"){: width="100%"}
+![예외클래스 계층도](/assets/img/posts/20240312/exceptionclass-hierarchy.png "예외클래스 계층도"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">예외클래스 계층도</div>
 
 모든 예외의 최고 조상은 Exception클래스이며, 상속계층도를 Exception클래스부터 도식화하면 다음과 같다.
 
-![Exception클래스와 RuntimeException클래스 중심의 상속계층도](/blog/assets/img/posts/20240312/exceptionclass-hierarchy2.png "Exception클래스와 RuntimeException클래스 중심의 상속계층도"){: width="100%"}
+![Exception클래스와 RuntimeException클래스 중심의 상속계층도](/assets/img/posts/20240312/exceptionclass-hierarchy2.png "Exception클래스와 RuntimeException클래스 중심의 상속계층도"){: width="100%"}
 <div style="color: gray; text-align: center; margin-bottom: 30px;">Exception클래스와 RuntimeException클래스 중심의 상속계층도</div>
 
 위 그림에서 볼 수 있듯이 예외 클래스들은 다음과 같이 두 그룹으로 나눠질 수 있다.
