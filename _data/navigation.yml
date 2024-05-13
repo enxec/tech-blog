@@ -1,8 +1,0 @@
-# main links
-main:
-  - title: "Home"
-    url: /
-  - title: "Categories"
-    url: /categories/
-  - title: "About Me"
-    url: "https://wonmolee.github.io/"
