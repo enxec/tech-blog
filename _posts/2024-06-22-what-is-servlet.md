@@ -1,5 +1,5 @@
 ---
-title: "[Spring] 서블릿이란?"
+title: "[Spring] Servlet이란?"
 description: 
 author: Enxec
 date: 2024-06-22
