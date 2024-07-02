@@ -4,7 +4,7 @@ description:
 author: Enxec
 date: 2024-06-24
 categories: [Language, Swift]
-tags: [swift, 스위프트, 데이터 타입, data type]
+tags: [swift, 스위프트, 데이터 타입, dataType]
 pin: false
 math: true
 mermaid: true

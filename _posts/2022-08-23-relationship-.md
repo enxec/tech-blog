@@ -4,7 +4,7 @@ description:
 author: Enxec
 date: 2022-08-23
 categories: [Language, SQL]
-tags: [sql, 관계, Relationship]
+tags: [sql, 관계, relationship]
 pin: false
 math: true
 mermaid: true

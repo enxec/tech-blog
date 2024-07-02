@@ -4,7 +4,7 @@ description:
 author: Enxec
 date: 2022-07-26
 categories: [Language, Java]
-tags: [java, 자바, 데이터타입, 변수타입, 자료형, data type, variable type, primitive type, reference type]
+tags: [java, 자바, 데이터타입, 변수타입, 자료형, dataType, variableType, primitiveType, referenceType]
 pin: false
 math: true
 mermaid: true

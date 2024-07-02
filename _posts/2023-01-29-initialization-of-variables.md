@@ -4,7 +4,7 @@ description:
 author: Enxec
 date: 2023-01-29
 categories: [Language, Java]
-tags: [java, 자바, Variable, 변수]
+tags: [java, 자바, variable, 변수]
 pin: false
 math: true
 mermaid: true
