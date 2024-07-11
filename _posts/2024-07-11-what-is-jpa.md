@@ -118,11 +118,12 @@ JPA는 EJB 2.0의 복잡성과 한계를 극복하기 위해 도입된 EJB 3.0 �
 
   - 기본 JPQL 쿼리 예
 
-  ```java
-  TypedQuery<User> query = em.createQuery("SELECT u FROM User u WHERE u.username = :username", User.class);
-  query.setParameter("username", "john");
-  List<User> results = query.getResultList();
-  ```
+    ```java
+    TypedQuery<User> query = em.createQuery("SELECT u FROM User u WHERE u.username = :username", User.class);
+    query.setParameter("username", "john");
+    List<User> results = query.getResultList();
+    ```
+    
 - 트랜잭션 관리
 
   JPA는 데이터베이스 트랜잭션을 관리하는 기능을 제공합니다. 트랜잭션은 엔티티 매니저를 통해 시작되고, 커밋 또는 롤백할 수 있습니다.
