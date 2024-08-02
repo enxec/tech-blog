@@ -1,5 +1,5 @@
 ---
-title: "DAO 패턴 vs Repository 패턴"
+title: "[Spring] DAO 패턴 vs Repository 패턴"
 description: 
 author: 이원모
 date: 2024-07-12

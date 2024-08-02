@@ -1,5 +1,5 @@
 ---
-title: "JPA란?"
+title: "[Spring] JPA란?"
 description: 
 author: 이원모
 date: 2024-07-11

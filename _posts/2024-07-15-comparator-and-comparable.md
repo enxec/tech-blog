@@ -1,5 +1,5 @@
 ---
-title: "Comparator와 Comparable"
+title: "[Java] Comparator와 Comparable"
 description: 
 author: 이원모
 date: 2024-07-15
