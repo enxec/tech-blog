@@ -43,7 +43,7 @@ ArrayList는 여러 생성자와 메서드를 가지고 있으며, 주요내용�
         <col style="width:20%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">메서드</th>
         <th style="text-align:center;">설명</th>
     </tr>

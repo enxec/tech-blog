@@ -25,7 +25,7 @@ java.lang패키지는 자바프로그래밍에 가장 기본이 되는 클래스
         <col style="width:40%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">Object클래스의 메서드</th>
         <th style="text-align:center;">설 명</th>
     </tr>

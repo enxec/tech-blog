@@ -37,7 +37,7 @@ JDK1.2 이전까지는 Vector, Hashtable, Properties와 같은 컬렉션 클래�
         <col style="width:20%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">인터페이스</th>
         <th style="text-align:center;">특징</th>
     </tr>
@@ -87,7 +87,7 @@ Vector나 Hashtable과 같은 기존의 컬렉션 클래스들을 호환하기 �
         <col style="width:40%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">메서드</th>
         <th style="text-align:center;">설명</th>
     </tr>
@@ -177,7 +177,7 @@ List인터페이스에 정의된 메서드는 다음과 같다. Collection인터
         <col style="width:40%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">메서드</th>
         <th style="text-align:center;">설명</th>
     </tr>
@@ -252,7 +252,7 @@ Map인터페이스는 키(key)와 값(value)을 하나의 쌍으로 묶어서 �
         <col style="width:40%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">메서드</th>
         <th style="text-align:center;">설명</th>
     </tr>
@@ -342,7 +342,7 @@ public interface Map {
         <col style="width:20%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">메서드</th>
         <th style="text-align:center;">설명</th>
     </tr>

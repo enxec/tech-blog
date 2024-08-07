@@ -42,7 +42,7 @@ iterator()는 Collection인터페이스에 정의된 메서드이므로 Collecti
     <col style="width:60%;">
   </colgroup>
   <thead>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
       <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">메서드</th>
       <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">설명</th>
     </tr>
@@ -180,7 +180,7 @@ ListIterator는 Iterator를 상속받아서 기능을 추가한 것으로, 컬�
     <col style="width:60%;">
   </colgroup>
   <thead>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
       <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">메서드</th>
       <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">설명</th>
     </tr>
@@ -213,7 +213,7 @@ ListIterator는 Iterator를 상속받아서 기능을 추가한 것으로, 컬�
     <col style="width:60%;">
   </colgroup>
   <thead>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
       <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">메서드</th>
       <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">설명</th>
     </tr>

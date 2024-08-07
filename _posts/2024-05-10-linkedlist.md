@@ -221,7 +221,7 @@ LinkedList : 317
         <col style="width:20%">
         <col style="width:40%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">컬렉션</th>
         <th style="text-align:center;">읽기(접근시간)</th>
         <th style="text-align:center;">추가 / 삭제</th>

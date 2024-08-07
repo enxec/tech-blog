@@ -33,7 +33,7 @@ image:
         <col style="width:70%;">
     </colgroup>
     <thead>
-        <tr style="background-color:gray;">
+        <tr style="background-color:darkslategray;">
             <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">메서드</th>
             <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">설명</th>
         </tr>
@@ -91,7 +91,7 @@ image:
         <col style="width:70%;">
     </colgroup>
     <thead>
-        <tr style="background-color:gray;">
+        <tr style="background-color:darkslategray;">
             <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">메서드</th>
             <th style="text-align:center; border: 1px solid black; word-wrap: break-word;">설명</th>
         </tr>

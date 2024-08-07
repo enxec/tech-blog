@@ -24,7 +24,7 @@ JDK 1.8 이전부터 사용해오던 Date와 Calendar의 단점을 해소하기 
         <col style="width:20%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">패키지</th>
         <th style="text-align:center;">설명</th>
     </tr>
@@ -188,7 +188,7 @@ LocalDate와 LocalTime의 객체에서 특정 필드의 값을 가져올 때는 
         <col style="width:20%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">클래스</th>
         <th style="text-align:center;">메서드</th>
         <th style="text-align:center;">설명(1999-12-31 23:59:59)</th>
@@ -264,7 +264,7 @@ long getLong (TemporalField field)
         <col style="width:20%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">TemporalField(ChronoField)</th>
         <th style="text-align:center;">설명</th>
     </tr>
@@ -631,7 +631,7 @@ LocalDate nextMonday = today.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
         <col style="width:60%">
         <col style="width:40%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">메서드</th>
         <th style="text-align:center;">설명</th>
     </tr>
@@ -863,7 +863,7 @@ pe = Period.of(1, 13, 32).normalized(); // 1년 13개월 32일 -> 2년 1개월 3
         <col style="width:15%">
         <col style="width:70%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">클래스</th>
         <th style="text-align:center;">메서드</th>
         <th style="text-align:center;">설명</th>
@@ -942,7 +942,7 @@ FormatStyle의 종류에 따른 출력 형태는 다음과 같다.
         <col style="width:50%">
         <col style="width:35%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">FormatStyle</th>
         <th style="text-align:center;">날짜</th>
         <th style="text-align:center;">시간</th>

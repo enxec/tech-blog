@@ -52,7 +52,7 @@ class A { // 외부 클래스
         <col style="width:20%">
         <col style="width:60%">
     </colgroup>
-    <tr style="background-color:gray;">
+    <tr style="background-color:darkslategray;">
         <th style="text-align:center;">내부 클래스</th>
         <th style="text-align:center;">특징</th>
     </tr>
